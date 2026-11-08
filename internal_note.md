@@ -34,6 +34,16 @@ Below is where we stand, why, and what I'd do this week.
   That's a broken Go Docker template/toolchain, fixable once for the whole cohort, not 10
   people who can't code.
 
+- **We have no pre-submission gate — and ~half of rejections don't need a human.** Classifying
+  rejections by *who can catch them*: **49% are fully machine-checkable** before a reviewer ever
+  looks (docker_build_failure 47 — a `docker build` that just doesn't compile; too_easy 75 — we
+  already compute frontier_pass_rate, so flag ≥0.80; duplicate 12). Those 134 tasks are **22% of
+  all 605 QA decisions** — reviewer time spent rejecting things a CI check would bounce instantly.
+  A pre-submission harness (build + run reference solution vs. hidden tests + frontier pass-rate +
+  dup check) would keep them out of the queue, **directly relieving the QA bottleneck** and giving
+  experts feedback in minutes instead of days. This is the single highest-leverage fix because it
+  hits the binding constraint. *Evidence: `metrics.json` → `rejection_preventability`.*
+
 - **Slice the reviewers too:** acceptance ranges from **R3 68% to R4 32%** on similar volumes
   (168 vs 102 decided). That spread may partly reflect task mix (who gets Go/feature tasks), but
   it's wide enough to warrant a 30-min calibration sync and spot-checking each reviewer's calls —
@@ -46,13 +56,15 @@ Below is where we stand, why, and what I'd do this week.
   but if the lab re-QAs on their side, that's the band most at risk of re-rejection.
 
 - **What I'd do this week (in priority order):**
-  1. **Add QA capacity / triage the 113 pending first** — throughput is the gate. Clearing the
-     backlog at ~55% yields ~62 accepts almost immediately.
-  2. **Fix the Go Docker template** — one infra fix unlocks ~10 experts currently near 0%.
+  1. **Stand up a pre-submission CI gate** — `docker build` + run the reference solution against
+     the hidden tests + frontier pass-rate check (flag ≥0.80) + duplicate check. Bounces ~49% of
+     today's rejection causes before they reach a reviewer, freeing ~22% of QA capacity (the
+     bottleneck), and fixes the Go `docker_build_failure` problem as a side effect.
+  2. **Triage the 113 pending now** — clearing the backlog at ~55% yields ~62 accepts immediately.
   3. **Coach E19 and E07 directly** on tightening tests (a 30-min session + 2 exemplars). Lifting
      these two toward the ~55% average reclaims ~35–40 tasks — more than any blanket memo.
-  4. **Ship a "tests tight + hard enough" checklist** to everyone to stop the loose-tests bleed,
-     and **run a reviewer calibration sync** (R3 68% vs R4 32%) to standardize thresholds.
+  4. **Run a reviewer calibration sync** (R3 68% vs R4 32%) and ship a "tests tight + hard enough"
+     checklist to everyone to stop the loose-tests bleed the gate can't fully catch.
 
 - **Forecast:** at current pace **~495 accepted by Nov 13** — base case 496, range **451
   (hold week-4's slow pace) → 535 (match our best week)**. **We will likely miss 600 by ~100**

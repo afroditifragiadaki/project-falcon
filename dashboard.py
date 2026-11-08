@@ -104,16 +104,20 @@ def build_html(m):
           <div class="wklab">W{wk_}<br><span class="muted">{v}</span></div>
         </div>"""
 
-    # rejection reasons
+    # rejection reasons (tagged by whether a pre-submission gate could catch them)
     rr = m["rejection_reasons"]
     rrtot = sum(rr.values())
     rrmax = max(rr.values())
+    prev = m["rejection_preventability"]
+    tagmap = prev["by_reason"]
+    taglabel = {"auto": "auto-catchable", "semi": "semi-auto", "human": "needs QA"}
     rr_html = ""
     for reason, n in rr.items():
         w = n / rrmax * 100
+        tag = tagmap.get(reason, "human")
         rr_html += f"""
         <div class="row">
-          <div class="row-label">{reason.replace('_',' ')}</div>
+          <div class="row-label">{reason.replace('_',' ')} <span class="tag tag-{tag}">{taglabel[tag]}</span></div>
           <div class="track"><div class="fill t-reason" style="width:{w}%"></div></div>
           <div class="row-val">{n}<span class="muted"> · {n/rrtot:.0%}</span></div>
         </div>"""
@@ -199,8 +203,13 @@ def build_html(m):
   .card h2 {{ font-size:14px; margin:0 0 3px; }}
   .card .cap {{ font-size:12px; color:var(--muted); margin:0 0 14px; }}
   .full {{ grid-column:1/-1; }}
-  .row {{ display:grid; grid-template-columns:120px 1fr 120px; align-items:center; gap:10px; margin:7px 0; font-size:13px; }}
+  .row {{ display:grid; grid-template-columns:150px 1fr 120px; align-items:center; gap:10px; margin:7px 0; font-size:13px; }}
   .row-label {{ color:var(--text-2); }}
+  .tag {{ display:inline-block; font-size:10px; font-weight:600; padding:1px 6px; border-radius:20px;
+    vertical-align:middle; letter-spacing:.02em; }}
+  .tag-auto {{ background:color-mix(in srgb,var(--good) 20%,transparent); color:var(--good); }}
+  .tag-semi {{ background:color-mix(in srgb,var(--warning) 26%,transparent); color:var(--text); }}
+  .tag-human {{ background:color-mix(in srgb,var(--muted) 20%,transparent); color:var(--text-2); }}
   .row-val {{ text-align:right; font-variant-numeric:tabular-nums; }}
   .track {{ background:color-mix(in srgb, var(--muted) 18%, transparent); border-radius:5px; height:12px; overflow:hidden; }}
   .fill {{ height:100%; border-radius:5px; }}
@@ -291,7 +300,9 @@ def build_html(m):
 
     <div class="card">
       <h2>Why tasks get rejected</h2>
-      <p class="cap">{rrtot} rejections. The top two — loose tests &amp; too easy — are {round((rr.get('tests_too_loose',0)+rr.get('too_easy',0))/rrtot*100)}% and both fixable with guidance.</p>
+      <p class="cap">{rrtot} rejections. <b>{prev['auto_share']:.0%}</b> are <span class="tag tag-auto">auto-catchable</span>
+         before a human reviewer (docker build, duplicate check, frontier pass-rate) — that's <b>{prev['auto_share_of_all_qa_decisions']:.0%}</b>
+         of all QA decisions wasted on things a pre-submission gate would bounce. Tagged below.</p>
       {rr_html}
     </div>
 

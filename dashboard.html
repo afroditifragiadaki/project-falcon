@@ -46,8 +46,13 @@
   .card h2 { font-size:14px; margin:0 0 3px; }
   .card .cap { font-size:12px; color:var(--muted); margin:0 0 14px; }
   .full { grid-column:1/-1; }
-  .row { display:grid; grid-template-columns:120px 1fr 120px; align-items:center; gap:10px; margin:7px 0; font-size:13px; }
+  .row { display:grid; grid-template-columns:150px 1fr 120px; align-items:center; gap:10px; margin:7px 0; font-size:13px; }
   .row-label { color:var(--text-2); }
+  .tag { display:inline-block; font-size:10px; font-weight:600; padding:1px 6px; border-radius:20px;
+    vertical-align:middle; letter-spacing:.02em; }
+  .tag-auto { background:color-mix(in srgb,var(--good) 20%,transparent); color:var(--good); }
+  .tag-semi { background:color-mix(in srgb,var(--warning) 26%,transparent); color:var(--text); }
+  .tag-human { background:color-mix(in srgb,var(--muted) 20%,transparent); color:var(--text-2); }
   .row-val { text-align:right; font-variant-numeric:tabular-nums; }
   .track { background:color-mix(in srgb, var(--muted) 18%, transparent); border-radius:5px; height:12px; overflow:hidden; }
   .fill { height:100%; border-radius:5px; }
@@ -221,30 +226,32 @@
 
     <div class="card">
       <h2>Why tasks get rejected</h2>
-      <p class="cap">274 rejections. The top two — loose tests &amp; too easy — are 65% and both fixable with guidance.</p>
+      <p class="cap">274 rejections. <b>49%</b> are <span class="tag tag-auto">auto-catchable</span>
+         before a human reviewer (docker build, duplicate check, frontier pass-rate) — that's <b>22%</b>
+         of all QA decisions wasted on things a pre-submission gate would bounce. Tagged below.</p>
       
         <div class="row">
-          <div class="row-label">tests too loose</div>
+          <div class="row-label">tests too loose <span class="tag tag-semi">semi-auto</span></div>
           <div class="track"><div class="fill t-reason" style="width:100.0%"></div></div>
           <div class="row-val">104<span class="muted"> · 38%</span></div>
         </div>
         <div class="row">
-          <div class="row-label">too easy</div>
+          <div class="row-label">too easy <span class="tag tag-auto">auto-catchable</span></div>
           <div class="track"><div class="fill t-reason" style="width:72.11538461538461%"></div></div>
           <div class="row-val">75<span class="muted"> · 27%</span></div>
         </div>
         <div class="row">
-          <div class="row-label">docker build failure</div>
+          <div class="row-label">docker build failure <span class="tag tag-auto">auto-catchable</span></div>
           <div class="track"><div class="fill t-reason" style="width:45.19230769230769%"></div></div>
           <div class="row-val">47<span class="muted"> · 17%</span></div>
         </div>
         <div class="row">
-          <div class="row-label">unclear instructions</div>
+          <div class="row-label">unclear instructions <span class="tag tag-human">needs QA</span></div>
           <div class="track"><div class="fill t-reason" style="width:34.61538461538461%"></div></div>
           <div class="row-val">36<span class="muted"> · 13%</span></div>
         </div>
         <div class="row">
-          <div class="row-label">duplicate</div>
+          <div class="row-label">duplicate <span class="tag tag-auto">auto-catchable</span></div>
           <div class="track"><div class="fill t-reason" style="width:11.538461538461538%"></div></div>
           <div class="row-val">12<span class="muted"> · 4%</span></div>
         </div>

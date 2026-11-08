@@ -719,6 +719,22 @@
     "unclear_instructions": 36,
     "duplicate": 12
   },
+  "rejection_preventability": {
+    "total_rejections": 274,
+    "auto": 134,
+    "semi": 104,
+    "human": 36,
+    "auto_share": 0.4891,
+    "auto_plus_semi_share": 0.8686,
+    "auto_share_of_all_qa_decisions": 0.2215,
+    "by_reason": {
+      "unclear_instructions": "human",
+      "tests_too_loose": "semi",
+      "docker_build_failure": "auto",
+      "too_easy": "auto",
+      "duplicate": "auto"
+    }
+  },
   "quality": {
     "accepted_fpr_median": 0.41,
     "too_easy_line": 0.8,

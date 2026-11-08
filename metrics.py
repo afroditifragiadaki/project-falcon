@@ -235,6 +235,30 @@ def compute(experts, subs, qa_list, clean):
     rejection_reasons = dict(Counter(
         s["reason"] for s in subs if s["status"] == "rejected" and s["reason"]))
 
+    # Can a pre-submission gate catch this reason without a human reviewer?
+    #   auto  = fully mechanical (CI build, duplicate hash, frontier pass-rate >= 0.80)
+    #   semi  = partly automatable (run reference + a broken solution vs. hidden tests)
+    #   human = genuine QA judgment
+    PREVENTABILITY = {
+        "docker_build_failure": "auto",   # `docker build` succeeds or it doesn't
+        "duplicate": "auto",              # hash/similarity vs. accepted corpus
+        "too_easy": "auto",               # we already compute frontier_pass_rate; flag >= 0.80
+        "tests_too_loose": "semi",        # ref solution must pass AND a broken one must fail
+        "unclear_instructions": "human",  # needs a reviewer
+    }
+    prev = Counter()
+    for reason, n in rejection_reasons.items():
+        prev[PREVENTABILITY.get(reason, "human")] += n
+    rtot = sum(rejection_reasons.values())
+    rejection_preventability = {
+        "total_rejections": rtot,
+        "auto": prev["auto"], "semi": prev["semi"], "human": prev["human"],
+        "auto_share": round(prev["auto"] / rtot, 4) if rtot else None,
+        "auto_plus_semi_share": round((prev["auto"] + prev["semi"]) / rtot, 4) if rtot else None,
+        "auto_share_of_all_qa_decisions": round(prev["auto"] / decided, 4) if decided else None,
+        "by_reason": {r: PREVENTABILITY.get(r, "human") for r in rejection_reasons},
+    }
+
     # quality: accepted frontier pass-rate distribution
     acc_fpr = [s["fpr"] for s in subs if s["status"] == "accepted" and s["fpr"] is not None]
     borderline_easy = sum(1 for x in acc_fpr if 0.70 <= x < TOO_EASY_LINE)
@@ -305,6 +329,7 @@ def compute(experts, subs, qa_list, clean):
         "expert_concentration": expert_concentration,
         "rejection_reasons": dict(sorted(rejection_reasons.items(),
                                          key=lambda x: -x[1])),
+        "rejection_preventability": rejection_preventability,
         "quality": {
             "accepted_fpr_median": round(statistics.median(acc_fpr), 3),
             "too_easy_line": TOO_EASY_LINE,
