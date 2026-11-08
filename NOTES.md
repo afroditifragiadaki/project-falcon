@@ -35,7 +35,7 @@ update for the lab's Friday sync.
 - **Top rejection reasons:** tests_too_loose (105) + too_easy (77) = 64% of rejections — both fixable with guidance.
 - **Go is weak:** 28% acceptance (vs Python 61%, TS 53%); Go experts only joined wk 3.
 - **Reviewer spread:** R3 accepts 68% vs R4 33% — calibration worth checking (may be task-mix).
-- **Forecast: ~500–520 accepted by Nov 13 — ~80–100 short of 600** at current pace.
+- **Forecast: ~510 accepted by Nov 13 (range 463–549) — ~90 short of 600** at current pace.
 
 ## Open questions / assumptions
 - Is there a per-language quota, or just 600 total? Assumed **600 total**, but flagged Go.
@@ -45,7 +45,7 @@ update for the lab's Friday sync.
 
 ## Progress log
 - :00 — explored data, found cleaning issues + trend. Writing script.
-- ~:20 — metrics.py + dashboard.py running; 343 accepted/600, forecast ~463–524. Note the
+- ~:20 — metrics.py + dashboard.py running; 343 accepted/600, forecast ~463–549 (base 509). Note the
   submissions-join gives 343 accepted vs 344 raw in QA: 2 QA rows (T9001/T9002) have no
   submission record and look synthetic → excluded (a deliverable needs a real submitted task).
 - ~:50 — dashboard, internal note, and lab update drafted. Cross-checked numbers against metrics.json.

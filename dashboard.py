@@ -97,7 +97,7 @@ def build_html(m):
     thr_html = ""
     for wk_, v in thr.items():
         hh = v / thrmax * 100
-        faint = " faint" if wk_ >= m["current_week"] else ""  # current/future = partial
+        faint = " faint" if wk_ > m["as_of_week"] else ""  # weeks after the snapshot = partial
         thr_html += f"""
         <div class="wkcol">
           <div class="wkbar"><div class="seg t-accent{faint}" style="height:{hh}%" title="{v}"></div></div>
@@ -203,7 +203,7 @@ def build_html(m):
 <div class="wrap">
   <header>
     <h1>Project Falcon — Health Check</h1>
-    <span class="sub">as of {m['as_of']} (week {m['current_week']}) · data through {m['data_through']} · due {m['due']} ({wks} wks left) · goal {m['goal']} accepted</span>
+    <span class="sub">as of {m['as_of']} (end of week {m['as_of_week']}) · data through {m['data_through']} · due {m['due']} ({wks} wks left) · goal {m['goal']} accepted</span>
   </header>
 
   <div class="verdict" style="--vt:var(--{verdict_tone})"><span class="dot"></span>{verdict}</div>
@@ -241,7 +241,7 @@ def build_html(m):
 
     <div class="card">
       <h2>QA throughput (accepted / review week)</h2>
-      <p class="cap">The real bottleneck. QA has never cleared more than {max(thr.values())} accepts in a week; the current week (W{m['current_week']}) is faded as partial.</p>
+      <p class="cap">The real bottleneck. QA has never cleared more than {max(thr.values())} accepts in a week; weeks after the snapshot are faded as partial.</p>
       <div class="wkrow">{thr_html}</div>
     </div>
 

@@ -1,6 +1,6 @@
 # Internal note — Project Falcon status (end of week 4, Nov 2)
 
-**TL;DR: we're off track for 600 by Nov 13.** Honest forecast ~500–520 accepted
+**TL;DR: we're off track for 600 by Nov 13.** Honest forecast ~510 accepted
 (~15% short). The binding constraint is **QA review throughput**, not expert supply.
 Below is where we stand, why, and what I'd do this week.
 
@@ -12,7 +12,7 @@ Below is where we stand, why, and what I'd do this week.
 - **The real bottleneck is QA, not experts.** Experts can produce ~**200 tasks/week**
   (772 expert-hrs ÷ 3.8 hrs/task); QA has **never cleared more than 103 accepts in a week**
   and only 60 in week 4. That's why the pending pile jumped to 92. To hit 600 we'd need
-  **128 accepts/week** (~233 reviews/wk) for two weeks — more than double our best week ever.
+  **~128 accepts/week** (~235 reviews/wk) for two weeks — more than double our best week ever.
   *Evidence: `capacity` + `forecast` in `metrics.json`.*
 
 - **Rejections are concentrated and fixable.** Of 283 rejections, **tests_too_loose (105)
@@ -44,10 +44,10 @@ Below is where we stand, why, and what I'd do this week.
   3. **Run a reviewer calibration sync** and standardize the too-easy/loose-tests thresholds.
   4. **Reallocate effort** toward higher-yield categories and pair-support the Go cohort.
 
-- **Forecast:** at current pace **~500–520 accepted by Nov 13** (range 463 pessimistic →
-  524 optimistic). **We will likely miss 600 by ~80–100** unless QA throughput roughly doubles
-  and holds. Recommend we go into Friday's sync with a realistic number and a concrete recovery
-  plan rather than a promise we can't keep.
+- **Forecast:** at current pace **~510 accepted by Nov 13** — base case 509, range **463
+  (hold week-4's slow pace) → 549 (match our best week)**. **We will likely miss 600 by ~90**
+  unless QA throughput roughly doubles and holds. Recommend we go into Friday's sync with a
+  realistic number and a concrete recovery plan rather than a promise we can't keep.
 
 *Assumptions: goal is 600 total (no per-language quota); ~2 weeks remain (W5 + W6 to Fri Nov 13);
 2 QA rows with no submission (T9001/T9002) excluded as synthetic. Rebuild all numbers:

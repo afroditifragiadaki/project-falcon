@@ -1,8 +1,8 @@
 {
-  "as_of": "2026-11-08",
+  "as_of": "2026-11-02",
+  "as_of_week": 4,
   "data_through": "2026-11-03",
-  "current_week": 5,
-  "weeks_left": 0.71,
+  "weeks_left": 2,
   "goal": 600,
   "due": "2026-11-13",
   "headline": {
@@ -146,19 +146,19 @@
   "forecast": {
     "accepted_now": 343,
     "gap_to_goal": 257,
-    "weeks_left": 0.71,
+    "weeks_left": 2,
     "past_due": false,
-    "needed_accepts_per_week": 362.0,
-    "needed_decided_per_week": 660.6,
+    "needed_accepts_per_week": 128.5,
+    "needed_decided_per_week": 234.5,
     "pace_basis_weeks": [
       1,
       2,
       3,
       4
     ],
-    "pessimistic": 386,
-    "base": 402,
-    "optimistic": 416,
+    "pessimistic": 463,
+    "base": 509,
+    "optimistic": 549,
     "peak_decided_week": 186
   },
   "data_quality": {

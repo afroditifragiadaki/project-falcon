@@ -16,10 +16,17 @@ That one command:
 3. writes `metrics.json`, and
 4. renders `dashboard.html`.
 
-Then open `dashboard.html` in a browser. Dates (report date, current week, weeks
-left to the deadline) are computed from the day you run it — nothing is hardcoded.
-The `GOAL` (600 accepted) and `DUE` (Nov 13, 2026) deadline are constants at the top
-of `metrics.py`.
+Then open `dashboard.html` in a browser. This is a **point-in-time status report**, so
+the snapshot date is pinned (`AS_OF = 2026-11-02`, end of week 4) rather than floating
+with the wall clock — that keeps the numbers reproducible and identical across every
+deliverable. To produce a later cut, pass a date:
+
+```bash
+python3 metrics.py 2026-11-09
+```
+
+`GOAL` (600 accepted), the `DUE` (Nov 13, 2026) deadline, and `AS_OF` are constants at
+the top of `metrics.py`.
 
 ## What's here
 

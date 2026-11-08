@@ -6,7 +6,7 @@ computes project metrics, and writes metrics.json. It also renders dashboard.htm
 
 Run:  python3 metrics.py
 """
-import csv, json, statistics, datetime as dt
+import csv, json, statistics, sys, datetime as dt
 from collections import Counter, defaultdict
 from pathlib import Path
 
@@ -16,8 +16,18 @@ DATA = ROOT / "data"
 GOAL = 600
 DUE = dt.date(2026, 11, 13)          # Friday — the fixed project deadline
 WEEK1_MON = dt.date(2026, 10, 5)     # project week 1 starts here
-TODAY = dt.date.today()              # dynamic: whatever day you run this
+# A status report is a point-in-time artifact: pin the snapshot so the numbers are
+# reproducible and identical across every deliverable. Override for a later cut with
+#   python3 metrics.py 2026-11-09
+AS_OF = dt.date(2026, 11, 2)         # end of week 4 (the brief's reporting date)
 TOO_EASY_LINE = 0.80                 # inferred from too_easy rejections (min fpr 0.82)
+
+
+def parse_args(argv):
+    """Optional first arg overrides the snapshot date (ISO, e.g. 2026-11-09)."""
+    global AS_OF
+    if len(argv) > 1 and argv[1]:
+        AS_OF = dt.date.fromisoformat(argv[1])
 
 
 def week_of(d: str):
@@ -138,20 +148,23 @@ def compute(experts, subs, qa_list, clean):
     med_hr = statistics.median(hrs)
     max_subs_per_wk = cap_hrs / med_hr
 
-    # ---- dynamic dates (computed from the day this runs) ----
-    current_week = week_of(TODAY.isoformat())
+    # ---- snapshot: a FIXED point in time (AS_OF), not the wall clock ----
+    # "as-of week" = the last fully-completed project week as of the snapshot
+    # (the day before AS_OF), so a Monday report reflects through the prior week.
+    as_of_week = week_of((AS_OF - dt.timedelta(days=1)).isoformat())
     all_dates = ([s["submitted_at"] for s in subs if s["submitted_at"]]
                  + [r["reviewed_at"] for r in qa_list if r.get("reviewed_at")])
-    data_through = max(all_dates) if all_dates else TODAY.isoformat()
-    days_left = (DUE - TODAY).days
-    weeks_left = round(days_left / 7, 2)
-    wl = max(weeks_left, 0)                 # clamp for projections past the deadline
-    past_due = days_left <= 0
+    data_through = max(all_dates) if all_dates else AS_OF.isoformat()
+    due_week = week_of(DUE.isoformat())
+    weeks_left = max(due_week - as_of_week, 0)   # remaining project weeks (e.g. W5–W6 = 2)
+    days_left = (DUE - AS_OF).days
+    wl = weeks_left
+    past_due = weeks_left <= 0
 
     # ---- forecast ----
-    # Run-rate from COMPLETE review weeks only (exclude the current partial week).
+    # Run-rate from COMPLETE review weeks only (exclude the partial current week).
     review_weeks = sorted(acc_by_review_wk)
-    complete = [w for w in review_weeks if w < current_week] or review_weeks
+    complete = [w for w in review_weeks if w <= as_of_week] or review_weeks
     rates = [acc_by_review_wk[w] for w in complete]
     base_rate = statistics.mean(rates)
     last_rate = rates[-1]                   # most recent complete week
@@ -174,9 +187,9 @@ def compute(experts, subs, qa_list, clean):
     }
 
     return {
-        "as_of": TODAY.isoformat(),          # the day this report was generated
+        "as_of": AS_OF.isoformat(),           # fixed snapshot date this report reflects
+        "as_of_week": as_of_week,             # last completed project week at the snapshot
         "data_through": data_through,         # latest date present in the data
-        "current_week": current_week,
         "weeks_left": weeks_left,
         "goal": GOAL,
         "due": DUE.isoformat(),
@@ -209,7 +222,8 @@ def compute(experts, subs, qa_list, clean):
     }
 
 
-def main():
+def main(argv=None):
+    parse_args(argv or sys.argv)
     experts, subs, qa_list, clean = load()
     m = compute(experts, subs, qa_list, clean)
     (ROOT / "metrics.json").write_text(json.dumps(m, indent=2))
@@ -219,7 +233,7 @@ def main():
             else f"Need {f['needed_accepts_per_week']:.0f} accepts/wk for "
                  f"{f['weeks_left']} wks")
     print("Project Falcon — metrics rebuilt  (metrics.json written)")
-    print(f"  As of {m['as_of']} (week {m['current_week']}, data through "
+    print(f"  As of {m['as_of']} (end of week {m['as_of_week']}, data through "
           f"{m['data_through']}) · due {m['due']}")
     print(f"  Accepted {h['accepted']}/{m['goal']}  ({h['pct_to_goal']:.0%})   "
           f"rejected {h['rejected']}  pending {h['pending']}")
