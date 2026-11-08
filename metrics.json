@@ -1,0 +1,172 @@
+{
+  "as_of": "2026-11-08",
+  "data_through": "2026-11-03",
+  "current_week": 5,
+  "weeks_left": 0.71,
+  "goal": 600,
+  "due": "2026-11-13",
+  "headline": {
+    "accepted": 343,
+    "rejected": 283,
+    "pending": 92,
+    "decided": 626,
+    "acc_rate": 0.548,
+    "pct_to_goal": 0.572
+  },
+  "weekly_by_submission": [
+    {
+      "week": 1,
+      "submitted": 159,
+      "accepted": 93,
+      "rejected": 66,
+      "pending": 0
+    },
+    {
+      "week": 2,
+      "submitted": 164,
+      "accepted": 94,
+      "rejected": 70,
+      "pending": 0
+    },
+    {
+      "week": 3,
+      "submitted": 189,
+      "accepted": 94,
+      "rejected": 83,
+      "pending": 12
+    },
+    {
+      "week": 4,
+      "submitted": 206,
+      "accepted": 62,
+      "rejected": 64,
+      "pending": 80
+    }
+  ],
+  "accepted_by_review_week": {
+    "1": 79,
+    "2": 90,
+    "3": 103,
+    "4": 60,
+    "5": 12
+  },
+  "decided_by_review_week": {
+    "1": 129,
+    "2": 162,
+    "3": 186,
+    "4": 130,
+    "5": 21
+  },
+  "by_language": {
+    "Python": {
+      "accepted": 203,
+      "rejected": 130,
+      "pending": 46,
+      "acc_rate": 0.61
+    },
+    "Go": {
+      "accepted": 16,
+      "rejected": 42,
+      "pending": 13,
+      "acc_rate": 0.276
+    },
+    "TypeScript": {
+      "accepted": 124,
+      "rejected": 111,
+      "pending": 33,
+      "acc_rate": 0.528
+    }
+  },
+  "by_category": {
+    "dependency_upgrade": {
+      "accepted": 83,
+      "rejected": 39,
+      "pending": 14,
+      "acc_rate": 0.68
+    },
+    "refactor": {
+      "accepted": 53,
+      "rejected": 55,
+      "pending": 16,
+      "acc_rate": 0.491
+    },
+    "bug_fix": {
+      "accepted": 142,
+      "rejected": 102,
+      "pending": 35,
+      "acc_rate": 0.582
+    },
+    "feature": {
+      "accepted": 65,
+      "rejected": 87,
+      "pending": 27,
+      "acc_rate": 0.428
+    }
+  },
+  "by_reviewer": {
+    "R1": {
+      "accepted": 105,
+      "decided": 184,
+      "acc_rate": 0.571
+    },
+    "R2": {
+      "accepted": 87,
+      "decided": 162,
+      "acc_rate": 0.537
+    },
+    "R3": {
+      "accepted": 115,
+      "decided": 170,
+      "acc_rate": 0.676
+    },
+    "R4": {
+      "accepted": 37,
+      "decided": 112,
+      "acc_rate": 0.33
+    }
+  },
+  "rejection_reasons": {
+    "tests_too_loose": 105,
+    "too_easy": 77,
+    "docker_build_failure": 51,
+    "unclear_instructions": 37,
+    "duplicate": 13
+  },
+  "quality": {
+    "accepted_fpr_median": 0.41,
+    "too_easy_line": 0.8,
+    "accepted_borderline_easy_0.70_0.79": 42
+  },
+  "capacity": {
+    "expert_hours_per_week": 772,
+    "median_hours_per_task": 3.8,
+    "max_submittable_per_week": 203,
+    "n_experts": 40
+  },
+  "forecast": {
+    "accepted_now": 343,
+    "gap_to_goal": 257,
+    "weeks_left": 0.71,
+    "past_due": false,
+    "needed_accepts_per_week": 362.0,
+    "needed_decided_per_week": 660.6,
+    "pace_basis_weeks": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "pessimistic": 386,
+    "base": 402,
+    "optimistic": 416,
+    "peak_decided_week": 186
+  },
+  "data_quality": {
+    "dup_submission_rows_dropped": 4,
+    "expert_ids_case_fixed": 0,
+    "empty_hours_rows": 6,
+    "unique_submissions": 718,
+    "submissions_without_qa": 0,
+    "expert_ids_not_in_roster": []
+  }
+}

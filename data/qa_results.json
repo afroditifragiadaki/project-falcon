@@ -1,0 +1,5762 @@
+[
+ {
+  "task_id": "T1637",
+  "status": "rejected",
+  "rejection_reason": "duplicate",
+  "reviewer_id": "R4",
+  "frontier_pass_rate": 0.78,
+  "reviewed_at": "2026-10-29"
+ },
+ {
+  "task_id": "T1631",
+  "status": "accepted",
+  "rejection_reason": null,
+  "reviewer_id": "R1",
+  "frontier_pass_rate": 0.36,
+  "reviewed_at": "2026-11-01"
+ },
+ {
+  "task_id": "T1528",
+  "status": "pending",
+  "rejection_reason": null,
+  "reviewer_id": null,
+  "frontier_pass_rate": null,
+  "reviewed_at": null
+ },
+ {
+  "task_id": "T1065",
+  "status": "accepted",
+  "rejection_reason": null,
+  "reviewer_id": "R1",
+  "frontier_pass_rate": 0.21,
+  "reviewed_at": "2026-10-10"
+ },
+ {
+  "task_id": "T1604",
+  "status": "accepted",
+  "rejection_reason": null,
+  "reviewer_id": "R3",
+  "frontier_pass_rate": 0.17,
+  "reviewed_at": "2026-11-01"
+ },
+ {
+  "task_id": "T1517",
+  "status": "accepted",
+  "rejection_reason": null,
+  "reviewer_id": "R3",
+  "frontier_pass_rate": 0.23,
+  "reviewed_at": "2026-10-30"
+ },
+ {
+  "task_id": "T1586",
+  "status": "rejected",
+  "rejection_reason": "too_easy",
+  "reviewer_id": "R4",
+  "frontier_pass_rate": 0.85,
+  "reviewed_at": "2026-10-30"
+ },
+ {
+  "task_id": "T1183",
+  "status": "accepted",
+  "rejection_reason": null,
+  "reviewer_id": "R2",
+  "frontier_pass_rate": 0.25,
+  "reviewed_at": "2026-10-19"
+ },
+ {
+  "task_id": "T1496",
+  "status": "accepted",
+  "rejection_reason": null,
+  "reviewer_id": "R3",
+  "frontier_pass_rate": 0.51,
+  "reviewed_at": "2026-10-21"
+ },
+ {
+  "task_id": "T1599",
+  "status": "accepted",
+  "rejection_reason": null,
+  "reviewer_id": "R1",
+  "frontier_pass_rate": 0.53,
+  "reviewed_at": "2026-11-03"
+ },
+ {
+  "task_id": "T1432",
+  "status": "accepted",
+  "rejection_reason": null,
+  "reviewer_id": "R1",
+  "frontier_pass_rate": 0.18,
+  "reviewed_at": "2026-10-21"
+ },
+ {
+  "task_id": "T1484",
+  "status": "accepted",
+  "rejection_reason": null,
+  "reviewer_id": "R2",
+  "frontier_pass_rate": 0.11,
+  "reviewed_at": "2026-10-23"
+ },
+ {
+  "task_id": "T1236",
+  "status": "accepted",
+  "rejection_reason": null,
+  "reviewer_id": "R2",
+  "frontier_pass_rate": 0.53,
+  "reviewed_at": "2026-10-19"
+ },
+ {
+  "task_id": "T1453",
+  "status": "rejected",
+  "rejection_reason": "too_easy",
+  "reviewer_id": "R4",
+  "frontier_pass_rate": 0.84,
+  "reviewed_at": "2026-10-25"
+ },
+ {
+  "task_id": "T1286",
+  "status": "accepted",
+  "rejection_reason": null,
+  "reviewer_id": "R2",
+  "frontier_pass_rate": 0.38,
+  "reviewed_at": "2026-10-20"
+ },
+ {
+  "task_id": "T1568",
+  "status": "accepted",
+  "rejection_reason": null,
+  "reviewer_id": "R3",
+  "frontier_pass_rate": 0.46,
+  "reviewed_at": "2026-11-01"
+ },
+ {
+  "task_id": "T1698",
+  "status": "accepted",
+  "rejection_reason": null,
+  "reviewer_id": "R1",
+  "frontier_pass_rate": 0.59,
+  "reviewed_at": "2026-11-03"
+ },
+ {
+  "task_id": "T1559",
+  "status": "rejected",
+  "rejection_reason": "too_easy",
+  "reviewer_id": "R4",
+  "frontier_pass_rate": 0.98,
+  "reviewed_at": "2026-11-03"
+ },
+ {
+  "task_id": "T1445",
+  "status": "accepted",
+  "rejection_reason": null,
+  "reviewer_id": "R4",
+  "frontier_pass_rate": 0.12,
+  "reviewed_at": "2026-10-25"
+ },
+ {
+  "task_id": "T1241",
+  "status": "rejected",
+  "rejection_reason": "duplicate",
+  "reviewer_id": "R1",
+  "frontier_pass_rate": 0.61,
+  "reviewed_at": "2026-10-14"
+ },
+ {
+  "task_id": "T1272",
+  "status": "rejected",
+  "rejection_reason": "unclear_instructions",
+  "reviewer_id": "R2",
+  "frontier_pass_rate": 0.67,
+  "reviewed_at": "2026-10-19"
+ },
+ {
+  "task_id": "T1300",
+  "status": "rejected",
+  "rejection_reason": "unclear_instructions",
+  "reviewer_id": "R3",
+  "frontier_pass_rate": 0.05,
+  "reviewed_at": "2026-10-16"
+ },
+ {
+  "task_id": "T1032",
+  "status": "rejected",
+  "rejection_reason": "tests_too_loose",
+  "reviewer_id": "R1",
+  "frontier_pass_rate": 0.69,
+  "reviewed_at": "2026-10-10"
+ },
+ {
+  "task_id": "T1196",
+  "status": "rejected",
+  "rejection_reason": "tests_too_loose",
+  "reviewer_id": "R1",
+  "frontier_pass_rate": 0.45,
+  "reviewed_at": "2026-10-16"
+ },
+ {
+  "task_id": "T1540",
+  "status": "pending",
+  "rejection_reason": null,
+  "reviewer_id": null,
+  "frontier_pass_rate": null,
+  "reviewed_at": null
+ },
+ {
+  "task_id": "T1683",
+  "status": "rejected",
+  "rejection_reason": "too_easy",
+  "reviewer_id": "R4",
+  "frontier_pass_rate": 0.89,
+  "reviewed_at": "2026-10-28"
+ },
+ {
+  "task_id": "T1421",
+  "status": "rejected",
+  "rejection_reason": "unclear_instructions",
+  "reviewer_id": "R4",
+  "frontier_pass_rate": 0.53,
+  "reviewed_at": "2026-10-23"
+ },
+ {
+  "task_id": "T1244",
+  "status": "accepted",
+  "rejection_reason": null,
+  "reviewer_id": "R3",
+  "frontier_pass_rate": 0.51,
+  "reviewed_at": "2026-10-18"
+ },
+ {
+  "task_id": "T1106",
+  "status": "rejected",
+  "rejection_reason": "tests_too_loose",
+  "reviewer_id": "R1",
+  "frontier_pass_rate": 0.32,
+  "reviewed_at": "2026-10-12"
+ },
+ {
+  "task_id": "T1153",
+  "status": "accepted",
+  "rejection_reason": null,
+  "reviewer_id": "R2",
+  "frontier_pass_rate": 0.67,
+  "reviewed_at": "2026-10-09"
+ },
+ {
+  "task_id": "T1349",
+  "status": "accepted",
+  "rejection_reason": null,
+  "reviewer_id": "R2",
+  "frontier_pass_rate": 0.62,
+  "reviewed_at": "2026-10-21"
+ },
+ {
+  "task_id": "T1447",
+  "status": "accepted",
+  "rejection_reason": null,
+  "reviewer_id": "R1",
+  "frontier_pass_rate": 0.14,
+  "reviewed_at": "2026-10-22"
+ },
+ {
+  "task_id": "T1193",
+  "status": "accepted",
+  "rejection_reason": null,
+  "reviewer_id": "R2",
+  "frontier_pass_rate": 0.54,
+  "reviewed_at": "2026-10-16"
+ },
+ {
+  "task_id": "T1467",
+  "status": "rejected",
+  "rejection_reason": "unclear_instructions",
+  "reviewer_id": "R4",
+  "frontier_pass_rate": 0.28,
+  "reviewed_at": "2026-10-26"
+ },
+ {
+  "task_id": "T1592",
+  "status": "accepted",
+  "rejection_reason": null,
+  "reviewer_id": "R3",
+  "frontier_pass_rate": 0.22,
+  "reviewed_at": "2026-10-29"
+ },
+ {
+  "task_id": "T1433",
+  "status": "pending",
+  "rejection_reason": null,
+  "reviewer_id": null,
+  "frontier_pass_rate": null,
+  "reviewed_at": null
+ },
+ {
+  "task_id": "T1199",
+  "status": "rejected",
+  "rejection_reason": "tests_too_loose",
+  "reviewer_id": "R2",
+  "frontier_pass_rate": 0.47,
+  "reviewed_at": "2026-10-19"
+ },
+ {
+  "task_id": "T1108",
+  "status": "accepted",
+  "rejection_reason": null,
+  "reviewer_id": "R1",
+  "frontier_pass_rate": 0.6,
+  "reviewed_at": "2026-10-10"
+ },
+ {
+  "task_id": "T1552",
+  "status": "accepted",
+  "rejection_reason": null,
+  "reviewer_id": "R1",
+  "frontier_pass_rate": 0.66,
+  "reviewed_at": "2026-11-02"
+ },
+ {
+  "task_id": "T1063",
+  "status": "accepted",
+  "rejection_reason": null,
+  "reviewer_id": "R1",
+  "frontier_pass_rate": 0.37,
+  "reviewed_at": "2026-10-10"
+ },
+ {
+  "task_id": "T1533",
+  "status": "accepted",
+  "rejection_reason": null,
+  "reviewer_id": "R3",
+  "frontier_pass_rate": 0.5,
+  "reviewed_at": "2026-10-29"
+ },
+ {
+  "task_id": "T1523",
+  "status": "pending",
+  "rejection_reason": null,
+  "reviewer_id": null,
+  "frontier_pass_rate": null,
+  "reviewed_at": null
+ },
+ {
+  "task_id": "T1257",
+  "status": "rejected",
+  "rejection_reason": "tests_too_loose",
+  "reviewer_id": "R2",
+  "frontier_pass_rate": 0.61,
+  "reviewed_at": "2026-10-17"
+ },
+ {
+  "task_id": "T1062",
+  "status": "rejected",
+  "rejection_reason": "too_easy",
+  "reviewer_id": "R3",
+  "frontier_pass_rate": 0.91,
+  "reviewed_at": "2026-10-07"
+ },
+ {
+  "task_id": "T1017",
+  "status": "accepted",
+  "rejection_reason": null,
+  "reviewer_id": "R2",
+  "frontier_pass_rate": 0.34,
+  "reviewed_at": "2026-10-09"
+ },
+ {
+  "task_id": "T1619",
+  "status": "accepted",
+  "rejection_reason": null,
+  "reviewer_id": "R1",
+  "frontier_pass_rate": 0.28,
+  "reviewed_at": "2026-10-29"
+ },
+ {
+  "task_id": "T1298",
+  "status": "accepted",
+  "rejection_reason": null,
+  "reviewer_id": "R1",
+  "frontier_pass_rate": 0.41,
+  "reviewed_at": "2026-10-18"
+ },
+ {
+  "task_id": "T1004",
+  "status": "accepted",
+  "rejection_reason": null,
+  "reviewer_id": "R3",
+  "frontier_pass_rate": 0.16,
+  "reviewed_at": "2026-10-09"
+ },
+ {
+  "task_id": "T1250",
+  "status": "rejected",
+  "rejection_reason": "too_easy",
+  "reviewer_id": "R2",
+  "frontier_pass_rate": 0.92,
+  "reviewed_at": "2026-10-18"
+ },
+ {
+  "task_id": "T1188",
+  "status": "rejected",
+  "rejection_reason": "tests_too_loose",
+  "reviewer_id": "R2",
+  "frontier_pass_rate": 0.76,
+  "reviewed_at": "2026-10-19"
+ },
+ {
+  "task_id": "T1053",
+  "status": "accepted",
+  "rejection_reason": null,
+  "reviewer_id": "R3",
+  "frontier_pass_rate": 0.23,
+  "reviewed_at": "2026-10-11"
+ },
+ {
+  "task_id": "T1101",
+  "status": "rejected",
+  "rejection_reason": "tests_too_loose",
+  "reviewer_id": "R2",
+  "frontier_pass_rate": 0.8,
+  "reviewed_at": "2026-10-08"
+ },
+ {
+  "task_id": "T1668",
+  "status": "accepted",
+  "rejection_reason": null,
+  "reviewer_id": "R4",
+  "frontier_pass_rate": 0.49,
+  "reviewed_at": "2026-11-02"
+ },
+ {
+  "task_id": "T1610",
+  "status": "rejected",
+  "rejection_reason": "tests_too_loose",
+  "reviewer_id": "R2",
+  "frontier_pass_rate": 0.26,
+  "reviewed_at": "2026-11-01"
+ },
+ {
+  "task_id": "T1427",
+  "status": "accepted",
+  "rejection_reason": null,
+  "reviewer_id": "R4",
+  "frontier_pass_rate": 0.35,
+  "reviewed_at": "2026-10-23"
+ },
+ {
+  "task_id": "T1438",
+  "status": "accepted",
+  "rejection_reason": null,
+  "reviewer_id": "R3",
+  "frontier_pass_rate": 0.34,
+  "reviewed_at": "2026-10-24"
+ },
+ {
+  "task_id": "T1356",
+  "status": "rejected",
+  "rejection_reason": "tests_too_loose",
+  "reviewer_id": "R2",
+  "frontier_pass_rate": 0.71,
+  "reviewed_at": "2026-10-20"
+ },
+ {
+  "task_id": "T1423",
+  "status": "rejected",
+  "rejection_reason": "tests_too_loose",
+  "reviewer_id": "R1",
+  "frontier_pass_rate": 0.65,
+  "reviewed_at": "2026-10-24"
+ },
+ {
+  "task_id": "T1346",
+  "status": "rejected",
+  "rejection_reason": "too_easy",
+  "reviewer_id": "R4",
+  "frontier_pass_rate": 0.94,
+  "reviewed_at": "2026-10-26"
+ },
+ {
+  "task_id": "T1664",
+  "status": "pending",
+  "rejection_reason": null,
+  "reviewer_id": null,
+  "frontier_pass_rate": null,
+  "reviewed_at": null
+ },
+ {
+  "task_id": "T1149",
+  "status": "rejected",
+  "rejection_reason": "too_easy",
+  "reviewer_id": "R1",
+  "frontier_pass_rate": 0.97,
+  "reviewed_at": "2026-10-11"
+ },
+ {
+  "task_id": "T1343",
+  "status": "rejected",
+  "rejection_reason": "too_easy",
+  "reviewer_id": "R4",
+  "frontier_pass_rate": 0.95,
+  "reviewed_at": "2026-10-24"
+ },
+ {
+  "task_id": "T1219",
+  "status": "accepted",
+  "rejection_reason": null,
+  "reviewer_id": "R3",
+  "frontier_pass_rate": 0.48,
+  "reviewed_at": "2026-10-13"
+ },
+ {
+  "task_id": "T1292",
+  "status": "rejected",
+  "rejection_reason": "tests_too_loose",
+  "reviewer_id": "R3",
+  "frontier_pass_rate": 0.45,
+  "reviewed_at": "2026-10-14"
+ },
+ {
+  "task_id": "T1143",
+  "status": "accepted",
+  "rejection_reason": null,
+  "reviewer_id": "R1",
+  "frontier_pass_rate": 0.41,
+  "reviewed_at": "2026-10-12"
+ },
+ {
+  "task_id": "T1424",
+  "status": "rejected",
+  "rejection_reason": "tests_too_loose",
+  "reviewer_id": "R3",
+  "frontier_pass_rate": 0.46,
+  "reviewed_at": "2026-10-24"
+ },
+ {
+  "task_id": "T1611",
+  "status": "rejected",
+  "rejection_reason": "tests_too_loose",
+  "reviewer_id": "R2",
+  "frontier_pass_rate": 0.1,
+  "reviewed_at": "2026-10-30"
+ },
+ {
+  "task_id": "T1572",
+  "status": "accepted",
+  "rejection_reason": null,
+  "reviewer_id": "R4",
+  "frontier_pass_rate": 0.46,
+  "reviewed_at": "2026-11-03"
+ },
+ {
+  "task_id": "T1557",
+  "status": "rejected",
+  "rejection_reason": "unclear_instructions",
+  "reviewer_id": "R3",
+  "frontier_pass_rate": 0.81,
+  "reviewed_at": "2026-10-29"
+ },
+ {
+  "task_id": "T1317",
+  "status": "accepted",
+  "rejection_reason": null,
+  "reviewer_id": "R1",
+  "frontier_pass_rate": 0.52,
+  "reviewed_at": "2026-10-17"
+ },
+ {
+  "task_id": "T1112",
+  "status": "accepted",
+  "rejection_reason": null,
+  "reviewer_id": "R2",
+  "frontier_pass_rate": 0.26,
+  "reviewed_at": "2026-10-11"
+ },
+ {
+  "task_id": "T1124",
+  "status": "accepted",
+  "rejection_reason": null,
+  "reviewer_id": "R2",
+  "frontier_pass_rate": 0.67,
+  "reviewed_at": "2026-10-12"
+ },
+ {
+  "task_id": "T1210",
+  "status": "rejected",
+  "rejection_reason": "unclear_instructions",
+  "reviewer_id": "R1",
+  "frontier_pass_rate": 0.45,
+  "reviewed_at": "2026-10-16"
+ },
+ {
+  "task_id": "T1665",
+  "status": "pending",
+  "rejection_reason": null,
+  "reviewer_id": null,
+  "frontier_pass_rate": null,
+  "reviewed_at": null
+ },
+ {
+  "task_id": "T1044",
+  "status": "rejected",
+  "rejection_reason": "tests_too_loose",
+  "reviewer_id": "R3",
+  "frontier_pass_rate": 0.89,
+  "reviewed_at": "2026-10-08"
+ },
+ {
+  "task_id": "T1489",
+  "status": "rejected",
+  "rejection_reason": "docker_build_failure",
+  "reviewer_id": "R4",
+  "frontier_pass_rate": 0.23,
+  "reviewed_at": "2026-10-27"
+ },
+ {
+  "task_id": "T1334",
+  "status": "accepted",
+  "rejection_reason": null,
+  "reviewer_id": "R3",
+  "frontier_pass_rate": 0.12,
+  "reviewed_at": "2026-10-25"
+ },
+ {
+  "task_id": "T1492",
+  "status": "rejected",
+  "rejection_reason": "docker_build_failure",
+  "reviewer_id": "R2",
+  "frontier_pass_rate": 0.19,
+  "reviewed_at": "2026-10-22"
+ },
+ {
+  "task_id": "T1548",
+  "status": "pending",
+  "rejection_reason": null,
+  "reviewer_id": null,
+  "frontier_pass_rate": null,
+  "reviewed_at": null
+ },
+ {
+  "task_id": "T1117",
+  "status": "accepted",
+  "rejection_reason": null,
+  "reviewer_id": "R1",
+  "frontier_pass_rate": 0.08,
+  "reviewed_at": "2026-10-09"
+ },
+ {
+  "task_id": "T1200",
+  "status": "rejected",
+  "rejection_reason": "too_easy",
+  "reviewer_id": "R2",
+  "frontier_pass_rate": 0.98,
+  "reviewed_at": "2026-10-19"
+ },
+ {
+  "task_id": "T1658",
+  "status": "pending",
+  "rejection_reason": null,
+  "reviewer_id": null,
+  "frontier_pass_rate": null,
+  "reviewed_at": null
+ },
+ {
+  "task_id": "T1255",
+  "status": "rejected",
+  "rejection_reason": "tests_too_loose",
+  "reviewer_id": "R3",
+  "frontier_pass_rate": 0.48,
+  "reviewed_at": "2026-10-20"
+ },
+ {
+  "task_id": "T1341",
+  "status": "accepted",
+  "rejection_reason": null,
+  "reviewer_id": "R3",
+  "frontier_pass_rate": 0.73,
+  "reviewed_at": "2026-10-25"
+ },
+ {
+  "task_id": "T1578",
+  "status": "pending",
+  "rejection_reason": null,
+  "reviewer_id": null,
+  "frontier_pass_rate": null,
+  "reviewed_at": null
+ },
+ {
+  "task_id": "T1391",
+  "status": "accepted",
+  "rejection_reason": null,
+  "reviewer_id": "R4",
+  "frontier_pass_rate": 0.45,
+  "reviewed_at": "2026-10-25"
+ },
+ {
+  "task_id": "T1001",
+  "status": "rejected",
+  "rejection_reason": "docker_build_failure",
+  "reviewer_id": "R1",
+  "frontier_pass_rate": 0.72,
+  "reviewed_at": "2026-10-12"
+ },
+ {
+  "task_id": "T1002",
+  "status": "rejected",
+  "rejection_reason": "tests_too_loose",
+  "reviewer_id": "R1",
+  "frontier_pass_rate": 0.49,
+  "reviewed_at": "2026-10-06"
+ },
+ {
+  "task_id": "T1287",
+  "status": "accepted",
+  "rejection_reason": null,
+  "reviewer_id": "R3",
+  "frontier_pass_rate": 0.37,
+  "reviewed_at": "2026-10-13"
+ },
+ {
+  "task_id": "T1207",
+  "status": "accepted",
+  "rejection_reason": null,
+  "reviewer_id": "R3",
+  "frontier_pass_rate": 0.76,
+  "reviewed_at": "2026-10-19"
+ },
+ {
+  "task_id": "T1627",
+  "status": "pending",
+  "rejection_reason": null,
+  "reviewer_id": null,
+  "frontier_pass_rate": null,
+  "reviewed_at": null
+ },
+ {
+  "task_id": "T1127",
+  "status": "accepted",
+  "rejection_reason": null,
+  "reviewer_id": "R1",
+  "frontier_pass_rate": 0.6,
+  "reviewed_at": "2026-10-06"
+ },
+ {
+  "task_id": "T1656",
+  "status": "pending",
+  "rejection_reason": null,
+  "reviewer_id": null,
+  "frontier_pass_rate": null,
+  "reviewed_at": null
+ },
+ {
+  "task_id": "T1167",
+  "status": "rejected",
+  "rejection_reason": "duplicate",
+  "reviewer_id": "R2",
+  "frontier_pass_rate": 0.49,
+  "reviewed_at": "2026-10-19"
+ },
+ {
+  "task_id": "T1439",
+  "status": "rejected",
+  "rejection_reason": "docker_build_failure",
+  "reviewer_id": "R3",
+  "frontier_pass_rate": 0.21,
+  "reviewed_at": "2026-10-24"
+ },
+ {
+  "task_id": "T1344",
+  "status": "accepted",
+  "rejection_reason": null,
+  "reviewer_id": "R3",
+  "frontier_pass_rate": 0.71,
+  "reviewed_at": "2026-10-24"
+ },
+ {
+  "task_id": "T1114",
+  "status": "rejected",
+  "rejection_reason": "tests_too_loose",
+  "reviewer_id": "R2",
+  "frontier_pass_rate": 0.61,
+  "reviewed_at": "2026-10-12"
+ },
+ {
+  "task_id": "T1501",
+  "status": "rejected",
+  "rejection_reason": "docker_build_failure",
+  "reviewer_id": "R3",
+  "frontier_pass_rate": 0.52,
+  "reviewed_at": "2026-10-24"
+ },
+ {
+  "task_id": "T1682",
+  "status": "rejected",
+  "rejection_reason": "docker_build_failure",
+  "reviewer_id": "R4",
+  "frontier_pass_rate": 0.2,
+  "reviewed_at": "2026-10-29"
+ },
+ {
+  "task_id": "T1030",
+  "status": "rejected",
+  "rejection_reason": "tests_too_loose",
+  "reviewer_id": "R1",
+  "frontier_pass_rate": 0.14,
+  "reviewed_at": "2026-10-09"
+ },
+ {
+  "task_id": "T1448",
+  "status": "pending",
+  "rejection_reason": null,
+  "reviewer_id": null,
+  "frontier_pass_rate": null,
+  "reviewed_at": null
+ },
+ {
+  "task_id": "T1603",
+  "status": "pending",
+  "rejection_reason": null,
+  "reviewer_id": null,
+  "frontier_pass_rate": null,
+  "reviewed_at": null
+ },
+ {
+  "task_id": "T1537",
+  "status": "pending",
+  "rejection_reason": null,
+  "reviewer_id": null,
+  "frontier_pass_rate": null,
+  "reviewed_at": null
+ },
+ {
+  "task_id": "T1566",
+  "status": "accepted",
+  "rejection_reason": null,
+  "reviewer_id": "R2",
+  "frontier_pass_rate": 0.5,
+  "reviewed_at": "2026-11-01"
+ },
+ {
+  "task_id": "T1322",
+  "status": "accepted",
+  "rejection_reason": null,
+  "reviewer_id": "R2",
+  "frontier_pass_rate": 0.25,
+  "reviewed_at": "2026-10-19"
+ },
+ {
+  "task_id": "T1368",
+  "status": "accepted",
+  "rejection_reason": null,
+  "reviewer_id": "R3",
+  "frontier_pass_rate": 0.36,
+  "reviewed_at": "2026-10-25"
+ },
+ {
+  "task_id": "T1342",
+  "status": "accepted",
+  "rejection_reason": null,
+  "reviewer_id": "R4",
+  "frontier_pass_rate": 0.66,
+  "reviewed_at": "2026-10-21"
+ },
+ {
+  "task_id": "T1583",
+  "status": "pending",
+  "rejection_reason": null,
+  "reviewer_id": null,
+  "frontier_pass_rate": null,
+  "reviewed_at": null
+ },
+ {
+  "task_id": "T1458",
+  "status": "rejected",
+  "rejection_reason": "too_easy",
+  "reviewer_id": "R4",
+  "frontier_pass_rate": 0.93,
+  "reviewed_at": "2026-10-21"
+ },
+ {
+  "task_id": "T1240",
+  "status": "rejected",
+  "rejection_reason": "tests_too_loose",
+  "reviewer_id": "R2",
+  "frontier_pass_rate": 0.17,
+  "reviewed_at": "2026-10-20"
+ },
+ {
+  "task_id": "T1638",
+  "status": "accepted",
+  "rejection_reason": null,
+  "reviewer_id": "R3",
+  "frontier_pass_rate": 0.56,
+  "reviewed_at": "2026-10-27"
+ },
+ {
+  "task_id": "T1221",
+  "status": "rejected",
+  "rejection_reason": "tests_too_loose",
+  "reviewer_id": "R2",
+  "frontier_pass_rate": 0.24,
+  "reviewed_at": "2026-10-17"
+ },
+ {
+  "task_id": "T1313",
+  "status": "rejected",
+  "rejection_reason": "tests_too_loose",
+  "reviewer_id": "R1",
+  "frontier_pass_rate": 0.37,
+  "reviewed_at": "2026-10-15"
+ },
+ {
+  "task_id": "T1132",
+  "status": "accepted",
+  "rejection_reason": null,
+  "reviewer_id": "R3",
+  "frontier_pass_rate": 0.45,
+  "reviewed_at": "2026-10-13"
+ },
+ {
+  "task_id": "T1590",
+  "status": "accepted",
+  "rejection_reason": null,
+  "reviewer_id": "R3",
+  "frontier_pass_rate": 0.62,
+  "reviewed_at": "2026-10-29"
+ },
+ {
+  "task_id": "T1148",
+  "status": "accepted",
+  "rejection_reason": null,
+  "reviewer_id": "R3",
+  "frontier_pass_rate": 0.44,
+  "reviewed_at": "2026-10-08"
+ },
+ {
+  "task_id": "T1319",
+  "status": "accepted",
+  "rejection_reason": null,
+  "reviewer_id": "R2",
+  "frontier_pass_rate": 0.08,
+  "reviewed_at": "2026-10-14"
+ },
+ {
+  "task_id": "T1521",
+  "status": "pending",
+  "rejection_reason": null,
+  "reviewer_id": null,
+  "frontier_pass_rate": null,
+  "reviewed_at": null
+ },
+ {
+  "task_id": "T1363",
+  "status": "accepted",
+  "rejection_reason": null,
+  "reviewer_id": "R4",
+  "frontier_pass_rate": 0.41,
+  "reviewed_at": "2026-10-21"
+ },
+ {
+  "task_id": "T1404",
+  "status": "pending",
+  "rejection_reason": null,
+  "reviewer_id": null,
+  "frontier_pass_rate": null,
+  "reviewed_at": null
+ },
+ {
+  "task_id": "T1035",
+  "status": "rejected",
+  "rejection_reason": "duplicate",
+  "reviewer_id": "R1",
+  "frontier_pass_rate": 0.81,
+  "reviewed_at": "2026-10-11"
+ },
+ {
+  "task_id": "T1700",
+  "status": "rejected",
+  "rejection_reason": "docker_build_failure",
+  "reviewer_id": "R2",
+  "frontier_pass_rate": 0.88,
+  "reviewed_at": "2026-10-28"
+ },
+ {
+  "task_id": "T1120",
+  "status": "accepted",
+  "rejection_reason": null,
+  "reviewer_id": "R3",
+  "frontier_pass_rate": 0.09,
+  "reviewed_at": "2026-10-07"
+ },
+ {
+  "task_id": "T1461",
+  "status": "rejected",
+  "rejection_reason": "too_easy",
+  "reviewer_id": "R1",
+  "frontier_pass_rate": 0.94,
+  "reviewed_at": "2026-10-20"
+ },
+ {
+  "task_id": "T1352",
+  "status": "accepted",
+  "rejection_reason": null,
+  "reviewer_id": "R3",
+  "frontier_pass_rate": 0.2,
+  "reviewed_at": "2026-10-24"
+ },
+ {
+  "task_id": "T1054",
+  "status": "rejected",
+  "rejection_reason": "unclear_instructions",
+  "reviewer_id": "R2",
+  "frontier_pass_rate": 0.53,
+  "reviewed_at": "2026-10-11"
+ },
+ {
+  "task_id": "T1239",
+  "status": "accepted",
+  "rejection_reason": null,
+  "reviewer_id": "R3",
+  "frontier_pass_rate": 0.36,
+  "reviewed_at": "2026-10-15"
+ },
+ {
+  "task_id": "T1694",
+  "status": "rejected",
+  "rejection_reason": "docker_build_failure",
+  "reviewer_id": "R2",
+  "frontier_pass_rate": 0.11,
+  "reviewed_at": "2026-10-28"
+ },
+ {
+  "task_id": "T1274",
+  "status": "rejected",
+  "rejection_reason": "unclear_instructions",
+  "reviewer_id": "R1",
+  "frontier_pass_rate": 0.35,
+  "reviewed_at": "2026-10-14"
+ },
+ {
+  "task_id": "T1116",
+  "status": "rejected",
+  "rejection_reason": "unclear_instructions",
+  "reviewer_id": "R2",
+  "frontier_pass_rate": 0.31,
+  "reviewed_at": "2026-10-07"
+ },
+ {
+  "task_id": "T1563",
+  "status": "rejected",
+  "rejection_reason": "unclear_instructions",
+  "reviewer_id": "R4",
+  "frontier_pass_rate": 0.89,
+  "reviewed_at": "2026-10-29"
+ },
+ {
+  "task_id": "T1442",
+  "status": "rejected",
+  "rejection_reason": "unclear_instructions",
+  "reviewer_id": "R4",
+  "frontier_pass_rate": 0.72,
+  "reviewed_at": "2026-10-25"
+ },
+ {
+  "task_id": "T1487",
+  "status": "accepted",
+  "rejection_reason": null,
+  "reviewer_id": "R2",
+  "frontier_pass_rate": 0.36,
+  "reviewed_at": "2026-10-23"
+ },
+ {
+  "task_id": "T1040",
+  "status": "accepted",
+  "rejection_reason": null,
+  "reviewer_id": "R3",
+  "frontier_pass_rate": 0.12,
+  "reviewed_at": "2026-10-07"
+ },
+ {
+  "task_id": "T1113",
+  "status": "accepted",
+  "rejection_reason": null,
+  "reviewer_id": "R1",
+  "frontier_pass_rate": 0.32,
+  "reviewed_at": "2026-10-10"
+ },
+ {
+  "task_id": "T1508",
+  "status": "accepted",
+  "rejection_reason": null,
+  "reviewer_id": "R1",
+  "frontier_pass_rate": 0.26,
+  "reviewed_at": "2026-10-24"
+ },
+ {
+  "task_id": "T1686",
+  "status": "rejected",
+  "rejection_reason": "tests_too_loose",
+  "reviewer_id": "R3",
+  "frontier_pass_rate": 0.49,
+  "reviewed_at": "2026-10-31"
+ },
+ {
+  "task_id": "T1036",
+  "status": "rejected",
+  "rejection_reason": "tests_too_loose",
+  "reviewer_id": "R3",
+  "frontier_pass_rate": 0.36,
+  "reviewed_at": "2026-10-12"
+ },
+ {
+  "task_id": "T1516",
+  "status": "accepted",
+  "rejection_reason": null,
+  "reviewer_id": "R4",
+  "frontier_pass_rate": 0.68,
+  "reviewed_at": "2026-11-01"
+ },
+ {
+  "task_id": "T1311",
+  "status": "accepted",
+  "rejection_reason": null,
+  "reviewer_id": "R3",
+  "frontier_pass_rate": 0.74,
+  "reviewed_at": "2026-10-17"
+ },
+ {
+  "task_id": "T1175",
+  "status": "accepted",
+  "rejection_reason": null,
+  "reviewer_id": "R1",
+  "frontier_pass_rate": 0.12,
+  "reviewed_at": "2026-10-15"
+ },
+ {
+  "task_id": "T1685",
+  "status": "accepted",
+  "rejection_reason": null,
+  "reviewer_id": "R2",
+  "frontier_pass_rate": 0.17,
+  "reviewed_at": "2026-11-02"
+ },
+ {
+  "task_id": "T1144",
+  "status": "accepted",
+  "rejection_reason": null,
+  "reviewer_id": "R2",
+  "frontier_pass_rate": 0.2,
+  "reviewed_at": "2026-10-10"
+ },
+ {
+  "task_id": "T9001",
+  "status": "accepted",
+  "rejection_reason": null,
+  "reviewer_id": "R2",
+  "frontier_pass_rate": 0.41,
+  "reviewed_at": "2026-10-21"
+ },
+ {
+  "task_id": "T1543",
+  "status": "pending",
+  "rejection_reason": null,
+  "reviewer_id": null,
+  "frontier_pass_rate": null,
+  "reviewed_at": null
+ },
+ {
+  "task_id": "T1577",
+  "status": "accepted",
+  "rejection_reason": null,
+  "reviewer_id": "R3",
+  "frontier_pass_rate": 0.28,
+  "reviewed_at": "2026-10-28"
+ },
+ {
+  "task_id": "T1420",
+  "status": "rejected",
+  "rejection_reason": "tests_too_loose",
+  "reviewer_id": "R1",
+  "frontier_pass_rate": 0.52,
+  "reviewed_at": "2026-10-23"
+ },
+ {
+  "task_id": "T1173",
+  "status": "rejected",
+  "rejection_reason": "too_easy",
+  "reviewer_id": "R2",
+  "frontier_pass_rate": 0.84,
+  "reviewed_at": "2026-10-14"
+ },
+ {
+  "task_id": "T1581",
+  "status": "pending",
+  "rejection_reason": null,
+  "reviewer_id": null,
+  "frontier_pass_rate": null,
+  "reviewed_at": null
+ },
+ {
+  "task_id": "T1370",
+  "status": "accepted",
+  "rejection_reason": null,
+  "reviewer_id": "R1",
+  "frontier_pass_rate": 0.65,
+  "reviewed_at": "2026-10-24"
+ },
+ {
+  "task_id": "T1140",
+  "status": "rejected",
+  "rejection_reason": "tests_too_loose",
+  "reviewer_id": "R1",
+  "frontier_pass_rate": 0.44,
+  "reviewed_at": "2026-10-07"
+ },
+ {
+  "task_id": "T1428",
+  "status": "rejected",
+  "rejection_reason": "tests_too_loose",
+  "reviewer_id": "R4",
+  "frontier_pass_rate": 0.53,
+  "reviewed_at": "2026-10-25"
+ },
+ {
+  "task_id": "T1152",
+  "status": "accepted",
+  "rejection_reason": null,
+  "reviewer_id": "R3",
+  "frontier_pass_rate": 0.22,
+  "reviewed_at": "2026-10-07"
+ },
+ {
+  "task_id": "T1018",
+  "status": "rejected",
+  "rejection_reason": "docker_build_failure",
+  "reviewer_id": "R2",
+  "frontier_pass_rate": 0.69,
+  "reviewed_at": "2026-10-09"
+ },
+ {
+  "task_id": "T1681",
+  "status": "pending",
+  "rejection_reason": null,
+  "reviewer_id": null,
+  "frontier_pass_rate": null,
+  "reviewed_at": null
+ },
+ {
+  "task_id": "T1350",
+  "status": "pending",
+  "rejection_reason": null,
+  "reviewer_id": null,
+  "frontier_pass_rate": null,
+  "reviewed_at": null
+ },
+ {
+  "task_id": "T1021",
+  "status": "accepted",
+  "rejection_reason": null,
+  "reviewer_id": "R1",
+  "frontier_pass_rate": 0.73,
+  "reviewed_at": "2026-10-10"
+ },
+ {
+  "task_id": "T1214",
+  "status": "rejected",
+  "rejection_reason": "tests_too_loose",
+  "reviewer_id": "R1",
+  "frontier_pass_rate": 0.18,
+  "reviewed_at": "2026-10-19"
+ },
+ {
+  "task_id": "T1561",
+  "status": "rejected",
+  "rejection_reason": "too_easy",
+  "reviewer_id": "R4",
+  "frontier_pass_rate": 0.88,
+  "reviewed_at": "2026-10-29"
+ },
+ {
+  "task_id": "T1155",
+  "status": "accepted",
+  "rejection_reason": null,
+  "reviewer_id": "R1",
+  "frontier_pass_rate": 0.55,
+  "reviewed_at": "2026-10-11"
+ },
+ {
+  "task_id": "T1623",
+  "status": "accepted",
+  "rejection_reason": null,
+  "reviewer_id": "R3",
+  "frontier_pass_rate": 0.75,
+  "reviewed_at": "2026-10-28"
+ },
+ {
+  "task_id": "T1186",
+  "status": "accepted",
+  "rejection_reason": null,
+  "reviewer_id": "R2",
+  "frontier_pass_rate": 0.72,
+  "reviewed_at": "2026-10-20"
+ },
+ {
+  "task_id": "T1085",
+  "status": "rejected",
+  "rejection_reason": "too_easy",
+  "reviewer_id": "R2",
+  "frontier_pass_rate": 0.97,
+  "reviewed_at": "2026-10-08"
+ },
+ {
+  "task_id": "T1717",
+  "status": "rejected",
+  "rejection_reason": "too_easy",
+  "reviewer_id": "R4",
+  "frontier_pass_rate": 0.91,
+  "reviewed_at": "2026-10-28"
+ },
+ {
+  "task_id": "T1107",
+  "status": "accepted",
+  "rejection_reason": null,
+  "reviewer_id": "R3",
+  "frontier_pass_rate": 0.3,
+  "reviewed_at": "2026-10-07"
+ },
+ {
+  "task_id": "T1284",
+  "status": "accepted",
+  "rejection_reason": null,
+  "reviewer_id": "R3",
+  "frontier_pass_rate": 0.28,
+  "reviewed_at": "2026-10-16"
+ },
+ {
+  "task_id": "T1202",
+  "status": "accepted",
+  "rejection_reason": null,
+  "reviewer_id": "R2",
+  "frontier_pass_rate": 0.6,
+  "reviewed_at": "2026-10-16"
+ },
+ {
+  "task_id": "T1460",
+  "status": "accepted",
+  "rejection_reason": null,
+  "reviewer_id": "R4",
+  "frontier_pass_rate": 0.18,
+  "reviewed_at": "2026-10-23"
+ },
+ {
+  "task_id": "T1185",
+  "status": "accepted",
+  "rejection_reason": null,
+  "reviewer_id": "R3",
+  "frontier_pass_rate": 0.45,
+  "reviewed_at": "2026-10-15"
+ },
+ {
+  "task_id": "T1358",
+  "status": "accepted",
+  "rejection_reason": null,
+  "reviewer_id": "R4",
+  "frontier_pass_rate": 0.68,
+  "reviewed_at": "2026-10-26"
+ },
+ {
+  "task_id": "T1400",
+  "status": "accepted",
+  "rejection_reason": null,
+  "reviewer_id": "R3",
+  "frontier_pass_rate": 0.45,
+  "reviewed_at": "2026-10-26"
+ },
+ {
+  "task_id": "T1555",
+  "status": "accepted",
+  "rejection_reason": null,
+  "reviewer_id": "R1",
+  "frontier_pass_rate": 0.55,
+  "reviewed_at": "2026-10-30"
+ },
+ {
+  "task_id": "T1230",
+  "status": "accepted",
+  "rejection_reason": null,
+  "reviewer_id": "R3",
+  "frontier_pass_rate": 0.2,
+  "reviewed_at": "2026-10-20"
+ },
+ {
+  "task_id": "T1362",
+  "status": "pending",
+  "rejection_reason": null,
+  "reviewer_id": null,
+  "frontier_pass_rate": null,
+  "reviewed_at": null
+ },
+ {
+  "task_id": "T1645",
+  "status": "rejected",
+  "rejection_reason": "tests_too_loose",
+  "reviewer_id": "R4",
+  "frontier_pass_rate": 0.49,
+  "reviewed_at": "2026-10-27"
+ },
+ {
+  "task_id": "T1652",
+  "status": "rejected",
+  "rejection_reason": "too_easy",
+  "reviewer_id": "R4",
+  "frontier_pass_rate": 0.96,
+  "reviewed_at": "2026-10-31"
+ },
+ {
+  "task_id": "T1481",
+  "status": "rejected",
+  "rejection_reason": "too_easy",
+  "reviewer_id": "R4",
+  "frontier_pass_rate": 0.91,
+  "reviewed_at": "2026-10-27"
+ },
+ {
+  "task_id": "T1297",
+  "status": "accepted",
+  "rejection_reason": null,
+  "reviewer_id": "R2",
+  "frontier_pass_rate": 0.51,
+  "reviewed_at": "2026-10-18"
+ },
+ {
+  "task_id": "T1354",
+  "status": "accepted",
+  "rejection_reason": null,
+  "reviewer_id": "R4",
+  "frontier_pass_rate": 0.14,
+  "reviewed_at": "2026-10-24"
+ },
+ {
+  "task_id": "T1150",
+  "status": "accepted",
+  "rejection_reason": null,
+  "reviewer_id": "R3",
+  "frontier_pass_rate": 0.13,
+  "reviewed_at": "2026-10-10"
+ },
+ {
+  "task_id": "T1217",
+  "status": "accepted",
+  "rejection_reason": null,
+  "reviewer_id": "R3",
+  "frontier_pass_rate": 0.69,
+  "reviewed_at": "2026-10-15"
+ },
+ {
+  "task_id": "T1405",
+  "status": "rejected",
+  "rejection_reason": "too_easy",
+  "reviewer_id": "R4",
+  "frontier_pass_rate": 0.84,
+  "reviewed_at": "2026-10-26"
+ },
+ {
+  "task_id": "T1459",
+  "status": "pending",
+  "rejection_reason": null,
+  "reviewer_id": null,
+  "frontier_pass_rate": null,
+  "reviewed_at": null
+ },
+ {
+  "task_id": "T1655",
+  "status": "rejected",
+  "rejection_reason": "tests_too_loose",
+  "reviewer_id": "R1",
+  "frontier_pass_rate": 0.48,
+  "reviewed_at": "2026-10-28"
+ },
+ {
+  "task_id": "T1096",
+  "status": "rejected",
+  "rejection_reason": "tests_too_loose",
+  "reviewer_id": "R3",
+  "frontier_pass_rate": 0.87,
+  "reviewed_at": "2026-10-10"
+ },
+ {
+  "task_id": "T1033",
+  "status": "accepted",
+  "rejection_reason": null,
+  "reviewer_id": "R1",
+  "frontier_pass_rate": 0.09,
+  "reviewed_at": "2026-10-12"
+ },
+ {
+  "task_id": "T1165",
+  "status": "rejected",
+  "rejection_reason": "docker_build_failure",
+  "reviewer_id": "R1",
+  "frontier_pass_rate": 0.2,
+  "reviewed_at": "2026-10-18"
+ },
+ {
+  "task_id": "T1576",
+  "status": "pending",
+  "rejection_reason": null,
+  "reviewer_id": null,
+  "frontier_pass_rate": null,
+  "reviewed_at": null
+ },
+ {
+  "task_id": "T1208",
+  "status": "accepted",
+  "rejection_reason": null,
+  "reviewer_id": "R1",
+  "frontier_pass_rate": 0.69,
+  "reviewed_at": "2026-10-14"
+ },
+ {
+  "task_id": "T1594",
+  "status": "pending",
+  "rejection_reason": null,
+  "reviewer_id": null,
+  "frontier_pass_rate": null,
+  "reviewed_at": null
+ },
+ {
+  "task_id": "T1384",
+  "status": "accepted",
+  "rejection_reason": null,
+  "reviewer_id": "R1",
+  "frontier_pass_rate": 0.53,
+  "reviewed_at": "2026-10-22"
+ },
+ {
+  "task_id": "T1518",
+  "status": "pending",
+  "rejection_reason": null,
+  "reviewer_id": null,
+  "frontier_pass_rate": null,
+  "reviewed_at": null
+ },
+ {
+  "task_id": "T1584",
+  "status": "rejected",
+  "rejection_reason": "unclear_instructions",
+  "reviewer_id": "R4",
+  "frontier_pass_rate": 0.62,
+  "reviewed_at": "2026-10-29"
+ },
+ {
+  "task_id": "T1690",
+  "status": "accepted",
+  "rejection_reason": null,
+  "reviewer_id": "R3",
+  "frontier_pass_rate": 0.41,
+  "reviewed_at": "2026-11-01"
+ },
+ {
+  "task_id": "T1538",
+  "status": "pending",
+  "rejection_reason": null,
+  "reviewer_id": null,
+  "frontier_pass_rate": null,
+  "reviewed_at": null
+ },
+ {
+  "task_id": "T1693",
+  "status": "pending",
+  "rejection_reason": null,
+  "reviewer_id": null,
+  "frontier_pass_rate": null,
+  "reviewed_at": null
+ },
+ {
+  "task_id": "T1082",
+  "status": "accepted",
+  "rejection_reason": null,
+  "reviewer_id": "R3",
+  "frontier_pass_rate": 0.22,
+  "reviewed_at": "2026-10-07"
+ },
+ {
+  "task_id": "T1385",
+  "status": "accepted",
+  "rejection_reason": null,
+  "reviewer_id": "R3",
+  "frontier_pass_rate": 0.48,
+  "reviewed_at": "2026-10-20"
+ },
+ {
+  "task_id": "T1613",
+  "status": "rejected",
+  "rejection_reason": "tests_too_loose",
+  "reviewer_id": "R2",
+  "frontier_pass_rate": 0.24,
+  "reviewed_at": "2026-11-03"
+ },
+ {
+  "task_id": "T1237",
+  "status": "rejected",
+  "rejection_reason": "docker_build_failure",
+  "reviewer_id": "R1",
+  "frontier_pass_rate": 0.36,
+  "reviewed_at": "2026-10-14"
+ },
+ {
+  "task_id": "T1473",
+  "status": "rejected",
+  "rejection_reason": "too_easy",
+  "reviewer_id": "R3",
+  "frontier_pass_rate": 0.93,
+  "reviewed_at": "2026-10-27"
+ },
+ {
+  "task_id": "T1716",
+  "status": "rejected",
+  "rejection_reason": "too_easy",
+  "reviewer_id": "R1",
+  "frontier_pass_rate": 0.98,
+  "reviewed_at": "2026-10-29"
+ },
+ {
+  "task_id": "T1491",
+  "status": "rejected",
+  "rejection_reason": "docker_build_failure",
+  "reviewer_id": "R2",
+  "frontier_pass_rate": 0.25,
+  "reviewed_at": "2026-10-22"
+ },
+ {
+  "task_id": "T1191",
+  "status": "rejected",
+  "rejection_reason": "tests_too_loose",
+  "reviewer_id": "R3",
+  "frontier_pass_rate": 0.5,
+  "reviewed_at": "2026-10-14"
+ },
+ {
+  "task_id": "T1279",
+  "status": "accepted",
+  "rejection_reason": null,
+  "reviewer_id": "R1",
+  "frontier_pass_rate": 0.21,
+  "reviewed_at": "2026-10-18"
+ },
+ {
+  "task_id": "T1640",
+  "status": "pending",
+  "rejection_reason": null,
+  "reviewer_id": null,
+  "frontier_pass_rate": null,
+  "reviewed_at": null
+ },
+ {
+  "task_id": "T1380",
+  "status": "accepted",
+  "rejection_reason": null,
+  "reviewer_id": "R4",
+  "frontier_pass_rate": 0.12,
+  "reviewed_at": "2026-10-24"
+ },
+ {
+  "task_id": "T1168",
+  "status": "accepted",
+  "rejection_reason": null,
+  "reviewer_id": "R3",
+  "frontier_pass_rate": 0.24,
+  "reviewed_at": "2026-10-17"
+ },
+ {
+  "task_id": "T1273",
+  "status": "rejected",
+  "rejection_reason": "tests_too_loose",
+  "reviewer_id": "R3",
+  "frontier_pass_rate": 0.17,
+  "reviewed_at": "2026-10-16"
+ },
+ {
+  "task_id": "T1651",
+  "status": "pending",
+  "rejection_reason": null,
+  "reviewer_id": null,
+  "frontier_pass_rate": null,
+  "reviewed_at": null
+ },
+ {
+  "task_id": "T1178",
+  "status": "accepted",
+  "rejection_reason": null,
+  "reviewer_id": "R1",
+  "frontier_pass_rate": 0.52,
+  "reviewed_at": "2026-10-14"
+ },
+ {
+  "task_id": "T1226",
+  "status": "rejected",
+  "rejection_reason": "docker_build_failure",
+  "reviewer_id": "R1",
+  "frontier_pass_rate": 0.62,
+  "reviewed_at": "2026-10-17"
+ },
+ {
+  "task_id": "T1662",
+  "status": "pending",
+  "rejection_reason": null,
+  "reviewer_id": null,
+  "frontier_pass_rate": null,
+  "reviewed_at": null
+ },
+ {
+  "task_id": "T1051",
+  "status": "accepted",
+  "rejection_reason": null,
+  "reviewer_id": "R3",
+  "frontier_pass_rate": 0.4,
+  "reviewed_at": "2026-10-08"
+ },
+ {
+  "task_id": "T1028",
+  "status": "accepted",
+  "rejection_reason": null,
+  "reviewer_id": "R3",
+  "frontier_pass_rate": 0.24,
+  "reviewed_at": "2026-10-10"
+ },
+ {
+  "task_id": "T1480",
+  "status": "rejected",
+  "rejection_reason": "unclear_instructions",
+  "reviewer_id": "R4",
+  "frontier_pass_rate": 0.65,
+  "reviewed_at": "2026-10-21"
+ },
+ {
+  "task_id": "T1321",
+  "status": "accepted",
+  "rejection_reason": null,
+  "reviewer_id": "R3",
+  "frontier_pass_rate": 0.49,
+  "reviewed_at": "2026-10-20"
+ },
+ {
+  "task_id": "T1109",
+  "status": "rejected",
+  "rejection_reason": "duplicate",
+  "reviewer_id": "R3",
+  "frontier_pass_rate": 0.58,
+  "reviewed_at": "2026-10-07"
+ },
+ {
+  "task_id": "T1614",
+  "status": "rejected",
+  "rejection_reason": "tests_too_loose",
+  "reviewer_id": "R2",
+  "frontier_pass_rate": 0.36,
+  "reviewed_at": "2026-11-01"
+ },
+ {
+  "task_id": "T1331",
+  "status": "pending",
+  "rejection_reason": null,
+  "reviewer_id": null,
+  "frontier_pass_rate": null,
+  "reviewed_at": null
+ },
+ {
+  "task_id": "T1488",
+  "status": "rejected",
+  "rejection_reason": "too_easy",
+  "reviewer_id": "R4",
+  "frontier_pass_rate": 0.95,
+  "reviewed_at": "2026-10-22"
+ },
+ {
+  "task_id": "T1118",
+  "status": "accepted",
+  "rejection_reason": null,
+  "reviewer_id": "R2",
+  "frontier_pass_rate": 0.22,
+  "reviewed_at": "2026-10-10"
+ },
+ {
+  "task_id": "T1227",
+  "status": "rejected",
+  "rejection_reason": "tests_too_loose",
+  "reviewer_id": "R2",
+  "frontier_pass_rate": 0.58,
+  "reviewed_at": "2026-10-16"
+ },
+ {
+  "task_id": "T1136",
+  "status": "accepted",
+  "rejection_reason": null,
+  "reviewer_id": "R2",
+  "frontier_pass_rate": 0.43,
+  "reviewed_at": "2026-10-08"
+ },
+ {
+  "task_id": "T1087",
+  "status": "accepted",
+  "rejection_reason": null,
+  "reviewer_id": "R1",
+  "frontier_pass_rate": 0.16,
+  "reviewed_at": "2026-10-10"
+ },
+ {
+  "task_id": "T1608",
+  "status": "rejected",
+  "rejection_reason": "tests_too_loose",
+  "reviewer_id": "R1",
+  "frontier_pass_rate": 0.65,
+  "reviewed_at": "2026-10-28"
+ },
+ {
+  "task_id": "T1573",
+  "status": "accepted",
+  "rejection_reason": null,
+  "reviewer_id": "R1",
+  "frontier_pass_rate": 0.58,
+  "reviewed_at": "2026-10-29"
+ },
+ {
+  "task_id": "T1080",
+  "status": "rejected",
+  "rejection_reason": "unclear_instructions",
+  "reviewer_id": "R1",
+  "frontier_pass_rate": 0.7,
+  "reviewed_at": "2026-10-11"
+ },
+ {
+  "task_id": "T1029",
+  "status": "accepted",
+  "rejection_reason": null,
+  "reviewer_id": "R1",
+  "frontier_pass_rate": 0.1,
+  "reviewed_at": "2026-10-11"
+ },
+ {
+  "task_id": "T1130",
+  "status": "accepted",
+  "rejection_reason": null,
+  "reviewer_id": "R1",
+  "frontier_pass_rate": 0.27,
+  "reviewed_at": "2026-10-11"
+ },
+ {
+  "task_id": "T1554",
+  "status": "pending",
+  "rejection_reason": null,
+  "reviewer_id": null,
+  "frontier_pass_rate": null,
+  "reviewed_at": null
+ },
+ {
+  "task_id": "T1601",
+  "status": "rejected",
+  "rejection_reason": "unclear_instructions",
+  "reviewer_id": "R4",
+  "frontier_pass_rate": 0.28,
+  "reviewed_at": "2026-11-01"
+ },
+ {
+  "task_id": "T1189",
+  "status": "rejected",
+  "rejection_reason": "tests_too_loose",
+  "reviewer_id": "R1",
+  "frontier_pass_rate": 0.09,
+  "reviewed_at": "2026-10-20"
+ },
+ {
+  "task_id": "T1607",
+  "status": "accepted",
+  "rejection_reason": null,
+  "reviewer_id": "R1",
+  "frontier_pass_rate": 0.38,
+  "reviewed_at": "2026-10-29"
+ },
+ {
+  "task_id": "T1006",
+  "status": "accepted",
+  "rejection_reason": null,
+  "reviewer_id": "R2",
+  "frontier_pass_rate": 0.1,
+  "reviewed_at": "2026-10-08"
+ },
+ {
+  "task_id": "T1157",
+  "status": "accepted",
+  "rejection_reason": null,
+  "reviewer_id": "R2",
+  "frontier_pass_rate": 0.66,
+  "reviewed_at": "2026-10-08"
+ },
+ {
+  "task_id": "T1485",
+  "status": "rejected",
+  "rejection_reason": "docker_build_failure",
+  "reviewer_id": "R1",
+  "frontier_pass_rate": 0.54,
+  "reviewed_at": "2026-10-21"
+ },
+ {
+  "task_id": "T1248",
+  "status": "accepted",
+  "rejection_reason": null,
+  "reviewer_id": "R3",
+  "frontier_pass_rate": 0.4,
+  "reviewed_at": "2026-10-18"
+ },
+ {
+  "task_id": "T1336",
+  "status": "rejected",
+  "rejection_reason": "tests_too_loose",
+  "reviewer_id": "R4",
+  "frontier_pass_rate": 0.36,
+  "reviewed_at": "2026-10-24"
+ },
+ {
+  "task_id": "T1294",
+  "status": "accepted",
+  "rejection_reason": null,
+  "reviewer_id": "R2",
+  "frontier_pass_rate": 0.34,
+  "reviewed_at": "2026-10-14"
+ },
+ {
+  "task_id": "T1699",
+  "status": "pending",
+  "rejection_reason": null,
+  "reviewer_id": null,
+  "frontier_pass_rate": null,
+  "reviewed_at": null
+ },
+ {
+  "task_id": "T1547",
+  "status": "pending",
+  "rejection_reason": null,
+  "reviewer_id": null,
+  "frontier_pass_rate": null,
+  "reviewed_at": null
+ },
+ {
+  "task_id": "T1348",
+  "status": "rejected",
+  "rejection_reason": "docker_build_failure",
+  "reviewer_id": "R1",
+  "frontier_pass_rate": 0.72,
+  "reviewed_at": "2026-10-22"
+ },
+ {
+  "task_id": "T1469",
+  "status": "accepted",
+  "rejection_reason": null,
+  "reviewer_id": "R3",
+  "frontier_pass_rate": 0.75,
+  "reviewed_at": "2026-10-20"
+ },
+ {
+  "task_id": "T1408",
+  "status": "rejected",
+  "rejection_reason": "too_easy",
+  "reviewer_id": "R1",
+  "frontier_pass_rate": 0.96,
+  "reviewed_at": "2026-10-22"
+ },
+ {
+  "task_id": "T1330",
+  "status": "rejected",
+  "rejection_reason": "tests_too_loose",
+  "reviewer_id": "R4",
+  "frontier_pass_rate": 0.44,
+  "reviewed_at": "2026-10-25"
+ },
+ {
+  "task_id": "T1654",
+  "status": "rejected",
+  "rejection_reason": "too_easy",
+  "reviewer_id": "R4",
+  "frontier_pass_rate": 0.86,
+  "reviewed_at": "2026-10-29"
+ },
+ {
+  "task_id": "T1094",
+  "status": "rejected",
+  "rejection_reason": "tests_too_loose",
+  "reviewer_id": "R3",
+  "frontier_pass_rate": 0.55,
+  "reviewed_at": "2026-10-08"
+ },
+ {
+  "task_id": "T1441",
+  "status": "accepted",
+  "rejection_reason": null,
+  "reviewer_id": "R2",
+  "frontier_pass_rate": 0.4,
+  "reviewed_at": "2026-10-27"
+ },
+ {
+  "task_id": "T1251",
+  "status": "rejected",
+  "rejection_reason": "unclear_instructions",
+  "reviewer_id": "R2",
+  "frontier_pass_rate": 0.64,
+  "reviewed_at": "2026-10-15"
+ },
+ {
+  "task_id": "T1047",
+  "status": "accepted",
+  "rejection_reason": null,
+  "reviewer_id": "R2",
+  "frontier_pass_rate": 0.65,
+  "reviewed_at": "2026-10-09"
+ },
+ {
+  "task_id": "T1014",
+  "status": "rejected",
+  "rejection_reason": "tests_too_loose",
+  "reviewer_id": "R2",
+  "frontier_pass_rate": 0.66,
+  "reviewed_at": "2026-10-10"
+ },
+ {
+  "task_id": "T1580",
+  "status": "pending",
+  "rejection_reason": null,
+  "reviewer_id": null,
+  "frontier_pass_rate": null,
+  "reviewed_at": null
+ },
+ {
+  "task_id": "T1644",
+  "status": "pending",
+  "rejection_reason": null,
+  "reviewer_id": null,
+  "frontier_pass_rate": null,
+  "reviewed_at": null
+ },
+ {
+  "task_id": "T1203",
+  "status": "accepted",
+  "rejection_reason": null,
+  "reviewer_id": "R2",
+  "frontier_pass_rate": 0.34,
+  "reviewed_at": "2026-10-14"
+ },
+ {
+  "task_id": "T1010",
+  "status": "accepted",
+  "rejection_reason": null,
+  "reviewer_id": "R1",
+  "frontier_pass_rate": 0.45,
+  "reviewed_at": "2026-10-08"
+ },
+ {
+  "task_id": "T1299",
+  "status": "rejected",
+  "rejection_reason": "tests_too_loose",
+  "reviewer_id": "R1",
+  "frontier_pass_rate": 0.59,
+  "reviewed_at": "2026-10-14"
+ },
+ {
+  "task_id": "T1128",
+  "status": "rejected",
+  "rejection_reason": "tests_too_loose",
+  "reviewer_id": "R1",
+  "frontier_pass_rate": 0.63,
+  "reviewed_at": "2026-10-11"
+ },
+ {
+  "task_id": "T1452",
+  "status": "rejected",
+  "rejection_reason": "tests_too_loose",
+  "reviewer_id": "R3",
+  "frontier_pass_rate": 0.71,
+  "reviewed_at": "2026-10-23"
+ },
+ {
+  "task_id": "T1134",
+  "status": "rejected",
+  "rejection_reason": "tests_too_loose",
+  "reviewer_id": "R2",
+  "frontier_pass_rate": 0.66,
+  "reviewed_at": "2026-10-12"
+ },
+ {
+  "task_id": "T1676",
+  "status": "accepted",
+  "rejection_reason": null,
+  "reviewer_id": "R3",
+  "frontier_pass_rate": 0.27,
+  "reviewed_at": "2026-10-27"
+ },
+ {
+  "task_id": "T1687",
+  "status": "rejected",
+  "rejection_reason": "docker_build_failure",
+  "reviewer_id": "R4",
+  "frontier_pass_rate": 0.66,
+  "reviewed_at": "2026-11-02"
+ },
+ {
+  "task_id": "T1621",
+  "status": "pending",
+  "rejection_reason": null,
+  "reviewer_id": null,
+  "frontier_pass_rate": null,
+  "reviewed_at": null
+ },
+ {
+  "task_id": "T1145",
+  "status": "rejected",
+  "rejection_reason": "docker_build_failure",
+  "reviewer_id": "R2",
+  "frontier_pass_rate": 0.11,
+  "reviewed_at": "2026-10-11"
+ },
+ {
+  "task_id": "T1429",
+  "status": "rejected",
+  "rejection_reason": "tests_too_loose",
+  "reviewer_id": "R1",
+  "frontier_pass_rate": 0.58,
+  "reviewed_at": "2026-10-25"
+ },
+ {
+  "task_id": "T1376",
+  "status": "pending",
+  "rejection_reason": null,
+  "reviewer_id": null,
+  "frontier_pass_rate": null,
+  "reviewed_at": null
+ },
+ {
+  "task_id": "T1711",
+  "status": "rejected",
+  "rejection_reason": "too_easy",
+  "reviewer_id": "R4",
+  "frontier_pass_rate": 0.97,
+  "reviewed_at": "2026-10-27"
+ },
+ {
+  "task_id": "T1027",
+  "status": "accepted",
+  "rejection_reason": null,
+  "reviewer_id": "R1",
+  "frontier_pass_rate": 0.64,
+  "reviewed_at": "2026-10-13"
+ },
+ {
+  "task_id": "T1332",
+  "status": "rejected",
+  "rejection_reason": "tests_too_loose",
+  "reviewer_id": "R4",
+  "frontier_pass_rate": 0.62,
+  "reviewed_at": "2026-10-25"
+ },
+ {
+  "task_id": "T1532",
+  "status": "rejected",
+  "rejection_reason": "too_easy",
+  "reviewer_id": "R4",
+  "frontier_pass_rate": 0.89,
+  "reviewed_at": "2026-10-30"
+ },
+ {
+  "task_id": "T1569",
+  "status": "accepted",
+  "rejection_reason": null,
+  "reviewer_id": "R4",
+  "frontier_pass_rate": 0.19,
+  "reviewed_at": "2026-11-02"
+ },
+ {
+  "task_id": "T1524",
+  "status": "accepted",
+  "rejection_reason": null,
+  "reviewer_id": "R1",
+  "frontier_pass_rate": 0.59,
+  "reviewed_at": "2026-11-02"
+ },
+ {
+  "task_id": "T1425",
+  "status": "rejected",
+  "rejection_reason": "tests_too_loose",
+  "reviewer_id": "R2",
+  "frontier_pass_rate": 0.14,
+  "reviewed_at": "2026-10-23"
+ },
+ {
+  "task_id": "T1558",
+  "status": "pending",
+  "rejection_reason": null,
+  "reviewer_id": null,
+  "frontier_pass_rate": null,
+  "reviewed_at": null
+ },
+ {
+  "task_id": "T1593",
+  "status": "pending",
+  "rejection_reason": null,
+  "reviewer_id": null,
+  "frontier_pass_rate": null,
+  "reviewed_at": null
+ },
+ {
+  "task_id": "T1409",
+  "status": "accepted",
+  "rejection_reason": null,
+  "reviewer_id": "R2",
+  "frontier_pass_rate": 0.48,
+  "reviewed_at": "2026-10-23"
+ },
+ {
+  "task_id": "T1534",
+  "status": "rejected",
+  "rejection_reason": "too_easy",
+  "reviewer_id": "R4",
+  "frontier_pass_rate": 0.95,
+  "reviewed_at": "2026-11-02"
+ },
+ {
+  "task_id": "T1276",
+  "status": "accepted",
+  "rejection_reason": null,
+  "reviewer_id": "R1",
+  "frontier_pass_rate": 0.23,
+  "reviewed_at": "2026-10-16"
+ },
+ {
+  "task_id": "T1463",
+  "status": "accepted",
+  "rejection_reason": null,
+  "reviewer_id": "R2",
+  "frontier_pass_rate": 0.72,
+  "reviewed_at": "2026-10-24"
+ },
+ {
+  "task_id": "T1696",
+  "status": "accepted",
+  "rejection_reason": null,
+  "reviewer_id": "R4",
+  "frontier_pass_rate": 0.47,
+  "reviewed_at": "2026-10-31"
+ },
+ {
+  "task_id": "T1369",
+  "status": "rejected",
+  "rejection_reason": "duplicate",
+  "reviewer_id": "R4",
+  "frontier_pass_rate": 0.63,
+  "reviewed_at": "2026-10-20"
+ },
+ {
+  "task_id": "T1159",
+  "status": "accepted",
+  "rejection_reason": null,
+  "reviewer_id": "R2",
+  "frontier_pass_rate": 0.7,
+  "reviewed_at": "2026-10-08"
+ },
+ {
+  "task_id": "T1602",
+  "status": "pending",
+  "rejection_reason": null,
+  "reviewer_id": null,
+  "frontier_pass_rate": null,
+  "reviewed_at": null
+ },
+ {
+  "task_id": "T9002",
+  "status": "rejected",
+  "rejection_reason": "duplicate",
+  "reviewer_id": "R1",
+  "frontier_pass_rate": 0.33,
+  "reviewed_at": "2026-10-28"
+ },
+ {
+  "task_id": "T1204",
+  "status": "accepted",
+  "rejection_reason": null,
+  "reviewer_id": "R2",
+  "frontier_pass_rate": 0.23,
+  "reviewed_at": "2026-10-17"
+ },
+ {
+  "task_id": "T1564",
+  "status": "accepted",
+  "rejection_reason": null,
+  "reviewer_id": "R3",
+  "frontier_pass_rate": 0.44,
+  "reviewed_at": "2026-11-01"
+ },
+ {
+  "task_id": "T1707",
+  "status": "pending",
+  "rejection_reason": null,
+  "reviewer_id": null,
+  "frontier_pass_rate": null,
+  "reviewed_at": null
+ },
+ {
+  "task_id": "T1171",
+  "status": "accepted",
+  "rejection_reason": null,
+  "reviewer_id": "R3",
+  "frontier_pass_rate": 0.76,
+  "reviewed_at": "2026-10-17"
+ },
+ {
+  "task_id": "T1164",
+  "status": "accepted",
+  "rejection_reason": null,
+  "reviewer_id": "R2",
+  "frontier_pass_rate": 0.49,
+  "reviewed_at": "2026-10-18"
+ },
+ {
+  "task_id": "T1222",
+  "status": "accepted",
+  "rejection_reason": null,
+  "reviewer_id": "R3",
+  "frontier_pass_rate": 0.13,
+  "reviewed_at": "2026-10-19"
+ },
+ {
+  "task_id": "T1397",
+  "status": "accepted",
+  "rejection_reason": null,
+  "reviewer_id": "R1",
+  "frontier_pass_rate": 0.54,
+  "reviewed_at": "2026-10-21"
+ },
+ {
+  "task_id": "T1372",
+  "status": "rejected",
+  "rejection_reason": "docker_build_failure",
+  "reviewer_id": "R4",
+  "frontier_pass_rate": 0.13,
+  "reviewed_at": "2026-10-20"
+ },
+ {
+  "task_id": "T1020",
+  "status": "accepted",
+  "rejection_reason": null,
+  "reviewer_id": "R2",
+  "frontier_pass_rate": 0.59,
+  "reviewed_at": "2026-10-07"
+ },
+ {
+  "task_id": "T1705",
+  "status": "accepted",
+  "rejection_reason": null,
+  "reviewer_id": "R3",
+  "frontier_pass_rate": 0.57,
+  "reviewed_at": "2026-11-01"
+ },
+ {
+  "task_id": "T1624",
+  "status": "accepted",
+  "rejection_reason": null,
+  "reviewer_id": "R3",
+  "frontier_pass_rate": 0.39,
+  "reviewed_at": "2026-11-01"
+ },
+ {
+  "task_id": "T1174",
+  "status": "rejected",
+  "rejection_reason": "unclear_instructions",
+  "reviewer_id": "R1",
+  "frontier_pass_rate": 0.08,
+  "reviewed_at": "2026-10-16"
+ },
+ {
+  "task_id": "T1179",
+  "status": "accepted",
+  "rejection_reason": null,
+  "reviewer_id": "R1",
+  "frontier_pass_rate": 0.52,
+  "reviewed_at": "2026-10-14"
+ },
+ {
+  "task_id": "T1502",
+  "status": "rejected",
+  "rejection_reason": "docker_build_failure",
+  "reviewer_id": "R1",
+  "frontier_pass_rate": 0.31,
+  "reviewed_at": "2026-10-24"
+ },
+ {
+  "task_id": "T1526",
+  "status": "accepted",
+  "rejection_reason": null,
+  "reviewer_id": "R4",
+  "frontier_pass_rate": 0.65,
+  "reviewed_at": "2026-11-01"
+ },
+ {
+  "task_id": "T1379",
+  "status": "rejected",
+  "rejection_reason": "too_easy",
+  "reviewer_id": "R4",
+  "frontier_pass_rate": 0.9,
+  "reviewed_at": "2026-10-26"
+ },
+ {
+  "task_id": "T1612",
+  "status": "rejected",
+  "rejection_reason": "tests_too_loose",
+  "reviewer_id": "R2",
+  "frontier_pass_rate": 0.52,
+  "reviewed_at": "2026-11-01"
+ },
+ {
+  "task_id": "T1126",
+  "status": "accepted",
+  "rejection_reason": null,
+  "reviewer_id": "R1",
+  "frontier_pass_rate": 0.14,
+  "reviewed_at": "2026-10-12"
+ },
+ {
+  "task_id": "T1435",
+  "status": "pending",
+  "rejection_reason": null,
+  "reviewer_id": null,
+  "frontier_pass_rate": null,
+  "reviewed_at": null
+ },
+ {
+  "task_id": "T1520",
+  "status": "pending",
+  "rejection_reason": null,
+  "reviewer_id": null,
+  "frontier_pass_rate": null,
+  "reviewed_at": null
+ },
+ {
+  "task_id": "T1232",
+  "status": "accepted",
+  "rejection_reason": null,
+  "reviewer_id": "R2",
+  "frontier_pass_rate": 0.38,
+  "reviewed_at": "2026-10-18"
+ },
+ {
+  "task_id": "T1626",
+  "status": "accepted",
+  "rejection_reason": null,
+  "reviewer_id": "R3",
+  "frontier_pass_rate": 0.11,
+  "reviewed_at": "2026-10-31"
+ },
+ {
+  "task_id": "T1434",
+  "status": "accepted",
+  "rejection_reason": null,
+  "reviewer_id": "R4",
+  "frontier_pass_rate": 0.32,
+  "reviewed_at": "2026-10-20"
+ },
+ {
+  "task_id": "T1269",
+  "status": "rejected",
+  "rejection_reason": "tests_too_loose",
+  "reviewer_id": "R3",
+  "frontier_pass_rate": 0.45,
+  "reviewed_at": "2026-10-16"
+ },
+ {
+  "task_id": "T1211",
+  "status": "accepted",
+  "rejection_reason": null,
+  "reviewer_id": "R2",
+  "frontier_pass_rate": 0.2,
+  "reviewed_at": "2026-10-15"
+ },
+ {
+  "task_id": "T1293",
+  "status": "rejected",
+  "rejection_reason": "tests_too_loose",
+  "reviewer_id": "R1",
+  "frontier_pass_rate": 0.89,
+  "reviewed_at": "2026-10-15"
+ },
+ {
+  "task_id": "T1296",
+  "status": "rejected",
+  "rejection_reason": "too_easy",
+  "reviewer_id": "R2",
+  "frontier_pass_rate": 0.86,
+  "reviewed_at": "2026-10-16"
+ },
+ {
+  "task_id": "T1661",
+  "status": "pending",
+  "rejection_reason": null,
+  "reviewer_id": null,
+  "frontier_pass_rate": null,
+  "reviewed_at": null
+ },
+ {
+  "task_id": "T1539",
+  "status": "accepted",
+  "rejection_reason": null,
+  "reviewer_id": "R1",
+  "frontier_pass_rate": 0.44,
+  "reviewed_at": "2026-10-29"
+ },
+ {
+  "task_id": "T1387",
+  "status": "accepted",
+  "rejection_reason": null,
+  "reviewer_id": "R4",
+  "frontier_pass_rate": 0.58,
+  "reviewed_at": "2026-10-25"
+ },
+ {
+  "task_id": "T1059",
+  "status": "rejected",
+  "rejection_reason": "docker_build_failure",
+  "reviewer_id": "R1",
+  "frontier_pass_rate": 0.89,
+  "reviewed_at": "2026-10-07"
+ },
+ {
+  "task_id": "T1388",
+  "status": "accepted",
+  "rejection_reason": null,
+  "reviewer_id": "R1",
+  "frontier_pass_rate": 0.18,
+  "reviewed_at": "2026-10-23"
+ },
+ {
+  "task_id": "T1708",
+  "status": "accepted",
+  "rejection_reason": null,
+  "reviewer_id": "R1",
+  "frontier_pass_rate": 0.29,
+  "reviewed_at": "2026-10-30"
+ },
+ {
+  "task_id": "T1271",
+  "status": "accepted",
+  "rejection_reason": null,
+  "reviewer_id": "R1",
+  "frontier_pass_rate": 0.69,
+  "reviewed_at": "2026-10-14"
+ },
+ {
+  "task_id": "T1587",
+  "status": "rejected",
+  "rejection_reason": "docker_build_failure",
+  "reviewer_id": "R1",
+  "frontier_pass_rate": 0.89,
+  "reviewed_at": "2026-11-01"
+ },
+ {
+  "task_id": "T1325",
+  "status": "accepted",
+  "rejection_reason": null,
+  "reviewer_id": "R1",
+  "frontier_pass_rate": 0.24,
+  "reviewed_at": "2026-10-23"
+ },
+ {
+  "task_id": "T1440",
+  "status": "accepted",
+  "rejection_reason": null,
+  "reviewer_id": "R3",
+  "frontier_pass_rate": 0.66,
+  "reviewed_at": "2026-10-23"
+ },
+ {
+  "task_id": "T1270",
+  "status": "accepted",
+  "rejection_reason": null,
+  "reviewer_id": "R1",
+  "frontier_pass_rate": 0.68,
+  "reviewed_at": "2026-10-18"
+ },
+ {
+  "task_id": "T1531",
+  "status": "pending",
+  "rejection_reason": null,
+  "reviewer_id": null,
+  "frontier_pass_rate": null,
+  "reviewed_at": null
+ },
+ {
+  "task_id": "T1253",
+  "status": "accepted",
+  "rejection_reason": null,
+  "reviewer_id": "R2",
+  "frontier_pass_rate": 0.38,
+  "reviewed_at": "2026-10-14"
+ },
+ {
+  "task_id": "T1567",
+  "status": "accepted",
+  "rejection_reason": null,
+  "reviewer_id": "R4",
+  "frontier_pass_rate": 0.47,
+  "reviewed_at": "2026-11-01"
+ },
+ {
+  "task_id": "T1289",
+  "status": "accepted",
+  "rejection_reason": null,
+  "reviewer_id": "R1",
+  "frontier_pass_rate": 0.42,
+  "reviewed_at": "2026-10-20"
+ },
+ {
+  "task_id": "T1615",
+  "status": "rejected",
+  "rejection_reason": "too_easy",
+  "reviewer_id": "R4",
+  "frontier_pass_rate": 0.85,
+  "reviewed_at": "2026-10-31"
+ },
+ {
+  "task_id": "T1097",
+  "status": "rejected",
+  "rejection_reason": "too_easy",
+  "reviewer_id": "R3",
+  "frontier_pass_rate": 0.89,
+  "reviewed_at": "2026-10-11"
+ },
+ {
+  "task_id": "T1505",
+  "status": "rejected",
+  "rejection_reason": "docker_build_failure",
+  "reviewer_id": "R4",
+  "frontier_pass_rate": 0.18,
+  "reviewed_at": "2026-10-26"
+ },
+ {
+  "task_id": "T1456",
+  "status": "accepted",
+  "rejection_reason": null,
+  "reviewer_id": "R3",
+  "frontier_pass_rate": 0.58,
+  "reviewed_at": "2026-10-25"
+ },
+ {
+  "task_id": "T1715",
+  "status": "rejected",
+  "rejection_reason": "tests_too_loose",
+  "reviewer_id": "R3",
+  "frontier_pass_rate": 0.7,
+  "reviewed_at": "2026-10-27"
+ },
+ {
+  "task_id": "T1416",
+  "status": "rejected",
+  "rejection_reason": "too_easy",
+  "reviewer_id": "R1",
+  "frontier_pass_rate": 0.86,
+  "reviewed_at": "2026-10-26"
+ },
+ {
+  "task_id": "T1039",
+  "status": "accepted",
+  "rejection_reason": null,
+  "reviewer_id": "R3",
+  "frontier_pass_rate": 0.44,
+  "reviewed_at": "2026-10-12"
+ },
+ {
+  "task_id": "T1043",
+  "status": "accepted",
+  "rejection_reason": null,
+  "reviewer_id": "R1",
+  "frontier_pass_rate": 0.43,
+  "reviewed_at": "2026-10-12"
+ },
+ {
+  "task_id": "T1365",
+  "status": "rejected",
+  "rejection_reason": "tests_too_loose",
+  "reviewer_id": "R4",
+  "frontier_pass_rate": 0.54,
+  "reviewed_at": "2026-10-20"
+ },
+ {
+  "task_id": "T1015",
+  "status": "rejected",
+  "rejection_reason": "too_easy",
+  "reviewer_id": "R3",
+  "frontier_pass_rate": 0.84,
+  "reviewed_at": "2026-10-07"
+ },
+ {
+  "task_id": "T1545",
+  "status": "pending",
+  "rejection_reason": null,
+  "reviewer_id": null,
+  "frontier_pass_rate": null,
+  "reviewed_at": null
+ },
+ {
+  "task_id": "T1450",
+  "status": "accepted",
+  "rejection_reason": null,
+  "reviewer_id": "R4",
+  "frontier_pass_rate": 0.56,
+  "reviewed_at": "2026-10-24"
+ },
+ {
+  "task_id": "T1712",
+  "status": "pending",
+  "rejection_reason": null,
+  "reviewer_id": null,
+  "frontier_pass_rate": null,
+  "reviewed_at": null
+ },
+ {
+  "task_id": "T1302",
+  "status": "accepted",
+  "rejection_reason": null,
+  "reviewer_id": "R2",
+  "frontier_pass_rate": 0.7,
+  "reviewed_at": "2026-10-20"
+ },
+ {
+  "task_id": "T1513",
+  "status": "accepted",
+  "rejection_reason": null,
+  "reviewer_id": "R3",
+  "frontier_pass_rate": 0.26,
+  "reviewed_at": "2026-10-30"
+ },
+ {
+  "task_id": "T1550",
+  "status": "rejected",
+  "rejection_reason": "tests_too_loose",
+  "reviewer_id": "R1",
+  "frontier_pass_rate": 0.36,
+  "reviewed_at": "2026-11-01"
+ },
+ {
+  "task_id": "T1536",
+  "status": "pending",
+  "rejection_reason": null,
+  "reviewer_id": null,
+  "frontier_pass_rate": null,
+  "reviewed_at": null
+ },
+ {
+  "task_id": "T1556",
+  "status": "rejected",
+  "rejection_reason": "too_easy",
+  "reviewer_id": "R4",
+  "frontier_pass_rate": 0.89,
+  "reviewed_at": "2026-11-01"
+ },
+ {
+  "task_id": "T1079",
+  "status": "rejected",
+  "rejection_reason": "docker_build_failure",
+  "reviewer_id": "R2",
+  "frontier_pass_rate": 0.38,
+  "reviewed_at": "2026-10-10"
+ },
+ {
+  "task_id": "T1026",
+  "status": "accepted",
+  "rejection_reason": null,
+  "reviewer_id": "R2",
+  "frontier_pass_rate": 0.28,
+  "reviewed_at": "2026-10-12"
+ },
+ {
+  "task_id": "T1041",
+  "status": "accepted",
+  "rejection_reason": null,
+  "reviewer_id": "R1",
+  "frontier_pass_rate": 0.3,
+  "reviewed_at": "2026-10-10"
+ },
+ {
+  "task_id": "T1098",
+  "status": "rejected",
+  "rejection_reason": "tests_too_loose",
+  "reviewer_id": "R3",
+  "frontier_pass_rate": 0.75,
+  "reviewed_at": "2026-10-09"
+ },
+ {
+  "task_id": "T1553",
+  "status": "rejected",
+  "rejection_reason": "tests_too_loose",
+  "reviewer_id": "R4",
+  "frontier_pass_rate": 0.29,
+  "reviewed_at": "2026-10-30"
+ },
+ {
+  "task_id": "T1457",
+  "status": "accepted",
+  "rejection_reason": null,
+  "reviewer_id": "R4",
+  "frontier_pass_rate": 0.74,
+  "reviewed_at": "2026-10-25"
+ },
+ {
+  "task_id": "T1198",
+  "status": "rejected",
+  "rejection_reason": "tests_too_loose",
+  "reviewer_id": "R1",
+  "frontier_pass_rate": 0.55,
+  "reviewed_at": "2026-10-16"
+ },
+ {
+  "task_id": "T1390",
+  "status": "pending",
+  "rejection_reason": null,
+  "reviewer_id": null,
+  "frontier_pass_rate": null,
+  "reviewed_at": null
+ },
+ {
+  "task_id": "T1395",
+  "status": "accepted",
+  "rejection_reason": null,
+  "reviewer_id": "R1",
+  "frontier_pass_rate": 0.75,
+  "reviewed_at": "2026-10-23"
+ },
+ {
+  "task_id": "T1474",
+  "status": "accepted",
+  "rejection_reason": null,
+  "reviewer_id": "R2",
+  "frontier_pass_rate": 0.77,
+  "reviewed_at": "2026-10-20"
+ },
+ {
+  "task_id": "T1632",
+  "status": "rejected",
+  "rejection_reason": "unclear_instructions",
+  "reviewer_id": "R2",
+  "frontier_pass_rate": 0.46,
+  "reviewed_at": "2026-10-29"
+ },
+ {
+  "task_id": "T1316",
+  "status": "accepted",
+  "rejection_reason": null,
+  "reviewer_id": "R3",
+  "frontier_pass_rate": 0.41,
+  "reviewed_at": "2026-10-15"
+ },
+ {
+  "task_id": "T1353",
+  "status": "accepted",
+  "rejection_reason": null,
+  "reviewer_id": "R1",
+  "frontier_pass_rate": 0.13,
+  "reviewed_at": "2026-10-21"
+ },
+ {
+  "task_id": "T1565",
+  "status": "pending",
+  "rejection_reason": null,
+  "reviewer_id": null,
+  "frontier_pass_rate": null,
+  "reviewed_at": null
+ },
+ {
+  "task_id": "T1679",
+  "status": "rejected",
+  "rejection_reason": "docker_build_failure",
+  "reviewer_id": "R4",
+  "frontier_pass_rate": 0.19,
+  "reviewed_at": "2026-10-30"
+ },
+ {
+  "task_id": "T1190",
+  "status": "rejected",
+  "rejection_reason": "tests_too_loose",
+  "reviewer_id": "R2",
+  "frontier_pass_rate": 0.08,
+  "reviewed_at": "2026-10-16"
+ },
+ {
+  "task_id": "T1402",
+  "status": "rejected",
+  "rejection_reason": "unclear_instructions",
+  "reviewer_id": "R4",
+  "frontier_pass_rate": 0.08,
+  "reviewed_at": "2026-10-22"
+ },
+ {
+  "task_id": "T1535",
+  "status": "accepted",
+  "rejection_reason": null,
+  "reviewer_id": "R4",
+  "frontier_pass_rate": 0.6,
+  "reviewed_at": "2026-10-30"
+ },
+ {
+  "task_id": "T1571",
+  "status": "pending",
+  "rejection_reason": null,
+  "reviewer_id": null,
+  "frontier_pass_rate": null,
+  "reviewed_at": null
+ },
+ {
+  "task_id": "T1398",
+  "status": "accepted",
+  "rejection_reason": null,
+  "reviewer_id": "R3",
+  "frontier_pass_rate": 0.17,
+  "reviewed_at": "2026-10-26"
+ },
+ {
+  "task_id": "T1078",
+  "status": "accepted",
+  "rejection_reason": null,
+  "reviewer_id": "R2",
+  "frontier_pass_rate": 0.44,
+  "reviewed_at": "2026-10-11"
+ },
+ {
+  "task_id": "T1067",
+  "status": "accepted",
+  "rejection_reason": null,
+  "reviewer_id": "R3",
+  "frontier_pass_rate": 0.62,
+  "reviewed_at": "2026-10-10"
+ },
+ {
+  "task_id": "T1596",
+  "status": "pending",
+  "rejection_reason": null,
+  "reviewer_id": null,
+  "frontier_pass_rate": null,
+  "reviewed_at": null
+ },
+ {
+  "task_id": "T1125",
+  "status": "rejected",
+  "rejection_reason": "docker_build_failure",
+  "reviewer_id": "R2",
+  "frontier_pass_rate": 0.75,
+  "reviewed_at": "2026-10-13"
+ },
+ {
+  "task_id": "T1497",
+  "status": "accepted",
+  "rejection_reason": null,
+  "reviewer_id": "R2",
+  "frontier_pass_rate": 0.63,
+  "reviewed_at": "2026-10-26"
+ },
+ {
+  "task_id": "T1403",
+  "status": "accepted",
+  "rejection_reason": null,
+  "reviewer_id": "R3",
+  "frontier_pass_rate": 0.4,
+  "reviewed_at": "2026-10-24"
+ },
+ {
+  "task_id": "T1105",
+  "status": "rejected",
+  "rejection_reason": "tests_too_loose",
+  "reviewer_id": "R3",
+  "frontier_pass_rate": 0.68,
+  "reviewed_at": "2026-10-12"
+ },
+ {
+  "task_id": "T1007",
+  "status": "accepted",
+  "rejection_reason": null,
+  "reviewer_id": "R3",
+  "frontier_pass_rate": 0.35,
+  "reviewed_at": "2026-10-13"
+ },
+ {
+  "task_id": "T1718",
+  "status": "pending",
+  "rejection_reason": null,
+  "reviewer_id": null,
+  "frontier_pass_rate": null,
+  "reviewed_at": null
+ },
+ {
+  "task_id": "T1642",
+  "status": "pending",
+  "rejection_reason": null,
+  "reviewer_id": null,
+  "frontier_pass_rate": null,
+  "reviewed_at": null
+ },
+ {
+  "task_id": "T1194",
+  "status": "rejected",
+  "rejection_reason": "tests_too_loose",
+  "reviewer_id": "R1",
+  "frontier_pass_rate": 0.7,
+  "reviewed_at": "2026-10-15"
+ },
+ {
+  "task_id": "T1570",
+  "status": "accepted",
+  "rejection_reason": null,
+  "reviewer_id": "R2",
+  "frontier_pass_rate": 0.34,
+  "reviewed_at": "2026-10-30"
+ },
+ {
+  "task_id": "T1378",
+  "status": "accepted",
+  "rejection_reason": null,
+  "reviewer_id": "R1",
+  "frontier_pass_rate": 0.63,
+  "reviewed_at": "2026-10-24"
+ },
+ {
+  "task_id": "T1046",
+  "status": "accepted",
+  "rejection_reason": null,
+  "reviewer_id": "R1",
+  "frontier_pass_rate": 0.1,
+  "reviewed_at": "2026-10-08"
+ },
+ {
+  "task_id": "T1703",
+  "status": "accepted",
+  "rejection_reason": null,
+  "reviewer_id": "R3",
+  "frontier_pass_rate": 0.56,
+  "reviewed_at": "2026-11-03"
+ },
+ {
+  "task_id": "T1657",
+  "status": "rejected",
+  "rejection_reason": "too_easy",
+  "reviewer_id": "R4",
+  "frontier_pass_rate": 0.85,
+  "reviewed_at": "2026-10-28"
+ },
+ {
+  "task_id": "T1691",
+  "status": "rejected",
+  "rejection_reason": "unclear_instructions",
+  "reviewer_id": "R1",
+  "frontier_pass_rate": 0.63,
+  "reviewed_at": "2026-10-31"
+ },
+ {
+  "task_id": "T1617",
+  "status": "rejected",
+  "rejection_reason": "too_easy",
+  "reviewer_id": "R2",
+  "frontier_pass_rate": 0.95,
+  "reviewed_at": "2026-10-28"
+ },
+ {
+  "task_id": "T1598",
+  "status": "accepted",
+  "rejection_reason": null,
+  "reviewer_id": "R2",
+  "frontier_pass_rate": 0.51,
+  "reviewed_at": "2026-10-29"
+ },
+ {
+  "task_id": "T1431",
+  "status": "accepted",
+  "rejection_reason": null,
+  "reviewer_id": "R4",
+  "frontier_pass_rate": 0.73,
+  "reviewed_at": "2026-10-21"
+ },
+ {
+  "task_id": "T1328",
+  "status": "rejected",
+  "rejection_reason": "too_easy",
+  "reviewer_id": "R2",
+  "frontier_pass_rate": 0.93,
+  "reviewed_at": "2026-10-22"
+ },
+ {
+  "task_id": "T1507",
+  "status": "rejected",
+  "rejection_reason": "docker_build_failure",
+  "reviewer_id": "R4",
+  "frontier_pass_rate": 0.83,
+  "reviewed_at": "2026-10-23"
+ },
+ {
+  "task_id": "T1091",
+  "status": "rejected",
+  "rejection_reason": "duplicate",
+  "reviewer_id": "R2",
+  "frontier_pass_rate": 0.1,
+  "reviewed_at": "2026-10-10"
+ },
+ {
+  "task_id": "T1446",
+  "status": "accepted",
+  "rejection_reason": null,
+  "reviewer_id": "R3",
+  "frontier_pass_rate": 0.69,
+  "reviewed_at": "2026-10-21"
+ },
+ {
+  "task_id": "T1494",
+  "status": "rejected",
+  "rejection_reason": "docker_build_failure",
+  "reviewer_id": "R2",
+  "frontier_pass_rate": 0.89,
+  "reviewed_at": "2026-10-22"
+ },
+ {
+  "task_id": "T1465",
+  "status": "accepted",
+  "rejection_reason": null,
+  "reviewer_id": "R3",
+  "frontier_pass_rate": 0.4,
+  "reviewed_at": "2026-10-20"
+ },
+ {
+  "task_id": "T1238",
+  "status": "accepted",
+  "rejection_reason": null,
+  "reviewer_id": "R3",
+  "frontier_pass_rate": 0.56,
+  "reviewed_at": "2026-10-16"
+ },
+ {
+  "task_id": "T1649",
+  "status": "pending",
+  "rejection_reason": null,
+  "reviewer_id": null,
+  "frontier_pass_rate": null,
+  "reviewed_at": null
+ },
+ {
+  "task_id": "T1337",
+  "status": "accepted",
+  "rejection_reason": null,
+  "reviewer_id": "R3",
+  "frontier_pass_rate": 0.53,
+  "reviewed_at": "2026-10-23"
+ },
+ {
+  "task_id": "T1064",
+  "status": "accepted",
+  "rejection_reason": null,
+  "reviewer_id": "R1",
+  "frontier_pass_rate": 0.34,
+  "reviewed_at": "2026-10-06"
+ },
+ {
+  "task_id": "T1281",
+  "status": "rejected",
+  "rejection_reason": "too_easy",
+  "reviewer_id": "R2",
+  "frontier_pass_rate": 0.9,
+  "reviewed_at": "2026-10-16"
+ },
+ {
+  "task_id": "T1670",
+  "status": "pending",
+  "rejection_reason": null,
+  "reviewer_id": null,
+  "frontier_pass_rate": null,
+  "reviewed_at": null
+ },
+ {
+  "task_id": "T1585",
+  "status": "pending",
+  "rejection_reason": null,
+  "reviewer_id": null,
+  "frontier_pass_rate": null,
+  "reviewed_at": null
+ },
+ {
+  "task_id": "T1247",
+  "status": "accepted",
+  "rejection_reason": null,
+  "reviewer_id": "R1",
+  "frontier_pass_rate": 0.58,
+  "reviewed_at": "2026-10-15"
+ },
+ {
+  "task_id": "T1574",
+  "status": "accepted",
+  "rejection_reason": null,
+  "reviewer_id": "R1",
+  "frontier_pass_rate": 0.16,
+  "reviewed_at": "2026-10-30"
+ },
+ {
+  "task_id": "T1417",
+  "status": "rejected",
+  "rejection_reason": "too_easy",
+  "reviewer_id": "R4",
+  "frontier_pass_rate": 0.96,
+  "reviewed_at": "2026-10-23"
+ },
+ {
+  "task_id": "T1704",
+  "status": "pending",
+  "rejection_reason": null,
+  "reviewer_id": null,
+  "frontier_pass_rate": null,
+  "reviewed_at": null
+ },
+ {
+  "task_id": "T1077",
+  "status": "rejected",
+  "rejection_reason": "unclear_instructions",
+  "reviewer_id": "R1",
+  "frontier_pass_rate": 0.17,
+  "reviewed_at": "2026-10-07"
+ },
+ {
+  "task_id": "T1609",
+  "status": "rejected",
+  "rejection_reason": "tests_too_loose",
+  "reviewer_id": "R4",
+  "frontier_pass_rate": 0.41,
+  "reviewed_at": "2026-10-31"
+ },
+ {
+  "task_id": "T1095",
+  "status": "rejected",
+  "rejection_reason": "tests_too_loose",
+  "reviewer_id": "R1",
+  "frontier_pass_rate": 0.18,
+  "reviewed_at": "2026-10-08"
+ },
+ {
+  "task_id": "T1258",
+  "status": "rejected",
+  "rejection_reason": "tests_too_loose",
+  "reviewer_id": "R3",
+  "frontier_pass_rate": 0.85,
+  "reviewed_at": "2026-10-14"
+ },
+ {
+  "task_id": "T1314",
+  "status": "accepted",
+  "rejection_reason": null,
+  "reviewer_id": "R1",
+  "frontier_pass_rate": 0.64,
+  "reviewed_at": "2026-10-16"
+ },
+ {
+  "task_id": "T1493",
+  "status": "rejected",
+  "rejection_reason": "docker_build_failure",
+  "reviewer_id": "R1",
+  "frontier_pass_rate": 0.13,
+  "reviewed_at": "2026-10-23"
+ },
+ {
+  "task_id": "T1509",
+  "status": "accepted",
+  "rejection_reason": null,
+  "reviewer_id": "R4",
+  "frontier_pass_rate": 0.33,
+  "reviewed_at": "2026-10-24"
+ },
+ {
+  "task_id": "T1347",
+  "status": "rejected",
+  "rejection_reason": "too_easy",
+  "reviewer_id": "R4",
+  "frontier_pass_rate": 0.89,
+  "reviewed_at": "2026-10-23"
+ },
+ {
+  "task_id": "T1401",
+  "status": "rejected",
+  "rejection_reason": "too_easy",
+  "reviewer_id": "R2",
+  "frontier_pass_rate": 0.91,
+  "reviewed_at": "2026-10-24"
+ },
+ {
+  "task_id": "T1225",
+  "status": "accepted",
+  "rejection_reason": null,
+  "reviewer_id": "R2",
+  "frontier_pass_rate": 0.15,
+  "reviewed_at": "2026-10-14"
+ },
+ {
+  "task_id": "T1451",
+  "status": "accepted",
+  "rejection_reason": null,
+  "reviewer_id": "R1",
+  "frontier_pass_rate": 0.35,
+  "reviewed_at": "2026-10-24"
+ },
+ {
+  "task_id": "T1483",
+  "status": "rejected",
+  "rejection_reason": "too_easy",
+  "reviewer_id": "R4",
+  "frontier_pass_rate": 0.85,
+  "reviewed_at": "2026-10-21"
+ },
+ {
+  "task_id": "T1166",
+  "status": "rejected",
+  "rejection_reason": "too_easy",
+  "reviewer_id": "R1",
+  "frontier_pass_rate": 0.93,
+  "reviewed_at": "2026-10-14"
+ },
+ {
+  "task_id": "T1680",
+  "status": "pending",
+  "rejection_reason": null,
+  "reviewer_id": null,
+  "frontier_pass_rate": null,
+  "reviewed_at": null
+ },
+ {
+  "task_id": "T1393",
+  "status": "accepted",
+  "rejection_reason": null,
+  "reviewer_id": "R2",
+  "frontier_pass_rate": 0.63,
+  "reviewed_at": "2026-10-24"
+ },
+ {
+  "task_id": "T1377",
+  "status": "rejected",
+  "rejection_reason": "tests_too_loose",
+  "reviewer_id": "R2",
+  "frontier_pass_rate": 0.11,
+  "reviewed_at": "2026-10-22"
+ },
+ {
+  "task_id": "T1275",
+  "status": "rejected",
+  "rejection_reason": "tests_too_loose",
+  "reviewer_id": "R3",
+  "frontier_pass_rate": 0.82,
+  "reviewed_at": "2026-10-17"
+ },
+ {
+  "task_id": "T1455",
+  "status": "accepted",
+  "rejection_reason": null,
+  "reviewer_id": "R2",
+  "frontier_pass_rate": 0.22,
+  "reviewed_at": "2026-10-21"
+ },
+ {
+  "task_id": "T1229",
+  "status": "rejected",
+  "rejection_reason": "too_easy",
+  "reviewer_id": "R1",
+  "frontier_pass_rate": 0.89,
+  "reviewed_at": "2026-10-19"
+ },
+ {
+  "task_id": "T1320",
+  "status": "rejected",
+  "rejection_reason": "too_easy",
+  "reviewer_id": "R2",
+  "frontier_pass_rate": 0.82,
+  "reviewed_at": "2026-10-18"
+ },
+ {
+  "task_id": "T1177",
+  "status": "accepted",
+  "rejection_reason": null,
+  "reviewer_id": "R3",
+  "frontier_pass_rate": 0.61,
+  "reviewed_at": "2026-10-17"
+ },
+ {
+  "task_id": "T1477",
+  "status": "pending",
+  "rejection_reason": null,
+  "reviewer_id": null,
+  "frontier_pass_rate": null,
+  "reviewed_at": null
+ },
+ {
+  "task_id": "T1304",
+  "status": "rejected",
+  "rejection_reason": "too_easy",
+  "reviewer_id": "R1",
+  "frontier_pass_rate": 0.92,
+  "reviewed_at": "2026-10-17"
+ },
+ {
+  "task_id": "T1515",
+  "status": "accepted",
+  "rejection_reason": null,
+  "reviewer_id": "R3",
+  "frontier_pass_rate": 0.7,
+  "reviewed_at": "2026-11-01"
+ },
+ {
+  "task_id": "T1519",
+  "status": "accepted",
+  "rejection_reason": null,
+  "reviewer_id": "R4",
+  "frontier_pass_rate": 0.71,
+  "reviewed_at": "2026-10-31"
+ },
+ {
+  "task_id": "T1084",
+  "status": "accepted",
+  "rejection_reason": null,
+  "reviewer_id": "R3",
+  "frontier_pass_rate": 0.44,
+  "reviewed_at": "2026-10-09"
+ },
+ {
+  "task_id": "T1542",
+  "status": "pending",
+  "rejection_reason": null,
+  "reviewer_id": null,
+  "frontier_pass_rate": null,
+  "reviewed_at": null
+ },
+ {
+  "task_id": "T1345",
+  "status": "accepted",
+  "rejection_reason": null,
+  "reviewer_id": "R3",
+  "frontier_pass_rate": 0.14,
+  "reviewed_at": "2026-10-22"
+ },
+ {
+  "task_id": "T1011",
+  "status": "accepted",
+  "rejection_reason": null,
+  "reviewer_id": "R3",
+  "frontier_pass_rate": 0.36,
+  "reviewed_at": "2026-10-08"
+ },
+ {
+  "task_id": "T1335",
+  "status": "rejected",
+  "rejection_reason": "docker_build_failure",
+  "reviewer_id": "R2",
+  "frontier_pass_rate": 0.35,
+  "reviewed_at": "2026-10-22"
+ },
+ {
+  "task_id": "T1305",
+  "status": "rejected",
+  "rejection_reason": "docker_build_failure",
+  "reviewer_id": "R1",
+  "frontier_pass_rate": 0.13,
+  "reviewed_at": "2026-10-15"
+ },
+ {
+  "task_id": "T1212",
+  "status": "accepted",
+  "rejection_reason": null,
+  "reviewer_id": "R3",
+  "frontier_pass_rate": 0.71,
+  "reviewed_at": "2026-10-16"
+ },
+ {
+  "task_id": "T1057",
+  "status": "accepted",
+  "rejection_reason": null,
+  "reviewer_id": "R3",
+  "frontier_pass_rate": 0.5,
+  "reviewed_at": "2026-10-09"
+ },
+ {
+  "task_id": "T1472",
+  "status": "accepted",
+  "rejection_reason": null,
+  "reviewer_id": "R3",
+  "frontier_pass_rate": 0.18,
+  "reviewed_at": "2026-10-23"
+ },
+ {
+  "task_id": "T1688",
+  "status": "rejected",
+  "rejection_reason": "docker_build_failure",
+  "reviewer_id": "R2",
+  "frontier_pass_rate": 0.84,
+  "reviewed_at": "2026-11-01"
+ },
+ {
+  "task_id": "T1295",
+  "status": "accepted",
+  "rejection_reason": null,
+  "reviewer_id": "R1",
+  "frontier_pass_rate": 0.22,
+  "reviewed_at": "2026-10-14"
+ },
+ {
+  "task_id": "T1147",
+  "status": "rejected",
+  "rejection_reason": "docker_build_failure",
+  "reviewer_id": "R1",
+  "frontier_pass_rate": 0.58,
+  "reviewed_at": "2026-10-13"
+ },
+ {
+  "task_id": "T1406",
+  "status": "accepted",
+  "rejection_reason": null,
+  "reviewer_id": "R1",
+  "frontier_pass_rate": 0.58,
+  "reviewed_at": "2026-10-21"
+ },
+ {
+  "task_id": "T1288",
+  "status": "accepted",
+  "rejection_reason": null,
+  "reviewer_id": "R3",
+  "frontier_pass_rate": 0.17,
+  "reviewed_at": "2026-10-15"
+ },
+ {
+  "task_id": "T1034",
+  "status": "rejected",
+  "rejection_reason": "tests_too_loose",
+  "reviewer_id": "R3",
+  "frontier_pass_rate": 0.62,
+  "reviewed_at": "2026-10-08"
+ },
+ {
+  "task_id": "T1061",
+  "status": "accepted",
+  "rejection_reason": null,
+  "reviewer_id": "R2",
+  "frontier_pass_rate": 0.26,
+  "reviewed_at": "2026-10-09"
+ },
+ {
+  "task_id": "T1233",
+  "status": "rejected",
+  "rejection_reason": "unclear_instructions",
+  "reviewer_id": "R3",
+  "frontier_pass_rate": 0.54,
+  "reviewed_at": "2026-10-17"
+ },
+ {
+  "task_id": "T1355",
+  "status": "rejected",
+  "rejection_reason": "tests_too_loose",
+  "reviewer_id": "R4",
+  "frontier_pass_rate": 0.61,
+  "reviewed_at": "2026-10-21"
+ },
+ {
+  "task_id": "T1056",
+  "status": "accepted",
+  "rejection_reason": null,
+  "reviewer_id": "R2",
+  "frontier_pass_rate": 0.55,
+  "reviewed_at": "2026-10-09"
+ },
+ {
+  "task_id": "T1163",
+  "status": "accepted",
+  "rejection_reason": null,
+  "reviewer_id": "R3",
+  "frontier_pass_rate": 0.67,
+  "reviewed_at": "2026-10-16"
+ },
+ {
+  "task_id": "T1031",
+  "status": "rejected",
+  "rejection_reason": "too_easy",
+  "reviewer_id": "R1",
+  "frontier_pass_rate": 0.84,
+  "reviewed_at": "2026-10-11"
+ },
+ {
+  "task_id": "T1160",
+  "status": "accepted",
+  "rejection_reason": null,
+  "reviewer_id": "R3",
+  "frontier_pass_rate": 0.58,
+  "reviewed_at": "2026-10-19"
+ },
+ {
+  "task_id": "T1591",
+  "status": "accepted",
+  "rejection_reason": null,
+  "reviewer_id": "R4",
+  "frontier_pass_rate": 0.74,
+  "reviewed_at": "2026-11-02"
+ },
+ {
+  "task_id": "T1089",
+  "status": "accepted",
+  "rejection_reason": null,
+  "reviewer_id": "R3",
+  "frontier_pass_rate": 0.75,
+  "reviewed_at": "2026-10-11"
+ },
+ {
+  "task_id": "T1154",
+  "status": "accepted",
+  "rejection_reason": null,
+  "reviewer_id": "R3",
+  "frontier_pass_rate": 0.37,
+  "reviewed_at": "2026-10-11"
+ },
+ {
+  "task_id": "T1265",
+  "status": "rejected",
+  "rejection_reason": "tests_too_loose",
+  "reviewer_id": "R2",
+  "frontier_pass_rate": 0.52,
+  "reviewed_at": "2026-10-13"
+ },
+ {
+  "task_id": "T1527",
+  "status": "rejected",
+  "rejection_reason": "too_easy",
+  "reviewer_id": "R4",
+  "frontier_pass_rate": 0.94,
+  "reviewed_at": "2026-10-29"
+ },
+ {
+  "task_id": "T1176",
+  "status": "accepted",
+  "rejection_reason": null,
+  "reviewer_id": "R2",
+  "frontier_pass_rate": 0.38,
+  "reviewed_at": "2026-10-20"
+ },
+ {
+  "task_id": "T1069",
+  "status": "rejected",
+  "rejection_reason": "unclear_instructions",
+  "reviewer_id": "R3",
+  "frontier_pass_rate": 0.34,
+  "reviewed_at": "2026-10-12"
+ },
+ {
+  "task_id": "T1449",
+  "status": "rejected",
+  "rejection_reason": "docker_build_failure",
+  "reviewer_id": "R4",
+  "frontier_pass_rate": 0.85,
+  "reviewed_at": "2026-10-20"
+ },
+ {
+  "task_id": "T1628",
+  "status": "pending",
+  "rejection_reason": null,
+  "reviewer_id": null,
+  "frontier_pass_rate": null,
+  "reviewed_at": null
+ },
+ {
+  "task_id": "T1389",
+  "status": "accepted",
+  "rejection_reason": null,
+  "reviewer_id": "R3",
+  "frontier_pass_rate": 0.29,
+  "reviewed_at": "2026-10-22"
+ },
+ {
+  "task_id": "T1666",
+  "status": "accepted",
+  "rejection_reason": null,
+  "reviewer_id": "R1",
+  "frontier_pass_rate": 0.48,
+  "reviewed_at": "2026-11-02"
+ },
+ {
+  "task_id": "T1544",
+  "status": "accepted",
+  "rejection_reason": null,
+  "reviewer_id": "R2",
+  "frontier_pass_rate": 0.26,
+  "reviewed_at": "2026-10-29"
+ },
+ {
+  "task_id": "T1673",
+  "status": "accepted",
+  "rejection_reason": null,
+  "reviewer_id": "R4",
+  "frontier_pass_rate": 0.54,
+  "reviewed_at": "2026-10-29"
+ },
+ {
+  "task_id": "T1260",
+  "status": "rejected",
+  "rejection_reason": "tests_too_loose",
+  "reviewer_id": "R1",
+  "frontier_pass_rate": 0.15,
+  "reviewed_at": "2026-10-17"
+ },
+ {
+  "task_id": "T1605",
+  "status": "accepted",
+  "rejection_reason": null,
+  "reviewer_id": "R2",
+  "frontier_pass_rate": 0.4,
+  "reviewed_at": "2026-10-29"
+ },
+ {
+  "task_id": "T1195",
+  "status": "rejected",
+  "rejection_reason": "tests_too_loose",
+  "reviewer_id": "R2",
+  "frontier_pass_rate": 0.27,
+  "reviewed_at": "2026-10-17"
+ },
+ {
+  "task_id": "T1500",
+  "status": "rejected",
+  "rejection_reason": "unclear_instructions",
+  "reviewer_id": "R2",
+  "frontier_pass_rate": 0.83,
+  "reviewed_at": "2026-10-25"
+ },
+ {
+  "task_id": "T1268",
+  "status": "accepted",
+  "rejection_reason": null,
+  "reviewer_id": "R1",
+  "frontier_pass_rate": 0.63,
+  "reviewed_at": "2026-10-18"
+ },
+ {
+  "task_id": "T1158",
+  "status": "accepted",
+  "rejection_reason": null,
+  "reviewer_id": "R3",
+  "frontier_pass_rate": 0.46,
+  "reviewed_at": "2026-10-09"
+ },
+ {
+  "task_id": "T1470",
+  "status": "accepted",
+  "rejection_reason": null,
+  "reviewer_id": "R1",
+  "frontier_pass_rate": 0.69,
+  "reviewed_at": "2026-10-22"
+ },
+ {
+  "task_id": "T1689",
+  "status": "rejected",
+  "rejection_reason": "docker_build_failure",
+  "reviewer_id": "R1",
+  "frontier_pass_rate": 0.44,
+  "reviewed_at": "2026-10-28"
+ },
+ {
+  "task_id": "T1146",
+  "status": "accepted",
+  "rejection_reason": null,
+  "reviewer_id": "R1",
+  "frontier_pass_rate": 0.75,
+  "reviewed_at": "2026-10-13"
+ },
+ {
+  "task_id": "T1180",
+  "status": "rejected",
+  "rejection_reason": "too_easy",
+  "reviewer_id": "R1",
+  "frontier_pass_rate": 0.95,
+  "reviewed_at": "2026-10-14"
+ },
+ {
+  "task_id": "T1373",
+  "status": "accepted",
+  "rejection_reason": null,
+  "reviewer_id": "R1",
+  "frontier_pass_rate": 0.78,
+  "reviewed_at": "2026-10-21"
+ },
+ {
+  "task_id": "T1231",
+  "status": "rejected",
+  "rejection_reason": "too_easy",
+  "reviewer_id": "R2",
+  "frontier_pass_rate": 0.94,
+  "reviewed_at": "2026-10-20"
+ },
+ {
+  "task_id": "T1503",
+  "status": "accepted",
+  "rejection_reason": null,
+  "reviewer_id": "R2",
+  "frontier_pass_rate": 0.08,
+  "reviewed_at": "2026-10-26"
+ },
+ {
+  "task_id": "T1339",
+  "status": "accepted",
+  "rejection_reason": null,
+  "reviewer_id": "R1",
+  "frontier_pass_rate": 0.41,
+  "reviewed_at": "2026-10-25"
+ },
+ {
+  "task_id": "T1016",
+  "status": "accepted",
+  "rejection_reason": null,
+  "reviewer_id": "R1",
+  "frontier_pass_rate": 0.68,
+  "reviewed_at": "2026-10-10"
+ },
+ {
+  "task_id": "T1364",
+  "status": "accepted",
+  "rejection_reason": null,
+  "reviewer_id": "R1",
+  "frontier_pass_rate": 0.73,
+  "reviewed_at": "2026-10-25"
+ },
+ {
+  "task_id": "T1070",
+  "status": "accepted",
+  "rejection_reason": null,
+  "reviewer_id": "R2",
+  "frontier_pass_rate": 0.58,
+  "reviewed_at": "2026-10-07"
+ },
+ {
+  "task_id": "T1653",
+  "status": "pending",
+  "rejection_reason": null,
+  "reviewer_id": null,
+  "frontier_pass_rate": null,
+  "reviewed_at": null
+ },
+ {
+  "task_id": "T1139",
+  "status": "accepted",
+  "rejection_reason": null,
+  "reviewer_id": "R3",
+  "frontier_pass_rate": 0.19,
+  "reviewed_at": "2026-10-09"
+ },
+ {
+  "task_id": "T1710",
+  "status": "pending",
+  "rejection_reason": null,
+  "reviewer_id": null,
+  "frontier_pass_rate": null,
+  "reviewed_at": null
+ },
+ {
+  "task_id": "T1246",
+  "status": "accepted",
+  "rejection_reason": null,
+  "reviewer_id": "R1",
+  "frontier_pass_rate": 0.16,
+  "reviewed_at": "2026-10-14"
+ },
+ {
+  "task_id": "T1301",
+  "status": "rejected",
+  "rejection_reason": "too_easy",
+  "reviewer_id": "R2",
+  "frontier_pass_rate": 0.9,
+  "reviewed_at": "2026-10-16"
+ },
+ {
+  "task_id": "T1412",
+  "status": "accepted",
+  "rejection_reason": null,
+  "reviewer_id": "R1",
+  "frontier_pass_rate": 0.69,
+  "reviewed_at": "2026-10-24"
+ },
+ {
+  "task_id": "T1468",
+  "status": "accepted",
+  "rejection_reason": null,
+  "reviewer_id": "R2",
+  "frontier_pass_rate": 0.7,
+  "reviewed_at": "2026-10-27"
+ },
+ {
+  "task_id": "T1413",
+  "status": "accepted",
+  "rejection_reason": null,
+  "reviewer_id": "R3",
+  "frontier_pass_rate": 0.36,
+  "reviewed_at": "2026-10-22"
+ },
+ {
+  "task_id": "T1182",
+  "status": "accepted",
+  "rejection_reason": null,
+  "reviewer_id": "R3",
+  "frontier_pass_rate": 0.1,
+  "reviewed_at": "2026-10-19"
+ },
+ {
+  "task_id": "T1475",
+  "status": "rejected",
+  "rejection_reason": "docker_build_failure",
+  "reviewer_id": "R3",
+  "frontier_pass_rate": 0.31,
+  "reviewed_at": "2026-10-22"
+ },
+ {
+  "task_id": "T1121",
+  "status": "accepted",
+  "rejection_reason": null,
+  "reviewer_id": "R1",
+  "frontier_pass_rate": 0.76,
+  "reviewed_at": "2026-10-10"
+ },
+ {
+  "task_id": "T1037",
+  "status": "rejected",
+  "rejection_reason": "tests_too_loose",
+  "reviewer_id": "R2",
+  "frontier_pass_rate": 0.25,
+  "reviewed_at": "2026-10-12"
+ },
+ {
+  "task_id": "T1466",
+  "status": "accepted",
+  "rejection_reason": null,
+  "reviewer_id": "R3",
+  "frontier_pass_rate": 0.35,
+  "reviewed_at": "2026-10-22"
+ },
+ {
+  "task_id": "T1618",
+  "status": "rejected",
+  "rejection_reason": "tests_too_loose",
+  "reviewer_id": "R4",
+  "frontier_pass_rate": 0.36,
+  "reviewed_at": "2026-11-01"
+ },
+ {
+  "task_id": "T1252",
+  "status": "accepted",
+  "rejection_reason": null,
+  "reviewer_id": "R1",
+  "frontier_pass_rate": 0.61,
+  "reviewed_at": "2026-10-17"
+ },
+ {
+  "task_id": "T1072",
+  "status": "accepted",
+  "rejection_reason": null,
+  "reviewer_id": "R3",
+  "frontier_pass_rate": 0.09,
+  "reviewed_at": "2026-10-09"
+ },
+ {
+  "task_id": "T1259",
+  "status": "rejected",
+  "rejection_reason": "tests_too_loose",
+  "reviewer_id": "R1",
+  "frontier_pass_rate": 0.82,
+  "reviewed_at": "2026-10-20"
+ },
+ {
+  "task_id": "T1086",
+  "status": "accepted",
+  "rejection_reason": null,
+  "reviewer_id": "R3",
+  "frontier_pass_rate": 0.41,
+  "reviewed_at": "2026-10-09"
+ },
+ {
+  "task_id": "T1351",
+  "status": "rejected",
+  "rejection_reason": "unclear_instructions",
+  "reviewer_id": "R2",
+  "frontier_pass_rate": 0.22,
+  "reviewed_at": "2026-10-22"
+ },
+ {
+  "task_id": "T1374",
+  "status": "accepted",
+  "rejection_reason": null,
+  "reviewer_id": "R1",
+  "frontier_pass_rate": 0.24,
+  "reviewed_at": "2026-10-26"
+ },
+ {
+  "task_id": "T1129",
+  "status": "accepted",
+  "rejection_reason": null,
+  "reviewer_id": "R1",
+  "frontier_pass_rate": 0.77,
+  "reviewed_at": "2026-10-08"
+ },
+ {
+  "task_id": "T1151",
+  "status": "accepted",
+  "rejection_reason": null,
+  "reviewer_id": "R1",
+  "frontier_pass_rate": 0.61,
+  "reviewed_at": "2026-10-11"
+ },
+ {
+  "task_id": "T1677",
+  "status": "rejected",
+  "rejection_reason": "docker_build_failure",
+  "reviewer_id": "R3",
+  "frontier_pass_rate": 0.11,
+  "reviewed_at": "2026-11-02"
+ },
+ {
+  "task_id": "T1478",
+  "status": "rejected",
+  "rejection_reason": "too_easy",
+  "reviewer_id": "R1",
+  "frontier_pass_rate": 0.96,
+  "reviewed_at": "2026-10-24"
+ },
+ {
+  "task_id": "T1215",
+  "status": "accepted",
+  "rejection_reason": null,
+  "reviewer_id": "R3",
+  "frontier_pass_rate": 0.22,
+  "reviewed_at": "2026-10-15"
+ },
+ {
+  "task_id": "T1038",
+  "status": "rejected",
+  "rejection_reason": "tests_too_loose",
+  "reviewer_id": "R3",
+  "frontier_pass_rate": 0.86,
+  "reviewed_at": "2026-10-08"
+ },
+ {
+  "task_id": "T1695",
+  "status": "rejected",
+  "rejection_reason": "docker_build_failure",
+  "reviewer_id": "R4",
+  "frontier_pass_rate": 0.51,
+  "reviewed_at": "2026-11-03"
+ },
+ {
+  "task_id": "T1023",
+  "status": "rejected",
+  "rejection_reason": "tests_too_loose",
+  "reviewer_id": "R3",
+  "frontier_pass_rate": 0.46,
+  "reviewed_at": "2026-10-13"
+ },
+ {
+  "task_id": "T1514",
+  "status": "rejected",
+  "rejection_reason": "too_easy",
+  "reviewer_id": "R4",
+  "frontier_pass_rate": 0.9,
+  "reviewed_at": "2026-10-29"
+ },
+ {
+  "task_id": "T1133",
+  "status": "accepted",
+  "rejection_reason": null,
+  "reviewer_id": "R3",
+  "frontier_pass_rate": 0.37,
+  "reviewed_at": "2026-10-10"
+ },
+ {
+  "task_id": "T1486",
+  "status": "accepted",
+  "rejection_reason": null,
+  "reviewer_id": "R3",
+  "frontier_pass_rate": 0.55,
+  "reviewed_at": "2026-10-24"
+ },
+ {
+  "task_id": "T1327",
+  "status": "accepted",
+  "rejection_reason": null,
+  "reviewer_id": "R1",
+  "frontier_pass_rate": 0.19,
+  "reviewed_at": "2026-10-22"
+ },
+ {
+  "task_id": "T1326",
+  "status": "rejected",
+  "rejection_reason": "too_easy",
+  "reviewer_id": "R2",
+  "frontier_pass_rate": 0.83,
+  "reviewed_at": "2026-10-27"
+ },
+ {
+  "task_id": "T1418",
+  "status": "accepted",
+  "rejection_reason": null,
+  "reviewer_id": "R2",
+  "frontier_pass_rate": 0.54,
+  "reviewed_at": "2026-10-25"
+ },
+ {
+  "task_id": "T1013",
+  "status": "accepted",
+  "rejection_reason": null,
+  "reviewer_id": "R2",
+  "frontier_pass_rate": 0.57,
+  "reviewed_at": "2026-10-07"
+ },
+ {
+  "task_id": "T1022",
+  "status": "rejected",
+  "rejection_reason": "too_easy",
+  "reviewer_id": "R1",
+  "frontier_pass_rate": 0.88,
+  "reviewed_at": "2026-10-07"
+ },
+ {
+  "task_id": "T1504",
+  "status": "accepted",
+  "rejection_reason": null,
+  "reviewer_id": "R1",
+  "frontier_pass_rate": 0.53,
+  "reviewed_at": "2026-10-21"
+ },
+ {
+  "task_id": "T1187",
+  "status": "rejected",
+  "rejection_reason": "too_easy",
+  "reviewer_id": "R1",
+  "frontier_pass_rate": 0.88,
+  "reviewed_at": "2026-10-13"
+ },
+ {
+  "task_id": "T1111",
+  "status": "rejected",
+  "rejection_reason": "too_easy",
+  "reviewer_id": "R1",
+  "frontier_pass_rate": 0.97,
+  "reviewed_at": "2026-10-10"
+ },
+ {
+  "task_id": "T1426",
+  "status": "rejected",
+  "rejection_reason": "tests_too_loose",
+  "reviewer_id": "R4",
+  "frontier_pass_rate": 0.85,
+  "reviewed_at": "2026-10-23"
+ },
+ {
+  "task_id": "T1437",
+  "status": "accepted",
+  "rejection_reason": null,
+  "reviewer_id": "R3",
+  "frontier_pass_rate": 0.4,
+  "reviewed_at": "2026-10-25"
+ },
+ {
+  "task_id": "T1249",
+  "status": "accepted",
+  "rejection_reason": null,
+  "reviewer_id": "R2",
+  "frontier_pass_rate": 0.67,
+  "reviewed_at": "2026-10-16"
+ },
+ {
+  "task_id": "T1582",
+  "status": "pending",
+  "rejection_reason": null,
+  "reviewer_id": null,
+  "frontier_pass_rate": null,
+  "reviewed_at": null
+ },
+ {
+  "task_id": "T1606",
+  "status": "accepted",
+  "rejection_reason": null,
+  "reviewer_id": "R4",
+  "frontier_pass_rate": 0.7,
+  "reviewed_at": "2026-10-31"
+ },
+ {
+  "task_id": "T1525",
+  "status": "accepted",
+  "rejection_reason": null,
+  "reviewer_id": "R2",
+  "frontier_pass_rate": 0.34,
+  "reviewed_at": "2026-11-02"
+ },
+ {
+  "task_id": "T1367",
+  "status": "accepted",
+  "rejection_reason": null,
+  "reviewer_id": "R1",
+  "frontier_pass_rate": 0.09,
+  "reviewed_at": "2026-10-26"
+ },
+ {
+  "task_id": "T1546",
+  "status": "pending",
+  "rejection_reason": null,
+  "reviewer_id": null,
+  "frontier_pass_rate": null,
+  "reviewed_at": null
+ },
+ {
+  "task_id": "T1266",
+  "status": "accepted",
+  "rejection_reason": null,
+  "reviewer_id": "R3",
+  "frontier_pass_rate": 0.26,
+  "reviewed_at": "2026-10-16"
+ },
+ {
+  "task_id": "T1381",
+  "status": "pending",
+  "rejection_reason": null,
+  "reviewer_id": null,
+  "frontier_pass_rate": null,
+  "reviewed_at": null
+ },
+ {
+  "task_id": "T1135",
+  "status": "rejected",
+  "rejection_reason": "tests_too_loose",
+  "reviewer_id": "R1",
+  "frontier_pass_rate": 0.48,
+  "reviewed_at": "2026-10-12"
+ },
+ {
+  "task_id": "T1386",
+  "status": "accepted",
+  "rejection_reason": null,
+  "reviewer_id": "R3",
+  "frontier_pass_rate": 0.33,
+  "reviewed_at": "2026-10-23"
+ },
+ {
+  "task_id": "T1310",
+  "status": "accepted",
+  "rejection_reason": null,
+  "reviewer_id": "R1",
+  "frontier_pass_rate": 0.4,
+  "reviewed_at": "2026-10-13"
+ },
+ {
+  "task_id": "T1600",
+  "status": "rejected",
+  "rejection_reason": "unclear_instructions",
+  "reviewer_id": "R4",
+  "frontier_pass_rate": 0.19,
+  "reviewed_at": "2026-11-02"
+ },
+ {
+  "task_id": "T1290",
+  "status": "rejected",
+  "rejection_reason": "too_easy",
+  "reviewer_id": "R2",
+  "frontier_pass_rate": 0.92,
+  "reviewed_at": "2026-10-17"
+ },
+ {
+  "task_id": "T1714",
+  "status": "rejected",
+  "rejection_reason": "too_easy",
+  "reviewer_id": "R2",
+  "frontier_pass_rate": 0.97,
+  "reviewed_at": "2026-10-31"
+ },
+ {
+  "task_id": "T1399",
+  "status": "accepted",
+  "rejection_reason": null,
+  "reviewer_id": "R2",
+  "frontier_pass_rate": 0.27,
+  "reviewed_at": "2026-10-24"
+ },
+ {
+  "task_id": "T1254",
+  "status": "accepted",
+  "rejection_reason": null,
+  "reviewer_id": "R3",
+  "frontier_pass_rate": 0.44,
+  "reviewed_at": "2026-10-14"
+ },
+ {
+  "task_id": "T1675",
+  "status": "pending",
+  "rejection_reason": null,
+  "reviewer_id": null,
+  "frontier_pass_rate": null,
+  "reviewed_at": null
+ },
+ {
+  "task_id": "T1713",
+  "status": "rejected",
+  "rejection_reason": "docker_build_failure",
+  "reviewer_id": "R4",
+  "frontier_pass_rate": 0.39,
+  "reviewed_at": "2026-10-27"
+ },
+ {
+  "task_id": "T1138",
+  "status": "rejected",
+  "rejection_reason": "tests_too_loose",
+  "reviewer_id": "R2",
+  "frontier_pass_rate": 0.47,
+  "reviewed_at": "2026-10-09"
+ },
+ {
+  "task_id": "T1213",
+  "status": "accepted",
+  "rejection_reason": null,
+  "reviewer_id": "R2",
+  "frontier_pass_rate": 0.33,
+  "reviewed_at": "2026-10-17"
+ },
+ {
+  "task_id": "T1282",
+  "status": "rejected",
+  "rejection_reason": "too_easy",
+  "reviewer_id": "R1",
+  "frontier_pass_rate": 0.87,
+  "reviewed_at": "2026-10-19"
+ },
+ {
+  "task_id": "T1050",
+  "status": "accepted",
+  "rejection_reason": null,
+  "reviewer_id": "R2",
+  "frontier_pass_rate": 0.48,
+  "reviewed_at": "2026-10-10"
+ },
+ {
+  "task_id": "T1277",
+  "status": "accepted",
+  "rejection_reason": null,
+  "reviewer_id": "R1",
+  "frontier_pass_rate": 0.22,
+  "reviewed_at": "2026-10-15"
+ },
+ {
+  "task_id": "T1052",
+  "status": "accepted",
+  "rejection_reason": null,
+  "reviewer_id": "R1",
+  "frontier_pass_rate": 0.25,
+  "reviewed_at": "2026-10-12"
+ },
+ {
+  "task_id": "T1671",
+  "status": "pending",
+  "rejection_reason": null,
+  "reviewer_id": null,
+  "frontier_pass_rate": null,
+  "reviewed_at": null
+ },
+ {
+  "task_id": "T1008",
+  "status": "accepted",
+  "rejection_reason": null,
+  "reviewer_id": "R1",
+  "frontier_pass_rate": 0.22,
+  "reviewed_at": "2026-10-06"
+ },
+ {
+  "task_id": "T1123",
+  "status": "accepted",
+  "rejection_reason": null,
+  "reviewer_id": "R3",
+  "frontier_pass_rate": 0.13,
+  "reviewed_at": "2026-10-07"
+ },
+ {
+  "task_id": "T1530",
+  "status": "rejected",
+  "rejection_reason": "duplicate",
+  "reviewer_id": "R4",
+  "frontier_pass_rate": 0.25,
+  "reviewed_at": "2026-11-03"
+ },
+ {
+  "task_id": "T1522",
+  "status": "pending",
+  "rejection_reason": null,
+  "reviewer_id": null,
+  "frontier_pass_rate": null,
+  "reviewed_at": null
+ },
+ {
+  "task_id": "T1083",
+  "status": "accepted",
+  "rejection_reason": null,
+  "reviewer_id": "R1",
+  "frontier_pass_rate": 0.2,
+  "reviewed_at": "2026-10-09"
+ },
+ {
+  "task_id": "T1511",
+  "status": "rejected",
+  "rejection_reason": "unclear_instructions",
+  "reviewer_id": "R2",
+  "frontier_pass_rate": 0.32,
+  "reviewed_at": "2026-10-22"
+ },
+ {
+  "task_id": "T1278",
+  "status": "accepted",
+  "rejection_reason": null,
+  "reviewer_id": "R2",
+  "frontier_pass_rate": 0.39,
+  "reviewed_at": "2026-10-17"
+ },
+ {
+  "task_id": "T1197",
+  "status": "accepted",
+  "rejection_reason": null,
+  "reviewer_id": "R2",
+  "frontier_pass_rate": 0.16,
+  "reviewed_at": "2026-10-20"
+ },
+ {
+  "task_id": "T1093",
+  "status": "accepted",
+  "rejection_reason": null,
+  "reviewer_id": "R2",
+  "frontier_pass_rate": 0.32,
+  "reviewed_at": "2026-10-12"
+ },
+ {
+  "task_id": "T1090",
+  "status": "accepted",
+  "rejection_reason": null,
+  "reviewer_id": "R3",
+  "frontier_pass_rate": 0.4,
+  "reviewed_at": "2026-10-07"
+ },
+ {
+  "task_id": "T1307",
+  "status": "accepted",
+  "rejection_reason": null,
+  "reviewer_id": "R1",
+  "frontier_pass_rate": 0.56,
+  "reviewed_at": "2026-10-16"
+ },
+ {
+  "task_id": "T1360",
+  "status": "rejected",
+  "rejection_reason": "tests_too_loose",
+  "reviewer_id": "R2",
+  "frontier_pass_rate": 0.52,
+  "reviewed_at": "2026-10-25"
+ },
+ {
+  "task_id": "T1529",
+  "status": "pending",
+  "rejection_reason": null,
+  "reviewer_id": null,
+  "frontier_pass_rate": null,
+  "reviewed_at": null
+ },
+ {
+  "task_id": "T1392",
+  "status": "rejected",
+  "rejection_reason": "tests_too_loose",
+  "reviewer_id": "R1",
+  "frontier_pass_rate": 0.42,
+  "reviewed_at": "2026-10-23"
+ },
+ {
+  "task_id": "T1444",
+  "status": "rejected",
+  "rejection_reason": "duplicate",
+  "reviewer_id": "R4",
+  "frontier_pass_rate": 0.16,
+  "reviewed_at": "2026-10-26"
+ },
+ {
+  "task_id": "T1702",
+  "status": "rejected",
+  "rejection_reason": "docker_build_failure",
+  "reviewer_id": "R3",
+  "frontier_pass_rate": 0.57,
+  "reviewed_at": "2026-10-30"
+ },
+ {
+  "task_id": "T1701",
+  "status": "pending",
+  "rejection_reason": null,
+  "reviewer_id": null,
+  "frontier_pass_rate": null,
+  "reviewed_at": null
+ },
+ {
+  "task_id": "T1669",
+  "status": "pending",
+  "rejection_reason": null,
+  "reviewer_id": null,
+  "frontier_pass_rate": null,
+  "reviewed_at": null
+ },
+ {
+  "task_id": "T1291",
+  "status": "rejected",
+  "rejection_reason": "too_easy",
+  "reviewer_id": "R3",
+  "frontier_pass_rate": 0.96,
+  "reviewed_at": "2026-10-15"
+ },
+ {
+  "task_id": "T1650",
+  "status": "accepted",
+  "rejection_reason": null,
+  "reviewer_id": "R4",
+  "frontier_pass_rate": 0.6,
+  "reviewed_at": "2026-10-31"
+ },
+ {
+  "task_id": "T1407",
+  "status": "accepted",
+  "rejection_reason": null,
+  "reviewer_id": "R3",
+  "frontier_pass_rate": 0.78,
+  "reviewed_at": "2026-10-20"
+ },
+ {
+  "task_id": "T1647",
+  "status": "pending",
+  "rejection_reason": null,
+  "reviewer_id": null,
+  "frontier_pass_rate": null,
+  "reviewed_at": null
+ },
+ {
+  "task_id": "T1498",
+  "status": "accepted",
+  "rejection_reason": null,
+  "reviewer_id": "R4",
+  "frontier_pass_rate": 0.61,
+  "reviewed_at": "2026-10-23"
+ },
+ {
+  "task_id": "T1422",
+  "status": "rejected",
+  "rejection_reason": "tests_too_loose",
+  "reviewer_id": "R4",
+  "frontier_pass_rate": 0.46,
+  "reviewed_at": "2026-10-22"
+ },
+ {
+  "task_id": "T1333",
+  "status": "accepted",
+  "rejection_reason": null,
+  "reviewer_id": "R4",
+  "frontier_pass_rate": 0.6,
+  "reviewed_at": "2026-10-24"
+ },
+ {
+  "task_id": "T1315",
+  "status": "accepted",
+  "rejection_reason": null,
+  "reviewer_id": "R1",
+  "frontier_pass_rate": 0.62,
+  "reviewed_at": "2026-10-18"
+ },
+ {
+  "task_id": "T1058",
+  "status": "accepted",
+  "rejection_reason": null,
+  "reviewer_id": "R2",
+  "frontier_pass_rate": 0.22,
+  "reviewed_at": "2026-10-12"
+ },
+ {
+  "task_id": "T1588",
+  "status": "accepted",
+  "rejection_reason": null,
+  "reviewer_id": "R1",
+  "frontier_pass_rate": 0.43,
+  "reviewed_at": "2026-10-30"
+ },
+ {
+  "task_id": "T1396",
+  "status": "rejected",
+  "rejection_reason": "tests_too_loose",
+  "reviewer_id": "R4",
+  "frontier_pass_rate": 0.4,
+  "reviewed_at": "2026-10-22"
+ },
+ {
+  "task_id": "T1684",
+  "status": "rejected",
+  "rejection_reason": "docker_build_failure",
+  "reviewer_id": "R3",
+  "frontier_pass_rate": 0.41,
+  "reviewed_at": "2026-10-29"
+ },
+ {
+  "task_id": "T1634",
+  "status": "pending",
+  "rejection_reason": null,
+  "reviewer_id": null,
+  "frontier_pass_rate": null,
+  "reviewed_at": null
+ },
+ {
+  "task_id": "T1073",
+  "status": "rejected",
+  "rejection_reason": "too_easy",
+  "reviewer_id": "R2",
+  "frontier_pass_rate": 0.98,
+  "reviewed_at": "2026-10-12"
+ },
+ {
+  "task_id": "T1075",
+  "status": "accepted",
+  "rejection_reason": null,
+  "reviewer_id": "R3",
+  "frontier_pass_rate": 0.37,
+  "reviewed_at": "2026-10-11"
+ },
+ {
+  "task_id": "T1142",
+  "status": "rejected",
+  "rejection_reason": "duplicate",
+  "reviewer_id": "R1",
+  "frontier_pass_rate": 0.49,
+  "reviewed_at": "2026-10-07"
+ },
+ {
+  "task_id": "T1464",
+  "status": "rejected",
+  "rejection_reason": "unclear_instructions",
+  "reviewer_id": "R4",
+  "frontier_pass_rate": 0.55,
+  "reviewed_at": "2026-10-22"
+ },
+ {
+  "task_id": "T1510",
+  "status": "rejected",
+  "rejection_reason": "docker_build_failure",
+  "reviewer_id": "R4",
+  "frontier_pass_rate": 0.77,
+  "reviewed_at": "2026-10-25"
+ },
+ {
+  "task_id": "T1575",
+  "status": "accepted",
+  "rejection_reason": null,
+  "reviewer_id": "R2",
+  "frontier_pass_rate": 0.64,
+  "reviewed_at": "2026-10-30"
+ },
+ {
+  "task_id": "T1660",
+  "status": "pending",
+  "rejection_reason": null,
+  "reviewer_id": null,
+  "frontier_pass_rate": null,
+  "reviewed_at": null
+ },
+ {
+  "task_id": "T1706",
+  "status": "pending",
+  "rejection_reason": null,
+  "reviewer_id": null,
+  "frontier_pass_rate": null,
+  "reviewed_at": null
+ },
+ {
+  "task_id": "T1261",
+  "status": "rejected",
+  "rejection_reason": "tests_too_loose",
+  "reviewer_id": "R1",
+  "frontier_pass_rate": 0.78,
+  "reviewed_at": "2026-10-16"
+ },
+ {
+  "task_id": "T1646",
+  "status": "pending",
+  "rejection_reason": null,
+  "reviewer_id": null,
+  "frontier_pass_rate": null,
+  "reviewed_at": null
+ },
+ {
+  "task_id": "T1005",
+  "status": "accepted",
+  "rejection_reason": null,
+  "reviewer_id": "R2",
+  "frontier_pass_rate": 0.13,
+  "reviewed_at": "2026-10-06"
+ },
+ {
+  "task_id": "T1103",
+  "status": "rejected",
+  "rejection_reason": "tests_too_loose",
+  "reviewer_id": "R3",
+  "frontier_pass_rate": 0.07,
+  "reviewed_at": "2026-10-10"
+ },
+ {
+  "task_id": "T1579",
+  "status": "rejected",
+  "rejection_reason": "too_easy",
+  "reviewer_id": "R4",
+  "frontier_pass_rate": 0.96,
+  "reviewed_at": "2026-11-01"
+ },
+ {
+  "task_id": "T1541",
+  "status": "rejected",
+  "rejection_reason": "too_easy",
+  "reviewer_id": "R1",
+  "frontier_pass_rate": 0.96,
+  "reviewed_at": "2026-10-31"
+ },
+ {
+  "task_id": "T1242",
+  "status": "accepted",
+  "rejection_reason": null,
+  "reviewer_id": "R1",
+  "frontier_pass_rate": 0.28,
+  "reviewed_at": "2026-10-16"
+ },
+ {
+  "task_id": "T1357",
+  "status": "rejected",
+  "rejection_reason": "tests_too_loose",
+  "reviewer_id": "R2",
+  "frontier_pass_rate": 0.85,
+  "reviewed_at": "2026-10-20"
+ },
+ {
+  "task_id": "T1329",
+  "status": "rejected",
+  "rejection_reason": "docker_build_failure",
+  "reviewer_id": "R3",
+  "frontier_pass_rate": 0.75,
+  "reviewed_at": "2026-10-24"
+ },
+ {
+  "task_id": "T1092",
+  "status": "rejected",
+  "rejection_reason": "tests_too_loose",
+  "reviewer_id": "R3",
+  "frontier_pass_rate": 0.75,
+  "reviewed_at": "2026-10-10"
+ },
+ {
+  "task_id": "T1490",
+  "status": "rejected",
+  "rejection_reason": "docker_build_failure",
+  "reviewer_id": "R1",
+  "frontier_pass_rate": 0.39,
+  "reviewed_at": "2026-10-22"
+ },
+ {
+  "task_id": "T1235",
+  "status": "accepted",
+  "rejection_reason": null,
+  "reviewer_id": "R3",
+  "frontier_pass_rate": 0.44,
+  "reviewed_at": "2026-10-19"
+ },
+ {
+  "task_id": "T1131",
+  "status": "rejected",
+  "rejection_reason": "unclear_instructions",
+  "reviewer_id": "R3",
+  "frontier_pass_rate": 0.44,
+  "reviewed_at": "2026-10-12"
+ },
+ {
+  "task_id": "T1414",
+  "status": "rejected",
+  "rejection_reason": "unclear_instructions",
+  "reviewer_id": "R4",
+  "frontier_pass_rate": 0.3,
+  "reviewed_at": "2026-10-22"
+ },
+ {
+  "task_id": "T1443",
+  "status": "accepted",
+  "rejection_reason": null,
+  "reviewer_id": "R1",
+  "frontier_pass_rate": 0.71,
+  "reviewed_at": "2026-10-25"
+ },
+ {
+  "task_id": "T1361",
+  "status": "rejected",
+  "rejection_reason": "tests_too_loose",
+  "reviewer_id": "R4",
+  "frontier_pass_rate": 0.3,
+  "reviewed_at": "2026-10-23"
+ },
+ {
+  "task_id": "T1172",
+  "status": "rejected",
+  "rejection_reason": "too_easy",
+  "reviewer_id": "R2",
+  "frontier_pass_rate": 0.9,
+  "reviewed_at": "2026-10-15"
+ },
+ {
+  "task_id": "T1312",
+  "status": "accepted",
+  "rejection_reason": null,
+  "reviewer_id": "R3",
+  "frontier_pass_rate": 0.31,
+  "reviewed_at": "2026-10-18"
+ },
+ {
+  "task_id": "T1228",
+  "status": "accepted",
+  "rejection_reason": null,
+  "reviewer_id": "R2",
+  "frontier_pass_rate": 0.29,
+  "reviewed_at": "2026-10-17"
+ },
+ {
+  "task_id": "T1667",
+  "status": "accepted",
+  "rejection_reason": null,
+  "reviewer_id": "R3",
+  "frontier_pass_rate": 0.62,
+  "reviewed_at": "2026-10-28"
+ },
+ {
+  "task_id": "T1471",
+  "status": "rejected",
+  "rejection_reason": "docker_build_failure",
+  "reviewer_id": "R4",
+  "frontier_pass_rate": 0.76,
+  "reviewed_at": "2026-10-20"
+ },
+ {
+  "task_id": "T1562",
+  "status": "pending",
+  "rejection_reason": null,
+  "reviewer_id": null,
+  "frontier_pass_rate": null,
+  "reviewed_at": null
+ },
+ {
+  "task_id": "T1324",
+  "status": "rejected",
+  "rejection_reason": "unclear_instructions",
+  "reviewer_id": "R3",
+  "frontier_pass_rate": 0.28,
+  "reviewed_at": "2026-10-26"
+ },
+ {
+  "task_id": "T1209",
+  "status": "rejected",
+  "rejection_reason": "too_easy",
+  "reviewer_id": "R3",
+  "frontier_pass_rate": 0.85,
+  "reviewed_at": "2026-10-18"
+ },
+ {
+  "task_id": "T1223",
+  "status": "rejected",
+  "rejection_reason": "too_easy",
+  "reviewer_id": "R1",
+  "frontier_pass_rate": 0.83,
+  "reviewed_at": "2026-10-14"
+ },
+ {
+  "task_id": "T1663",
+  "status": "accepted",
+  "rejection_reason": null,
+  "reviewer_id": "R2",
+  "frontier_pass_rate": 0.22,
+  "reviewed_at": "2026-10-27"
+ },
+ {
+  "task_id": "T1234",
+  "status": "rejected",
+  "rejection_reason": "tests_too_loose",
+  "reviewer_id": "R1",
+  "frontier_pass_rate": 0.27,
+  "reviewed_at": "2026-10-14"
+ },
+ {
+  "task_id": "T1678",
+  "status": "rejected",
+  "rejection_reason": "docker_build_failure",
+  "reviewer_id": "R4",
+  "frontier_pass_rate": 0.51,
+  "reviewed_at": "2026-11-01"
+ },
+ {
+  "task_id": "T1218",
+  "status": "accepted",
+  "rejection_reason": null,
+  "reviewer_id": "R2",
+  "frontier_pass_rate": 0.42,
+  "reviewed_at": "2026-10-16"
+ },
+ {
+  "task_id": "T1267",
+  "status": "accepted",
+  "rejection_reason": null,
+  "reviewer_id": "R1",
+  "frontier_pass_rate": 0.77,
+  "reviewed_at": "2026-10-15"
+ },
+ {
+  "task_id": "T1641",
+  "status": "accepted",
+  "rejection_reason": null,
+  "reviewer_id": "R1",
+  "frontier_pass_rate": 0.73,
+  "reviewed_at": "2026-10-28"
+ },
+ {
+  "task_id": "T1309",
+  "status": "accepted",
+  "rejection_reason": null,
+  "reviewer_id": "R3",
+  "frontier_pass_rate": 0.74,
+  "reviewed_at": "2026-10-17"
+ },
+ {
+  "task_id": "T1115",
+  "status": "accepted",
+  "rejection_reason": null,
+  "reviewer_id": "R3",
+  "frontier_pass_rate": 0.36,
+  "reviewed_at": "2026-10-08"
+ },
+ {
+  "task_id": "T1224",
+  "status": "accepted",
+  "rejection_reason": null,
+  "reviewer_id": "R1",
+  "frontier_pass_rate": 0.11,
+  "reviewed_at": "2026-10-15"
+ },
+ {
+  "task_id": "T1104",
+  "status": "rejected",
+  "rejection_reason": "tests_too_loose",
+  "reviewer_id": "R2",
+  "frontier_pass_rate": 0.26,
+  "reviewed_at": "2026-10-08"
+ },
+ {
+  "task_id": "T1009",
+  "status": "accepted",
+  "rejection_reason": null,
+  "reviewer_id": "R2",
+  "frontier_pass_rate": 0.77,
+  "reviewed_at": "2026-10-11"
+ },
+ {
+  "task_id": "T1099",
+  "status": "rejected",
+  "rejection_reason": "tests_too_loose",
+  "reviewer_id": "R1",
+  "frontier_pass_rate": 0.66,
+  "reviewed_at": "2026-10-06"
+ },
+ {
+  "task_id": "T1648",
+  "status": "accepted",
+  "rejection_reason": null,
+  "reviewer_id": "R4",
+  "frontier_pass_rate": 0.29,
+  "reviewed_at": "2026-11-01"
+ },
+ {
+  "task_id": "T1359",
+  "status": "rejected",
+  "rejection_reason": "tests_too_loose",
+  "reviewer_id": "R4",
+  "frontier_pass_rate": 0.29,
+  "reviewed_at": "2026-10-22"
+ },
+ {
+  "task_id": "T1206",
+  "status": "rejected",
+  "rejection_reason": "unclear_instructions",
+  "reviewer_id": "R2",
+  "frontier_pass_rate": 0.73,
+  "reviewed_at": "2026-10-15"
+ },
+ {
+  "task_id": "T1066",
+  "status": "accepted",
+  "rejection_reason": null,
+  "reviewer_id": "R3",
+  "frontier_pass_rate": 0.34,
+  "reviewed_at": "2026-10-09"
+ },
+ {
+  "task_id": "T1674",
+  "status": "rejected",
+  "rejection_reason": "tests_too_loose",
+  "reviewer_id": "R1",
+  "frontier_pass_rate": 0.46,
+  "reviewed_at": "2026-10-31"
+ },
+ {
+  "task_id": "T1122",
+  "status": "rejected",
+  "rejection_reason": "tests_too_loose",
+  "reviewer_id": "R1",
+  "frontier_pass_rate": 0.68,
+  "reviewed_at": "2026-10-09"
+ },
+ {
+  "task_id": "T1256",
+  "status": "accepted",
+  "rejection_reason": null,
+  "reviewer_id": "R3",
+  "frontier_pass_rate": 0.39,
+  "reviewed_at": "2026-10-16"
+ },
+ {
+  "task_id": "T1306",
+  "status": "accepted",
+  "rejection_reason": null,
+  "reviewer_id": "R1",
+  "frontier_pass_rate": 0.24,
+  "reviewed_at": "2026-10-15"
+ },
+ {
+  "task_id": "T1216",
+  "status": "accepted",
+  "rejection_reason": null,
+  "reviewer_id": "R1",
+  "frontier_pass_rate": 0.16,
+  "reviewed_at": "2026-10-16"
+ },
+ {
+  "task_id": "T1495",
+  "status": "rejected",
+  "rejection_reason": "docker_build_failure",
+  "reviewer_id": "R3",
+  "frontier_pass_rate": 0.17,
+  "reviewed_at": "2026-10-23"
+ },
+ {
+  "task_id": "T1643",
+  "status": "pending",
+  "rejection_reason": null,
+  "reviewer_id": null,
+  "frontier_pass_rate": null,
+  "reviewed_at": null
+ },
+ {
+  "task_id": "T1625",
+  "status": "rejected",
+  "rejection_reason": "too_easy",
+  "reviewer_id": "R4",
+  "frontier_pass_rate": 0.92,
+  "reviewed_at": "2026-10-27"
+ },
+ {
+  "task_id": "T1245",
+  "status": "rejected",
+  "rejection_reason": "tests_too_loose",
+  "reviewer_id": "R1",
+  "frontier_pass_rate": 0.24,
+  "reviewed_at": "2026-10-16"
+ },
+ {
+  "task_id": "T1589",
+  "status": "accepted",
+  "rejection_reason": null,
+  "reviewer_id": "R3",
+  "frontier_pass_rate": 0.17,
+  "reviewed_at": "2026-10-29"
+ },
+ {
+  "task_id": "T1184",
+  "status": "rejected",
+  "rejection_reason": "duplicate",
+  "reviewer_id": "R2",
+  "frontier_pass_rate": 0.9,
+  "reviewed_at": "2026-10-16"
+ },
+ {
+  "task_id": "T1141",
+  "status": "rejected",
+  "rejection_reason": "too_easy",
+  "reviewer_id": "R1",
+  "frontier_pass_rate": 0.88,
+  "reviewed_at": "2026-10-10"
+ },
+ {
+  "task_id": "T1338",
+  "status": "accepted",
+  "rejection_reason": null,
+  "reviewer_id": "R2",
+  "frontier_pass_rate": 0.64,
+  "reviewed_at": "2026-10-20"
+ },
+ {
+  "task_id": "T1366",
+  "status": "accepted",
+  "rejection_reason": null,
+  "reviewer_id": "R3",
+  "frontier_pass_rate": 0.45,
+  "reviewed_at": "2026-10-23"
+ },
+ {
+  "task_id": "T1639",
+  "status": "pending",
+  "rejection_reason": null,
+  "reviewer_id": null,
+  "frontier_pass_rate": null,
+  "reviewed_at": null
+ },
+ {
+  "task_id": "T1430",
+  "status": "accepted",
+  "rejection_reason": null,
+  "reviewer_id": "R4",
+  "frontier_pass_rate": 0.16,
+  "reviewed_at": "2026-10-26"
+ },
+ {
+  "task_id": "T1102",
+  "status": "rejected",
+  "rejection_reason": "tests_too_loose",
+  "reviewer_id": "R3",
+  "frontier_pass_rate": 0.18,
+  "reviewed_at": "2026-10-08"
+ },
+ {
+  "task_id": "T1100",
+  "status": "rejected",
+  "rejection_reason": "tests_too_loose",
+  "reviewer_id": "R3",
+  "frontier_pass_rate": 0.28,
+  "reviewed_at": "2026-10-09"
+ },
+ {
+  "task_id": "T1709",
+  "status": "rejected",
+  "rejection_reason": "docker_build_failure",
+  "reviewer_id": "R4",
+  "frontier_pass_rate": 0.71,
+  "reviewed_at": "2026-10-29"
+ },
+ {
+  "task_id": "T1630",
+  "status": "accepted",
+  "rejection_reason": null,
+  "reviewer_id": "R2",
+  "frontier_pass_rate": 0.44,
+  "reviewed_at": "2026-10-27"
+ },
+ {
+  "task_id": "T1482",
+  "status": "accepted",
+  "rejection_reason": null,
+  "reviewer_id": "R4",
+  "frontier_pass_rate": 0.18,
+  "reviewed_at": "2026-10-21"
+ },
+ {
+  "task_id": "T1243",
+  "status": "accepted",
+  "rejection_reason": null,
+  "reviewer_id": "R1",
+  "frontier_pass_rate": 0.51,
+  "reviewed_at": "2026-10-15"
+ },
+ {
+  "task_id": "T1045",
+  "status": "accepted",
+  "rejection_reason": null,
+  "reviewer_id": "R2",
+  "frontier_pass_rate": 0.21,
+  "reviewed_at": "2026-10-11"
+ },
+ {
+  "task_id": "T1024",
+  "status": "rejected",
+  "rejection_reason": "tests_too_loose",
+  "reviewer_id": "R2",
+  "frontier_pass_rate": 0.57,
+  "reviewed_at": "2026-10-07"
+ },
+ {
+  "task_id": "T1659",
+  "status": "pending",
+  "rejection_reason": null,
+  "reviewer_id": null,
+  "frontier_pass_rate": null,
+  "reviewed_at": null
+ },
+ {
+  "task_id": "T1048",
+  "status": "rejected",
+  "rejection_reason": "unclear_instructions",
+  "reviewer_id": "R3",
+  "frontier_pass_rate": 0.3,
+  "reviewed_at": "2026-10-09"
+ },
+ {
+  "task_id": "T1340",
+  "status": "rejected",
+  "rejection_reason": "too_easy",
+  "reviewer_id": "R2",
+  "frontier_pass_rate": 0.96,
+  "reviewed_at": "2026-10-23"
+ },
+ {
+  "task_id": "T1622",
+  "status": "accepted",
+  "rejection_reason": null,
+  "reviewer_id": "R3",
+  "frontier_pass_rate": 0.16,
+  "reviewed_at": "2026-11-01"
+ },
+ {
+  "task_id": "T1076",
+  "status": "accepted",
+  "rejection_reason": null,
+  "reviewer_id": "R3",
+  "frontier_pass_rate": 0.72,
+  "reviewed_at": "2026-10-09"
+ },
+ {
+  "task_id": "T1283",
+  "status": "rejected",
+  "rejection_reason": "unclear_instructions",
+  "reviewer_id": "R2",
+  "frontier_pass_rate": 0.78,
+  "reviewed_at": "2026-10-20"
+ },
+ {
+  "task_id": "T1074",
+  "status": "rejected",
+  "rejection_reason": "too_easy",
+  "reviewer_id": "R1",
+  "frontier_pass_rate": 0.89,
+  "reviewed_at": "2026-10-08"
+ },
+ {
+  "task_id": "T1081",
+  "status": "accepted",
+  "rejection_reason": null,
+  "reviewer_id": "R2",
+  "frontier_pass_rate": 0.23,
+  "reviewed_at": "2026-10-10"
+ },
+ {
+  "task_id": "T1551",
+  "status": "accepted",
+  "rejection_reason": null,
+  "reviewer_id": "R3",
+  "frontier_pass_rate": 0.66,
+  "reviewed_at": "2026-10-29"
+ },
+ {
+  "task_id": "T1476",
+  "status": "rejected",
+  "rejection_reason": "unclear_instructions",
+  "reviewer_id": "R3",
+  "frontier_pass_rate": 0.08,
+  "reviewed_at": "2026-10-27"
+ },
+ {
+  "task_id": "T1110",
+  "status": "rejected",
+  "rejection_reason": "tests_too_loose",
+  "reviewer_id": "R3",
+  "frontier_pass_rate": 0.53,
+  "reviewed_at": "2026-10-12"
+ },
+ {
+  "task_id": "T1012",
+  "status": "rejected",
+  "rejection_reason": "docker_build_failure",
+  "reviewer_id": "R1",
+  "frontier_pass_rate": 0.3,
+  "reviewed_at": "2026-10-10"
+ },
+ {
+  "task_id": "T1003",
+  "status": "rejected",
+  "rejection_reason": "too_easy",
+  "reviewer_id": "R3",
+  "frontier_pass_rate": 0.84,
+  "reviewed_at": "2026-10-08"
+ },
+ {
+  "task_id": "T1025",
+  "status": "accepted",
+  "rejection_reason": null,
+  "reviewer_id": "R2",
+  "frontier_pass_rate": 0.42,
+  "reviewed_at": "2026-10-10"
+ },
+ {
+  "task_id": "T1119",
+  "status": "accepted",
+  "rejection_reason": null,
+  "reviewer_id": "R2",
+  "frontier_pass_rate": 0.29,
+  "reviewed_at": "2026-10-10"
+ },
+ {
+  "task_id": "T1156",
+  "status": "accepted",
+  "rejection_reason": null,
+  "reviewer_id": "R1",
+  "frontier_pass_rate": 0.5,
+  "reviewed_at": "2026-10-08"
+ },
+ {
+  "task_id": "T1205",
+  "status": "accepted",
+  "rejection_reason": null,
+  "reviewer_id": "R1",
+  "frontier_pass_rate": 0.41,
+  "reviewed_at": "2026-10-19"
+ },
+ {
+  "task_id": "T1280",
+  "status": "accepted",
+  "rejection_reason": null,
+  "reviewer_id": "R3",
+  "frontier_pass_rate": 0.14,
+  "reviewed_at": "2026-10-14"
+ },
+ {
+  "task_id": "T1060",
+  "status": "rejected",
+  "rejection_reason": "too_easy",
+  "reviewer_id": "R1",
+  "frontier_pass_rate": 0.87,
+  "reviewed_at": "2026-10-10"
+ },
+ {
+  "task_id": "T1629",
+  "status": "rejected",
+  "rejection_reason": "tests_too_loose",
+  "reviewer_id": "R3",
+  "frontier_pass_rate": 0.25,
+  "reviewed_at": "2026-10-28"
+ },
+ {
+  "task_id": "T1071",
+  "status": "accepted",
+  "rejection_reason": null,
+  "reviewer_id": "R3",
+  "frontier_pass_rate": 0.69,
+  "reviewed_at": "2026-10-09"
+ },
+ {
+  "task_id": "T1371",
+  "status": "accepted",
+  "rejection_reason": null,
+  "reviewer_id": "R2",
+  "frontier_pass_rate": 0.59,
+  "reviewed_at": "2026-10-23"
+ },
+ {
+  "task_id": "T1595",
+  "status": "pending",
+  "rejection_reason": null,
+  "reviewer_id": null,
+  "frontier_pass_rate": null,
+  "reviewed_at": null
+ },
+ {
+  "task_id": "T1697",
+  "status": "rejected",
+  "rejection_reason": "docker_build_failure",
+  "reviewer_id": "R2",
+  "frontier_pass_rate": 0.26,
+  "reviewed_at": "2026-11-02"
+ },
+ {
+  "task_id": "T1137",
+  "status": "accepted",
+  "rejection_reason": null,
+  "reviewer_id": "R3",
+  "frontier_pass_rate": 0.18,
+  "reviewed_at": "2026-10-09"
+ },
+ {
+  "task_id": "T1264",
+  "status": "rejected",
+  "rejection_reason": "duplicate",
+  "reviewer_id": "R1",
+  "frontier_pass_rate": 0.15,
+  "reviewed_at": "2026-10-13"
+ },
+ {
+  "task_id": "T1549",
+  "status": "pending",
+  "rejection_reason": null,
+  "reviewer_id": null,
+  "frontier_pass_rate": null,
+  "reviewed_at": null
+ },
+ {
+  "task_id": "T1375",
+  "status": "accepted",
+  "rejection_reason": null,
+  "reviewer_id": "R2",
+  "frontier_pass_rate": 0.56,
+  "reviewed_at": "2026-10-23"
+ },
+ {
+  "task_id": "T1068",
+  "status": "accepted",
+  "rejection_reason": null,
+  "reviewer_id": "R1",
+  "frontier_pass_rate": 0.09,
+  "reviewed_at": "2026-10-08"
+ },
+ {
+  "task_id": "T1220",
+  "status": "accepted",
+  "rejection_reason": null,
+  "reviewer_id": "R2",
+  "frontier_pass_rate": 0.57,
+  "reviewed_at": "2026-10-15"
+ },
+ {
+  "task_id": "T1049",
+  "status": "accepted",
+  "rejection_reason": null,
+  "reviewer_id": "R1",
+  "frontier_pass_rate": 0.77,
+  "reviewed_at": "2026-10-11"
+ },
+ {
+  "task_id": "T1181",
+  "status": "accepted",
+  "rejection_reason": null,
+  "reviewer_id": "R2",
+  "frontier_pass_rate": 0.11,
+  "reviewed_at": "2026-10-17"
+ },
+ {
+  "task_id": "T1635",
+  "status": "pending",
+  "rejection_reason": null,
+  "reviewer_id": null,
+  "frontier_pass_rate": null,
+  "reviewed_at": null
+ },
+ {
+  "task_id": "T1454",
+  "status": "accepted",
+  "rejection_reason": null,
+  "reviewer_id": "R4",
+  "frontier_pass_rate": 0.78,
+  "reviewed_at": "2026-10-23"
+ },
+ {
+  "task_id": "T1620",
+  "status": "rejected",
+  "rejection_reason": "tests_too_loose",
+  "reviewer_id": "R4",
+  "frontier_pass_rate": 0.6,
+  "reviewed_at": "2026-10-29"
+ },
+ {
+  "task_id": "T1019",
+  "status": "accepted",
+  "rejection_reason": null,
+  "reviewer_id": "R1",
+  "frontier_pass_rate": 0.19,
+  "reviewed_at": "2026-10-11"
+ },
+ {
+  "task_id": "T1383",
+  "status": "accepted",
+  "rejection_reason": null,
+  "reviewer_id": "R1",
+  "frontier_pass_rate": 0.31,
+  "reviewed_at": "2026-10-22"
+ },
+ {
+  "task_id": "T1055",
+  "status": "rejected",
+  "rejection_reason": "too_easy",
+  "reviewer_id": "R1",
+  "frontier_pass_rate": 0.84,
+  "reviewed_at": "2026-10-08"
+ },
+ {
+  "task_id": "T1419",
+  "status": "accepted",
+  "rejection_reason": null,
+  "reviewer_id": "R4",
+  "frontier_pass_rate": 0.39,
+  "reviewed_at": "2026-10-22"
+ },
+ {
+  "task_id": "T1560",
+  "status": "pending",
+  "rejection_reason": null,
+  "reviewer_id": null,
+  "frontier_pass_rate": null,
+  "reviewed_at": null
+ },
+ {
+  "task_id": "T1192",
+  "status": "rejected",
+  "rejection_reason": "tests_too_loose",
+  "reviewer_id": "R3",
+  "frontier_pass_rate": 0.39,
+  "reviewed_at": "2026-10-18"
+ },
+ {
+  "task_id": "T1410",
+  "status": "rejected",
+  "rejection_reason": "unclear_instructions",
+  "reviewer_id": "R4",
+  "frontier_pass_rate": 0.47,
+  "reviewed_at": "2026-10-22"
+ },
+ {
+  "task_id": "T1382",
+  "status": "accepted",
+  "rejection_reason": null,
+  "reviewer_id": "R1",
+  "frontier_pass_rate": 0.71,
+  "reviewed_at": "2026-10-24"
+ },
+ {
+  "task_id": "T1436",
+  "status": "accepted",
+  "rejection_reason": null,
+  "reviewer_id": "R1",
+  "frontier_pass_rate": 0.76,
+  "reviewed_at": "2026-10-24"
+ },
+ {
+  "task_id": "T1597",
+  "status": "pending",
+  "rejection_reason": null,
+  "reviewer_id": null,
+  "frontier_pass_rate": null,
+  "reviewed_at": null
+ },
+ {
+  "task_id": "T1042",
+  "status": "accepted",
+  "rejection_reason": null,
+  "reviewer_id": "R2",
+  "frontier_pass_rate": 0.76,
+  "reviewed_at": "2026-10-07"
+ },
+ {
+  "task_id": "T1088",
+  "status": "rejected",
+  "rejection_reason": "too_easy",
+  "reviewer_id": "R3",
+  "frontier_pass_rate": 0.85,
+  "reviewed_at": "2026-10-12"
+ },
+ {
+  "task_id": "T1636",
+  "status": "accepted",
+  "rejection_reason": null,
+  "reviewer_id": "R4",
+  "frontier_pass_rate": 0.48,
+  "reviewed_at": "2026-10-30"
+ },
+ {
+  "task_id": "T1616",
+  "status": "rejected",
+  "rejection_reason": "tests_too_loose",
+  "reviewer_id": "R2",
+  "frontier_pass_rate": 0.1,
+  "reviewed_at": "2026-11-01"
+ },
+ {
+  "task_id": "T1161",
+  "status": "accepted",
+  "rejection_reason": null,
+  "reviewer_id": "R2",
+  "frontier_pass_rate": 0.78,
+  "reviewed_at": "2026-10-18"
+ },
+ {
+  "task_id": "T1318",
+  "status": "accepted",
+  "rejection_reason": null,
+  "reviewer_id": "R1",
+  "frontier_pass_rate": 0.57,
+  "reviewed_at": "2026-10-17"
+ },
+ {
+  "task_id": "T1308",
+  "status": "accepted",
+  "rejection_reason": null,
+  "reviewer_id": "R3",
+  "frontier_pass_rate": 0.29,
+  "reviewed_at": "2026-10-17"
+ },
+ {
+  "task_id": "T1201",
+  "status": "rejected",
+  "rejection_reason": "too_easy",
+  "reviewer_id": "R3",
+  "frontier_pass_rate": 0.97,
+  "reviewed_at": "2026-10-15"
+ },
+ {
+  "task_id": "T1303",
+  "status": "accepted",
+  "rejection_reason": null,
+  "reviewer_id": "R2",
+  "frontier_pass_rate": 0.27,
+  "reviewed_at": "2026-10-17"
+ },
+ {
+  "task_id": "T1323",
+  "status": "accepted",
+  "rejection_reason": null,
+  "reviewer_id": "R1",
+  "frontier_pass_rate": 0.38,
+  "reviewed_at": "2026-10-20"
+ },
+ {
+  "task_id": "T1411",
+  "status": "accepted",
+  "rejection_reason": null,
+  "reviewer_id": "R4",
+  "frontier_pass_rate": 0.24,
+  "reviewed_at": "2026-10-25"
+ },
+ {
+  "task_id": "T1394",
+  "status": "rejected",
+  "rejection_reason": "tests_too_loose",
+  "reviewer_id": "R1",
+  "frontier_pass_rate": 0.39,
+  "reviewed_at": "2026-10-22"
+ },
+ {
+  "task_id": "T1479",
+  "status": "accepted",
+  "rejection_reason": null,
+  "reviewer_id": "R1",
+  "frontier_pass_rate": 0.31,
+  "reviewed_at": "2026-10-22"
+ },
+ {
+  "task_id": "T1506",
+  "status": "rejected",
+  "rejection_reason": "duplicate",
+  "reviewer_id": "R2",
+  "frontier_pass_rate": 0.31,
+  "reviewed_at": "2026-10-21"
+ },
+ {
+  "task_id": "T1162",
+  "status": "accepted",
+  "rejection_reason": null,
+  "reviewer_id": "R3",
+  "frontier_pass_rate": 0.55,
+  "reviewed_at": "2026-10-15"
+ },
+ {
+  "task_id": "T1169",
+  "status": "rejected",
+  "rejection_reason": "too_easy",
+  "reviewer_id": "R2",
+  "frontier_pass_rate": 0.91,
+  "reviewed_at": "2026-10-14"
+ },
+ {
+  "task_id": "T1692",
+  "status": "pending",
+  "rejection_reason": null,
+  "reviewer_id": null,
+  "frontier_pass_rate": null,
+  "reviewed_at": null
+ },
+ {
+  "task_id": "T1499",
+  "status": "rejected",
+  "rejection_reason": "docker_build_failure",
+  "reviewer_id": "R2",
+  "frontier_pass_rate": 0.64,
+  "reviewed_at": "2026-10-27"
+ },
+ {
+  "task_id": "T1415",
+  "status": "accepted",
+  "rejection_reason": null,
+  "reviewer_id": "R2",
+  "frontier_pass_rate": 0.61,
+  "reviewed_at": "2026-10-21"
+ },
+ {
+  "task_id": "T1672",
+  "status": "pending",
+  "rejection_reason": null,
+  "reviewer_id": null,
+  "frontier_pass_rate": null,
+  "reviewed_at": null
+ },
+ {
+  "task_id": "T1512",
+  "status": "rejected",
+  "rejection_reason": "docker_build_failure",
+  "reviewer_id": "R4",
+  "frontier_pass_rate": 0.15,
+  "reviewed_at": "2026-10-23"
+ },
+ {
+  "task_id": "T1285",
+  "status": "accepted",
+  "rejection_reason": null,
+  "reviewer_id": "R2",
+  "frontier_pass_rate": 0.18,
+  "reviewed_at": "2026-10-18"
+ },
+ {
+  "task_id": "T1263",
+  "status": "rejected",
+  "rejection_reason": "tests_too_loose",
+  "reviewer_id": "R3",
+  "frontier_pass_rate": 0.39,
+  "reviewed_at": "2026-10-16"
+ },
+ {
+  "task_id": "T1633",
+  "status": "pending",
+  "rejection_reason": null,
+  "reviewer_id": null,
+  "frontier_pass_rate": null,
+  "reviewed_at": null
+ },
+ {
+  "task_id": "T1262",
+  "status": "rejected",
+  "rejection_reason": "tests_too_loose",
+  "reviewer_id": "R2",
+  "frontier_pass_rate": 0.16,
+  "reviewed_at": "2026-10-15"
+ },
+ {
+  "task_id": "T1170",
+  "status": "accepted",
+  "rejection_reason": null,
+  "reviewer_id": "R1",
+  "frontier_pass_rate": 0.71,
+  "reviewed_at": "2026-10-14"
+ },
+ {
+  "task_id": "T1462",
+  "status": "rejected",
+  "rejection_reason": "unclear_instructions",
+  "reviewer_id": "R3",
+  "frontier_pass_rate": 0.24,
+  "reviewed_at": "2026-10-22"
+ }
+]
