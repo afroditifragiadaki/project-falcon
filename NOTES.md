@@ -45,6 +45,9 @@ update for the lab's Friday sync.
 - **Forecast: ~495 accepted by Nov 13 (range 451–535, base 496) — ~100 short of 600** at current pace.
 
 ## Open questions / assumptions
+- **What's the target difficulty band (frontier pass-rate)?** Heard ~20–40%; UNCONFIRMED. Our QA
+  accepts up to ~0.80, and only 30% of accepted tasks are in 20–40% / 26% are ≥0.60. If the lab
+  enforces 20–40%, real accepted count is far below 331. **Highest-priority question — ask the lab.**
 - Is there a per-language quota, or just 600 total? Assumed **600 total**, but flagged Go.
 - Does the lab re-QA our accepted tasks? If so, the 41 accepted tasks in the 0.70–0.79
   "borderline-easy" band are a re-rejection risk.

@@ -129,6 +129,24 @@ def build_html(m):
                 for k, v in m["by_reviewer"].items()}
     rev_html = _bar_rows(rev_rows, "rev", "accepted")
 
+    # difficulty vs. target band — histogram of accepted tasks' frontier pass-rate
+    ds = m["difficulty_to_spec"]
+    lo, hi = ds["target_band"]
+    dh = ds["histogram_0.1"]
+    dmax = max(dh.values()) or 1
+    diff_html = ""
+    for k in sorted(dh, key=float):
+        kf = float(k)
+        n = dh[k]
+        ht = n / dmax * 100
+        inband = lo <= kf < hi
+        seg = "t-good" if inband else ("t-reason" if kf >= 0.60 else "t-pending")
+        diff_html += f"""
+        <div class="wkcol">
+          <div class="wkbar"><div class="seg {seg}" style="height:{ht}%" title="{n} tasks at {k}-{round(kf+0.1,1)}"></div></div>
+          <div class="wklab">{k}<br><span class="muted">{n}</span></div>
+        </div>"""
+
     # worst experts (by actor) — the real concentration of the problem
     ec = m["expert_concentration"]
     we = ec["worst_experts"]
@@ -310,6 +328,20 @@ def build_html(m):
       <h2>Reviewer acceptance spread</h2>
       <p class="cap">R3 accepts {m['by_reviewer']['R3']['acc_rate']:.0%} vs R4 {m['by_reviewer']['R4']['acc_rate']:.0%} — worth a calibration check (may be task mix).</p>
       {rev_html}
+    </div>
+
+    <div class="card full">
+      <h2>Are accepted tasks hard enough? ⚠️ spec to confirm</h2>
+      <p class="cap">Accepted tasks by frontier pass-rate. If the target band is <b>{lo:.0%}–{hi:.0%}</b> (industry
+         heuristic — <b>unconfirmed with the lab</b>), only <b>{ds['in_band']}/{ds['n_accepted_with_fpr']} = {ds['in_band_share']:.0%}</b>
+         of our accepted tasks are in spec; <b>{ds['above_0.60']} ({ds['above_0.60_share']:.0%})</b> are above 0.60 and may be
+         too easy. Our QA's own "too easy" line sits at ~0.80, so the easy tail (orange) was accepted. Green = in band, orange = likely too easy, grey = harder than band.</p>
+      <div class="wkrow">{diff_html}</div>
+      <div class="legend">
+        <span><i class="t-good"></i>in {lo:.0%}–{hi:.0%} band</span>
+        <span><i class="t-reason"></i>≥0.60 (easy?)</span>
+        <span><i class="t-pending"></i>below / above band</span>
+      </div>
     </div>
 
     <div class="card full">

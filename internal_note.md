@@ -2,6 +2,8 @@
 
 **TL;DR: we're off track for 600 by Nov 13.** Honest forecast ~495 accepted
 (~17% short). The binding constraint is **QA review throughput**, not expert supply.
+**One thing to resolve before Friday:** if the lab's difficulty spec is ~20–40% frontier
+pass-rate, only ~30% of our accepted tasks qualify — a bigger risk than the count itself.
 Below is where we stand, why, and what I'd do this week.
 
 - **Where we stand:** **331 accepted / 600 (55%)**, 274 rejected, **113 pending (unreviewed)**.
@@ -51,19 +53,28 @@ Below is where we stand, why, and what I'd do this week.
   weaker lens here: features 41% / refactors 50% vs dependency_upgrades 68%, but the people cut
   above explains far more of the variance.)
 
-- **A quality caveat to watch:** 41 accepted tasks sit in the 0.70–0.79 frontier-pass band
-  (borderline-easy; the "too easy" rejection line is ~0.80). They're inside our current bar,
-  but if the lab re-QAs on their side, that's the band most at risk of re-rejection.
+- **⚠️ Possible difficulty-spec mismatch — our biggest hidden risk.** A good RL task needs a
+  frontier pass-rate in a target band (industry heuristic ~**20–40%**: hard enough to leave a
+  learning gradient, not so hard the reward is too sparse). **Our QA has been accepting up to
+  ~0.80** (the lowest fpr among `too_easy` rejections is 0.82), and **never rejects for being too
+  easy below that or too hard at all.** Result: only **98 of 331 accepted tasks (30%) fall in
+  20–40%**, and **87 (26%) are above 0.60** — likely too easy under a strict spec. If the lab
+  applies a 20–40% bar on their side, a large slice of our "accepted" count is at risk of
+  re-rejection, so true progress may be well below 331. **This could matter more than throughput.**
+  *I have not confirmed the target band — see open questions. Evidence: `difficulty_to_spec`.*
 
 - **What I'd do this week (in priority order):**
   1. **Stand up a pre-submission CI gate** — `docker build` + run the reference solution against
      the hidden tests + frontier pass-rate check (flag ≥0.80) + duplicate check. Bounces ~49% of
      today's rejection causes before they reach a reviewer, freeing ~22% of QA capacity (the
      bottleneck), and fixes the Go `docker_build_failure` problem as a side effect.
-  2. **Triage the 113 pending now** — clearing the backlog at ~55% yields ~62 accepts immediately.
-  3. **Coach E19 and E07 directly** on tightening tests (a 30-min session + 2 exemplars). Lifting
+  2. **Confirm the difficulty spec with the lab (today).** If it's ~20–40% pass-rate, re-score the
+     331 accepted against it, re-tune the QA bar, and stop shipping ≥0.60 tasks — this could reset
+     our real number and must not wait until Friday.
+  3. **Triage the 113 pending now** — clearing the backlog at ~55% yields ~62 accepts immediately.
+  4. **Coach E19 and E07 directly** on tightening tests (a 30-min session + 2 exemplars). Lifting
      these two toward the ~55% average reclaims ~35–40 tasks — more than any blanket memo.
-  4. **Run a reviewer calibration sync** (R3 68% vs R4 32%) and ship a "tests tight + hard enough"
+  5. **Run a reviewer calibration sync** (R3 68% vs R4 32%) and ship a "tests tight + hard enough"
      checklist to everyone to stop the loose-tests bleed the gate can't fully catch.
 
 - **Forecast:** at current pace **~495 accepted by Nov 13** — base case 496, range **451
@@ -71,7 +82,9 @@ Below is where we stand, why, and what I'd do this week.
   unless QA throughput roughly doubles and holds. Recommend we go into Friday's sync with a
   realistic number and a concrete recovery plan rather than a promise we can't keep.
 
-*Assumptions: goal is 600 total (no per-language quota); ~2 weeks remain (W5 + W6 to Fri Nov 13).
+*Assumptions / open questions: **the 20–40% difficulty band is unconfirmed — confirm with the lab
+first** (it drives the quality risk above); goal is 600 total (no per-language quota); ~2 weeks
+remain (W5 + W6 to Fri Nov 13).
 This is a point-in-time snapshot through **end of week 4 (Nov 1)**: 21 tasks the export shows as
 reviewed on Nov 2–3 are counted as still pending as of the snapshot, and 2 QA rows with no
 submission (T9001/T9002) are excluded as synthetic. Rebuild all numbers: `python3 metrics.py`.*

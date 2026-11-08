@@ -20,7 +20,12 @@ WEEK1_MON = dt.date(2026, 10, 5)     # project week 1 starts here
 # reproducible and identical across every deliverable. Override for a later cut with
 #   python3 metrics.py 2026-11-09
 AS_OF = dt.date(2026, 11, 2)         # end of week 4 (the brief's reporting date)
-TOO_EASY_LINE = 0.80                 # inferred from too_easy rejections (min fpr 0.82)
+TOO_EASY_LINE = 0.80                 # OBSERVED QA bar: lowest fpr among too_easy rejections is 0.82
+# Hypothesised target difficulty band for a good RL task (frontier pass-rate).
+# ** UNCONFIRMED — must verify with the lab. ** Industry heuristic is ~0.20–0.40: hard
+# enough to leave an RL gradient, not so hard the reward is too sparse to learn from.
+# Our QA has been accepting up to ~0.80, so this is the gap to check.
+TARGET_BAND = (0.20, 0.40)
 
 
 def parse_args(argv):
@@ -263,6 +268,25 @@ def compute(experts, subs, qa_list, clean):
     acc_fpr = [s["fpr"] for s in subs if s["status"] == "accepted" and s["fpr"] is not None]
     borderline_easy = sum(1 for x in acc_fpr if 0.70 <= x < TOO_EASY_LINE)
 
+    # Difficulty vs. the (hypothesised) target band — are accepted tasks actually hard enough?
+    lo, hi = TARGET_BAND
+    nfpr = len(acc_fpr)
+    hist = Counter(min(int(x * 10), 9) for x in acc_fpr)   # 0.0,0.1,...,0.9 buckets
+    difficulty_to_spec = {
+        "target_band": [lo, hi],
+        "band_is_confirmed": False,            # flip to True once the lab confirms the spec
+        "qa_too_easy_line_observed": TOO_EASY_LINE,
+        "n_accepted_with_fpr": nfpr,
+        "in_band": sum(1 for x in acc_fpr if lo <= x < hi),
+        "below_band": sum(1 for x in acc_fpr if x < lo),
+        "above_band": sum(1 for x in acc_fpr if x >= hi),
+        "above_0.60": sum(1 for x in acc_fpr if x >= 0.60),
+        "in_band_share": round(sum(1 for x in acc_fpr if lo <= x < hi) / nfpr, 4) if nfpr else None,
+        "above_0.60_share": round(sum(1 for x in acc_fpr if x >= 0.60) / nfpr, 4) if nfpr else None,
+        "median": round(statistics.median(acc_fpr), 3) if nfpr else None,
+        "histogram_0.1": {round(k * 0.1, 1): hist.get(k, 0) for k in range(10)},
+    }
+
     # capacity
     cap_hrs = sum(int(e["hours_per_week"]) for e in experts)
     hrs = [s["hours_spent"] for s in subs if s["hours_spent"] is not None]
@@ -335,6 +359,7 @@ def compute(experts, subs, qa_list, clean):
             "too_easy_line": TOO_EASY_LINE,
             "accepted_borderline_easy_0.70_0.79": borderline_easy,
         },
+        "difficulty_to_spec": difficulty_to_spec,
         "capacity": {
             "expert_hours_per_week": cap_hrs,
             "median_hours_per_task": med_hr,

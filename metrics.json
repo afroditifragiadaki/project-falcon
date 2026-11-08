@@ -740,6 +740,34 @@
     "too_easy_line": 0.8,
     "accepted_borderline_easy_0.70_0.79": 41
   },
+  "difficulty_to_spec": {
+    "target_band": [
+      0.2,
+      0.4
+    ],
+    "band_is_confirmed": false,
+    "qa_too_easy_line_observed": 0.8,
+    "n_accepted_with_fpr": 331,
+    "in_band": 98,
+    "below_band": 54,
+    "above_band": 179,
+    "above_0.60": 87,
+    "in_band_share": 0.2961,
+    "above_0.60_share": 0.2628,
+    "median": 0.41,
+    "histogram_0.1": {
+      "0.0": 8,
+      "0.1": 46,
+      "0.2": 54,
+      "0.3": 44,
+      "0.4": 49,
+      "0.5": 43,
+      "0.6": 46,
+      "0.7": 41,
+      "0.8": 0,
+      "0.9": 0
+    }
+  },
   "capacity": {
     "expert_hours_per_week": 772,
     "median_hours_per_task": 3.8,
