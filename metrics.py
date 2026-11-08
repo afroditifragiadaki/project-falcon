@@ -30,6 +30,19 @@ def parse_args(argv):
         AS_OF = dt.date.fromisoformat(argv[1])
 
 
+def snapshot():
+    """Return (as_of_week, cutoff_date).
+
+    A status report is a point-in-time artifact: it reflects everything through the
+    end of the last fully-completed project week as of AS_OF, and *nothing after*.
+    For AS_OF = Mon Nov 2 the last complete week is week 4, which ends Sun Nov 1, so
+    the cutoff is Nov 1 — week-5 submissions/reviews in the export are excluded.
+    """
+    as_of_week = week_of((AS_OF - dt.timedelta(days=1)).isoformat())
+    cutoff = WEEK1_MON + dt.timedelta(days=as_of_week * 7 - 1)
+    return as_of_week, cutoff
+
+
 def week_of(d: str):
     if not d:
         return None
@@ -42,13 +55,19 @@ def load():
     expert_ids = {e["expert_id"].upper() for e in experts}
 
     raw = list(csv.DictReader(open(DATA / "submissions.csv")))
+    _, cutoff = snapshot()
+    cutoff_iso = cutoff.isoformat()
+
     seen, subs = set(), []
-    dup = 0
+    dup = subs_after_cutoff = 0
     for s in raw:
         s["expert_id"] = s["expert_id"].strip().upper()   # fix mixed-case ids
         tid = s["task_id"]
         if tid in seen:                                    # drop duplicate task rows
             dup += 1
+            continue
+        if s["submitted_at"] > cutoff_iso:                 # not yet submitted at snapshot
+            subs_after_cutoff += 1
             continue
         seen.add(tid)
         try:
@@ -61,12 +80,29 @@ def load():
     qa_list = json.load(open(DATA / "qa_results.json"))
     qa = {r["task_id"]: r for r in qa_list}
 
+    reviews_after_cutoff = 0
     for s in subs:                                         # join QA onto submissions
         r = qa.get(s["task_id"], {})
-        s["status"] = r.get("status", "no_qa")
-        s["fpr"] = r.get("frontier_pass_rate")
-        s["reason"] = r.get("rejection_reason")
-        s["reviewer"] = r.get("reviewer_id")
+        rdate = r.get("reviewed_at")
+        if rdate and rdate > cutoff_iso:
+            # Reviewed only after the snapshot → as of the report it is still pending.
+            reviews_after_cutoff += 1
+            s["status"] = "pending"
+            s["fpr"] = s["reason"] = s["reviewer"] = s["reviewed_at"] = None
+        else:
+            s["status"] = r.get("status", "no_qa")
+            s["fpr"] = r.get("frontier_pass_rate")
+            s["reason"] = r.get("rejection_reason")
+            s["reviewer"] = r.get("reviewer_id")
+            s["reviewed_at"] = rdate
+
+    # Effective QA view for throughput/reviewer stats: only decisions made by the
+    # cutoff, and only for tasks that actually exist in the submission set (drops
+    # the two synthetic orphan rows T9001/T9002), so every view agrees with the headline.
+    sub_ids = {s["task_id"] for s in subs}
+    qa_eff = [r for r in qa_list
+              if r["task_id"] in sub_ids
+              and not (r.get("reviewed_at") and r["reviewed_at"] > cutoff_iso)]
 
     clean = {
         "dup_submission_rows_dropped": dup,
@@ -76,8 +112,13 @@ def load():
         "submissions_without_qa": sum(1 for s in subs if s["status"] == "no_qa"),
         "expert_ids_not_in_roster": sorted(
             {s["expert_id"] for s in subs} - expert_ids),
+        "cutoff_date": cutoff_iso,
+        "submissions_after_cutoff_excluded": subs_after_cutoff,
+        "reviews_after_cutoff_deferred_to_pending": reviews_after_cutoff,
+        "orphan_qa_rows_excluded": sorted(
+            {r["task_id"] for r in qa_list} - sub_ids),
     }
-    return experts, subs, qa_list, clean
+    return experts, subs, qa_eff, clean
 
 
 # ---------------------------------------------------------------- metrics

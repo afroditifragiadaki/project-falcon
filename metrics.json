@@ -1,17 +1,17 @@
 {
   "as_of": "2026-11-02",
   "as_of_week": 4,
-  "data_through": "2026-11-03",
+  "data_through": "2026-11-01",
   "weeks_left": 2,
   "goal": 600,
   "due": "2026-11-13",
   "headline": {
-    "accepted": 343,
-    "rejected": 283,
-    "pending": 92,
-    "decided": 626,
-    "acc_rate": 0.548,
-    "pct_to_goal": 0.572
+    "accepted": 331,
+    "rejected": 274,
+    "pending": 113,
+    "decided": 605,
+    "acc_rate": 0.547,
+    "pct_to_goal": 0.552
   },
   "weekly_by_submission": [
     {
@@ -38,104 +38,102 @@
     {
       "week": 4,
       "submitted": 206,
-      "accepted": 62,
-      "rejected": 64,
-      "pending": 80
+      "accepted": 50,
+      "rejected": 55,
+      "pending": 101
     }
   ],
   "accepted_by_review_week": {
     "1": 79,
     "2": 90,
-    "3": 103,
-    "4": 60,
-    "5": 12
+    "3": 102,
+    "4": 60
   },
   "decided_by_review_week": {
     "1": 129,
     "2": 162,
-    "3": 186,
-    "4": 130,
-    "5": 21
+    "3": 185,
+    "4": 129
   },
   "by_language": {
     "Python": {
-      "accepted": 203,
-      "rejected": 130,
-      "pending": 46,
-      "acc_rate": 0.61
+      "accepted": 196,
+      "rejected": 126,
+      "pending": 57,
+      "acc_rate": 0.609
     },
     "Go": {
-      "accepted": 16,
-      "rejected": 42,
-      "pending": 13,
-      "acc_rate": 0.276
+      "accepted": 13,
+      "rejected": 38,
+      "pending": 20,
+      "acc_rate": 0.255
     },
     "TypeScript": {
-      "accepted": 124,
-      "rejected": 111,
-      "pending": 33,
-      "acc_rate": 0.528
+      "accepted": 122,
+      "rejected": 110,
+      "pending": 36,
+      "acc_rate": 0.526
     }
   },
   "by_category": {
     "dependency_upgrade": {
-      "accepted": 83,
-      "rejected": 39,
-      "pending": 14,
-      "acc_rate": 0.68
+      "accepted": 79,
+      "rejected": 38,
+      "pending": 19,
+      "acc_rate": 0.675
     },
     "refactor": {
-      "accepted": 53,
-      "rejected": 55,
-      "pending": 16,
-      "acc_rate": 0.491
+      "accepted": 52,
+      "rejected": 52,
+      "pending": 20,
+      "acc_rate": 0.5
     },
     "bug_fix": {
-      "accepted": 142,
-      "rejected": 102,
-      "pending": 35,
-      "acc_rate": 0.582
+      "accepted": 141,
+      "rejected": 100,
+      "pending": 38,
+      "acc_rate": 0.585
     },
     "feature": {
-      "accepted": 65,
-      "rejected": 87,
-      "pending": 27,
-      "acc_rate": 0.428
+      "accepted": 59,
+      "rejected": 84,
+      "pending": 36,
+      "acc_rate": 0.413
     }
   },
   "by_reviewer": {
     "R1": {
-      "accepted": 105,
-      "decided": 184,
-      "acc_rate": 0.571
+      "accepted": 100,
+      "decided": 178,
+      "acc_rate": 0.562
     },
     "R2": {
-      "accepted": 87,
-      "decided": 162,
-      "acc_rate": 0.537
+      "accepted": 84,
+      "decided": 157,
+      "acc_rate": 0.535
     },
     "R3": {
-      "accepted": 115,
-      "decided": 170,
-      "acc_rate": 0.676
+      "accepted": 114,
+      "decided": 168,
+      "acc_rate": 0.679
     },
     "R4": {
-      "accepted": 37,
-      "decided": 112,
-      "acc_rate": 0.33
+      "accepted": 33,
+      "decided": 102,
+      "acc_rate": 0.324
     }
   },
   "rejection_reasons": {
-    "tests_too_loose": 105,
-    "too_easy": 77,
-    "docker_build_failure": 51,
-    "unclear_instructions": 37,
-    "duplicate": 13
+    "tests_too_loose": 104,
+    "too_easy": 75,
+    "docker_build_failure": 47,
+    "unclear_instructions": 36,
+    "duplicate": 12
   },
   "quality": {
     "accepted_fpr_median": 0.41,
     "too_easy_line": 0.8,
-    "accepted_borderline_easy_0.70_0.79": 42
+    "accepted_borderline_easy_0.70_0.79": 41
   },
   "capacity": {
     "expert_hours_per_week": 772,
@@ -144,22 +142,22 @@
     "n_experts": 40
   },
   "forecast": {
-    "accepted_now": 343,
-    "gap_to_goal": 257,
+    "accepted_now": 331,
+    "gap_to_goal": 269,
     "weeks_left": 2,
     "past_due": false,
-    "needed_accepts_per_week": 128.5,
-    "needed_decided_per_week": 234.5,
+    "needed_accepts_per_week": 134.5,
+    "needed_decided_per_week": 245.8,
     "pace_basis_weeks": [
       1,
       2,
       3,
       4
     ],
-    "pessimistic": 463,
-    "base": 509,
-    "optimistic": 549,
-    "peak_decided_week": 186
+    "pessimistic": 451,
+    "base": 496,
+    "optimistic": 535,
+    "peak_decided_week": 185
   },
   "data_quality": {
     "dup_submission_rows_dropped": 4,
@@ -167,6 +165,13 @@
     "empty_hours_rows": 6,
     "unique_submissions": 718,
     "submissions_without_qa": 0,
-    "expert_ids_not_in_roster": []
+    "expert_ids_not_in_roster": [],
+    "cutoff_date": "2026-11-01",
+    "submissions_after_cutoff_excluded": 0,
+    "reviews_after_cutoff_deferred_to_pending": 21,
+    "orphan_qa_rows_excluded": [
+      "T9001",
+      "T9002"
+    ]
   }
 }
