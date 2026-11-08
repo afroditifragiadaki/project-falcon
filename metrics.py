@@ -176,6 +176,62 @@ def compute(experts, subs, qa_list, clean):
         by_reviewer[rv] = {"accepted": c["accepted"], "decided": dec,
                            "acc_rate": round(c["accepted"] / dec, 3)}
 
+    # ---- slice by ACTOR: per-expert (problems usually concentrate in a few people) ----
+    emeta = {e["expert_id"]: e for e in experts}
+    pe = defaultdict(Counter)
+    pe_reason = defaultdict(Counter)
+    for s in subs:
+        pe[s["expert_id"]][s["status"]] += 1
+        if s["status"] == "rejected" and s["reason"]:
+            pe_reason[s["expert_id"]][s["reason"]] += 1
+    by_expert = {}
+    for eid, c in pe.items():
+        dec = c["accepted"] + c["rejected"]
+        top = pe_reason[eid].most_common(1)
+        m_ = emeta.get(eid, {})
+        by_expert[eid] = {
+            "language": m_.get("primary_language"),
+            "join_week": int(m_["join_week"]) if m_.get("join_week") else None,
+            "submitted": sum(c.values()),
+            "accepted": c["accepted"], "rejected": c["rejected"], "pending": c["pending"],
+            "acc_rate": round(c["accepted"] / dec, 3) if dec else None,
+            "top_reason": (top[0][0] if top else None),
+            "top_reason_n": (top[0][1] if top else 0),
+        }
+
+    # rejection concentration (Pareto): how few experts own most of the rejections
+    total_rej = sum(c["rejected"] for c in pe.values())
+    rej_sorted = sorted(((eid, c["rejected"]) for eid, c in pe.items()),
+                        key=lambda x: -x[1])
+
+    def share(n):
+        # keep 4 dp so a later :.0% format rounds the true value, not a pre-rounded one
+        return round(sum(v for _, v in rej_sorted[:n]) / total_rej, 4) if total_rej else None
+
+    # worst high-volume experts (enough decided to be a real signal, not small-sample noise)
+    worst = sorted(
+        [(eid, d) for eid, d in by_expert.items()
+         if (d["accepted"] + d["rejected"]) >= 5 and d["acc_rate"] is not None],
+        key=lambda x: (x[1]["acc_rate"], -x[1]["rejected"]))[:8]
+    expert_concentration = {
+        "n_experts_with_submissions": len(by_expert),
+        "total_rejections": total_rej,
+        "top3_rejection_share": share(3),
+        "top5_rejection_share": share(5),
+        "top10_rejection_share": share(10),
+        "top_rejectors": [
+            {"expert": eid, "rejections": n, "language": by_expert[eid]["language"],
+             "acc_rate": by_expert[eid]["acc_rate"],
+             "top_reason": by_expert[eid]["top_reason"],
+             "top_reason_n": by_expert[eid]["top_reason_n"]}
+            for eid, n in rej_sorted[:5]],
+        "worst_experts": [
+            {"expert": eid, **{k: d[k] for k in
+             ("language", "join_week", "submitted", "accepted", "rejected",
+              "pending", "acc_rate", "top_reason", "top_reason_n")}}
+            for eid, d in worst],
+    }
+
     rejection_reasons = dict(Counter(
         s["reason"] for s in subs if s["status"] == "rejected" and s["reason"]))
 
@@ -245,6 +301,8 @@ def compute(experts, subs, qa_list, clean):
         "by_language": by_language,
         "by_category": by_category,
         "by_reviewer": dict(sorted(by_reviewer.items())),
+        "by_expert": dict(sorted(by_expert.items())),
+        "expert_concentration": expert_concentration,
         "rejection_reasons": dict(sorted(rejection_reasons.items(),
                                          key=lambda x: -x[1])),
         "quality": {

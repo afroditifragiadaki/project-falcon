@@ -125,6 +125,32 @@ def build_html(m):
                 for k, v in m["by_reviewer"].items()}
     rev_html = _bar_rows(rev_rows, "rev", "accepted")
 
+    # worst experts (by actor) — the real concentration of the problem
+    ec = m["expert_concentration"]
+    we = ec["worst_experts"]
+    wemax = max(d["submitted"] for d in we) or 1
+    exp_html = ""
+    for d in we:
+        dec = d["accepted"] + d["rejected"]
+        rate = d["acc_rate"] or 0
+        aw = d["accepted"] / wemax * 100
+        rw = d["rejected"] / wemax * 100
+        pw = d["pending"] / wemax * 100
+        reason = (d["top_reason"] or "").replace("_", " ")
+        exp_html += f"""
+        <div class="erow">
+          <div class="elabel">{d['expert']}<span class="muted"> · {d['language']} · W{d['join_week']}</span></div>
+          <div class="ebar">
+            <div class="seg t-good" style="width:{aw}%" title="accepted {d['accepted']}"></div>
+            <div class="seg t-critical" style="width:{rw}%" title="rejected {d['rejected']}"></div>
+            <div class="seg t-pending" style="width:{pw}%" title="pending {d['pending']}"></div>
+          </div>
+          <div class="eval">{rate:.0%}<span class="muted"> · {d['rejected']}✗ mostly {reason} ({d['top_reason_n']})</span></div>
+        </div>"""
+    top2 = ec["top_rejectors"][:2]
+    top2_rej = sum(t["rejections"] for t in top2)
+    top2_txt = " + ".join(t["expert"] for t in top2)
+
     return f"""<!doctype html>
 <html lang="en">
 <head>
@@ -193,6 +219,12 @@ def build_html(m):
   .seg {{ width:100%; }} .seg+.seg {{ border-top:2px solid var(--surface); }}
   .faint {{ opacity:.4; }}
   .wklab {{ font-size:12px; text-align:center; margin-top:6px; color:var(--text-2); }}
+  .erow {{ display:grid; grid-template-columns:150px 1fr; gap:4px 10px; margin:10px 0; font-size:13px; }}
+  .elabel {{ grid-column:1; align-self:center; font-weight:600; }}
+  .ebar {{ grid-column:2; align-self:center; display:flex; height:13px; border-radius:5px; overflow:hidden;
+    background:color-mix(in srgb,var(--muted) 15%,transparent); }}
+  .ebar .seg {{ height:100%; }} .ebar .seg+.seg {{ border-left:2px solid var(--surface); }}
+  .eval {{ grid-column:2; font-size:12px; color:var(--text-2); font-variant-numeric:tabular-nums; }}
   ul.take {{ margin:4px 0 0; padding-left:18px; }} ul.take li {{ margin:6px 0; font-size:13px; color:var(--text-2); }}
   ul.take b {{ color:var(--text); }}
   @media (max-width:720px) {{ .grid{{grid-template-columns:repeat(2,1fr);}} .cards{{grid-template-columns:1fr;}}
@@ -267,6 +299,15 @@ def build_html(m):
       <h2>Reviewer acceptance spread</h2>
       <p class="cap">R3 accepts {m['by_reviewer']['R3']['acc_rate']:.0%} vs R4 {m['by_reviewer']['R4']['acc_rate']:.0%} — worth a calibration check (may be task mix).</p>
       {rev_html}
+    </div>
+
+    <div class="card full">
+      <h2>Where the problem concentrates — by expert</h2>
+      <p class="cap">Rejections cluster in a few people: the top 3 experts own <b>{ec['top3_rejection_share']:.0%}</b> of
+         all rejections, the top 10 own <b>{ec['top10_rejection_share']:.0%}</b>. <b>{top2_txt}</b> alone account for
+         <b>{top2_rej}</b> rejections — almost all <i>tests&nbsp;too&nbsp;loose</i>. The Go cohort (joined W3) fails
+         mostly on <i>docker&nbsp;build&nbsp;failure</i> — an environment problem, not skill. Bars = accepted / rejected / pending.</p>
+      {exp_html}
     </div>
 
     <div class="card full">

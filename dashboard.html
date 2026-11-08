@@ -66,6 +66,12 @@
   .seg { width:100%; } .seg+.seg { border-top:2px solid var(--surface); }
   .faint { opacity:.4; }
   .wklab { font-size:12px; text-align:center; margin-top:6px; color:var(--text-2); }
+  .erow { display:grid; grid-template-columns:150px 1fr; gap:4px 10px; margin:10px 0; font-size:13px; }
+  .elabel { grid-column:1; align-self:center; font-weight:600; }
+  .ebar { grid-column:2; align-self:center; display:flex; height:13px; border-radius:5px; overflow:hidden;
+    background:color-mix(in srgb,var(--muted) 15%,transparent); }
+  .ebar .seg { height:100%; } .ebar .seg+.seg { border-left:2px solid var(--surface); }
+  .eval { grid-column:2; font-size:12px; color:var(--text-2); font-variant-numeric:tabular-nums; }
   ul.take { margin:4px 0 0; padding-left:18px; } ul.take li { margin:6px 0; font-size:13px; color:var(--text-2); }
   ul.take b { color:var(--text); }
   @media (max-width:720px) { .grid{grid-template-columns:repeat(2,1fr);} .cards{grid-template-columns:1fr;}
@@ -267,6 +273,87 @@
           <div class="row-label">R3</div>
           <div class="track"><div class="fill t-good" style="width:1%"></div></div>
           <div class="row-val">68%<span class="muted"> · 168 decided</span></div>
+        </div>
+    </div>
+
+    <div class="card full">
+      <h2>Where the problem concentrates — by expert</h2>
+      <p class="cap">Rejections cluster in a few people: the top 3 experts own <b>29%</b> of
+         all rejections, the top 10 own <b>49%</b>. <b>E19 + E07</b> alone account for
+         <b>69</b> rejections — almost all <i>tests&nbsp;too&nbsp;loose</i>. The Go cohort (joined W3) fails
+         mostly on <i>docker&nbsp;build&nbsp;failure</i> — an environment problem, not skill. Bars = accepted / rejected / pending.</p>
+      
+        <div class="erow">
+          <div class="elabel">E40<span class="muted"> · Go · W3</span></div>
+          <div class="ebar">
+            <div class="seg t-good" style="width:0.0%" title="accepted 0"></div>
+            <div class="seg t-critical" style="width:12.5%" title="rejected 7"></div>
+            <div class="seg t-pending" style="width:1.7857142857142856%" title="pending 1"></div>
+          </div>
+          <div class="eval">0%<span class="muted"> · 7✗ mostly too easy (3)</span></div>
+        </div>
+        <div class="erow">
+          <div class="elabel">E33<span class="muted"> · Go · W3</span></div>
+          <div class="ebar">
+            <div class="seg t-good" style="width:0.0%" title="accepted 0"></div>
+            <div class="seg t-critical" style="width:10.714285714285714%" title="rejected 6"></div>
+            <div class="seg t-pending" style="width:1.7857142857142856%" title="pending 1"></div>
+          </div>
+          <div class="eval">0%<span class="muted"> · 6✗ mostly docker build failure (4)</span></div>
+        </div>
+        <div class="erow">
+          <div class="elabel">E32<span class="muted"> · Go · W3</span></div>
+          <div class="ebar">
+            <div class="seg t-good" style="width:0.0%" title="accepted 0"></div>
+            <div class="seg t-critical" style="width:10.714285714285714%" title="rejected 6"></div>
+            <div class="seg t-pending" style="width:3.571428571428571%" title="pending 2"></div>
+          </div>
+          <div class="eval">0%<span class="muted"> · 6✗ mostly docker build failure (6)</span></div>
+        </div>
+        <div class="erow">
+          <div class="elabel">E19<span class="muted"> · TypeScript · W1</span></div>
+          <div class="ebar">
+            <div class="seg t-good" style="width:17.857142857142858%" title="accepted 10"></div>
+            <div class="seg t-critical" style="width:76.78571428571429%" title="rejected 43"></div>
+            <div class="seg t-pending" style="width:5.357142857142857%" title="pending 3"></div>
+          </div>
+          <div class="eval">19%<span class="muted"> · 43✗ mostly tests too loose (38)</span></div>
+        </div>
+        <div class="erow">
+          <div class="elabel">E07<span class="muted"> · Python · W1</span></div>
+          <div class="ebar">
+            <div class="seg t-good" style="width:23.214285714285715%" title="accepted 13"></div>
+            <div class="seg t-critical" style="width:46.42857142857143%" title="rejected 26"></div>
+            <div class="seg t-pending" style="width:17.857142857142858%" title="pending 10"></div>
+          </div>
+          <div class="eval">33%<span class="muted"> · 26✗ mostly tests too loose (24)</span></div>
+        </div>
+        <div class="erow">
+          <div class="elabel">E37<span class="muted"> · Go · W3</span></div>
+          <div class="ebar">
+            <div class="seg t-good" style="width:3.571428571428571%" title="accepted 2"></div>
+            <div class="seg t-critical" style="width:5.357142857142857%" title="rejected 3"></div>
+            <div class="seg t-pending" style="width:5.357142857142857%" title="pending 3"></div>
+          </div>
+          <div class="eval">40%<span class="muted"> · 3✗ mostly docker build failure (3)</span></div>
+        </div>
+        <div class="erow">
+          <div class="elabel">E39<span class="muted"> · Go · W3</span></div>
+          <div class="ebar">
+            <div class="seg t-good" style="width:3.571428571428571%" title="accepted 2"></div>
+            <div class="seg t-critical" style="width:5.357142857142857%" title="rejected 3"></div>
+            <div class="seg t-pending" style="width:3.571428571428571%" title="pending 2"></div>
+          </div>
+          <div class="eval">40%<span class="muted"> · 3✗ mostly docker build failure (2)</span></div>
+        </div>
+        <div class="erow">
+          <div class="elabel">E38<span class="muted"> · Go · W3</span></div>
+          <div class="ebar">
+            <div class="seg t-good" style="width:3.571428571428571%" title="accepted 2"></div>
+            <div class="seg t-critical" style="width:5.357142857142857%" title="rejected 3"></div>
+            <div class="seg t-pending" style="width:3.571428571428571%" title="pending 2"></div>
+          </div>
+          <div class="eval">40%<span class="muted"> · 3✗ mostly docker build failure (2)</span></div>
         </div>
     </div>
 

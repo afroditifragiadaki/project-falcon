@@ -38,6 +38,9 @@ update for the lab's Friday sync.
   (772 hrs/wk ÷ 3.8 hr/task); QA has never cleared >102/wk.
 - **Top rejection reasons:** tests_too_loose (104) + too_easy (75) = 65% of rejections — both fixable with guidance.
 - **Go is weak:** 26% acceptance (vs Python 61%, TS 53%); Go experts only joined wk 3.
+- **Slice by actor — problems concentrate in people:** top 3 experts = 29% of rejections,
+  top 10 = 49%. E19 (56 subs, 19%) + E07 (49 subs, 33%) = 69 rejections, nearly all
+  tests_too_loose (E19 alone = 38 of 104). Go cohort fails on docker_build_failure (infra, not skill).
 - **Reviewer spread:** R3 accepts 68% vs R4 32% — calibration worth checking (may be task-mix).
 - **Forecast: ~495 accepted by Nov 13 (range 451–535, base 496) — ~100 short of 600** at current pace.
 
