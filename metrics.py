@@ -29,10 +29,16 @@ TARGET_BAND = (0.20, 0.40)
 
 
 def parse_args(argv):
-    """Optional first arg overrides the snapshot date (ISO, e.g. 2026-11-09)."""
+    """Args (any order): an ISO date overrides the snapshot; --diagnose prints the
+    health-check report. Returns True if --diagnose was passed."""
     global AS_OF
-    if len(argv) > 1 and argv[1]:
-        AS_OF = dt.date.fromisoformat(argv[1])
+    diagnose_flag = False
+    for a in argv[1:]:
+        if a == "--diagnose":
+            diagnose_flag = True
+        elif a and not a.startswith("-"):
+            AS_OF = dt.date.fromisoformat(a)
+    return diagnose_flag
 
 
 def snapshot():
@@ -371,11 +377,151 @@ def compute(experts, subs, qa_list, clean):
     }
 
 
+SEV_ORDER = {"CRITICAL": 0, "WARN": 1, "INFO": 2}
+
+
+def diagnose(m):
+    """Run health-check rules over the metrics and return ranked flags.
+
+    Each flag: {severity, code, message, evidence, recommendation}. Rules are
+    threshold-driven off the metrics, so they re-fire correctly on fresh data.
+    """
+    F = []
+
+    def add(sev, code, msg, evidence, rec):
+        F.append({"severity": sev, "code": code, "message": msg,
+                  "evidence": evidence, "recommendation": rec})
+
+    h, f = m["headline"], m["forecast"]
+    ds, ec, rp = m["difficulty_to_spec"], m["expert_concentration"], m["rejection_preventability"]
+    br, goal = m["by_reviewer"], m["goal"]
+    acc_rate = h["acc_rate"]
+
+    # 1. Forecast vs goal
+    if not f["past_due"] and f["base"] < goal:
+        add("CRITICAL", "forecast_short",
+            f"Forecast ~{f['base']} accepted by {m['due']} — {goal - f['base']} short of {goal}.",
+            f"base {f['base']} (range {f['pessimistic']}–{f['optimistic']}); gap {f['gap_to_goal']} in {f['weeks_left']} wks",
+            "Bring a recovery plan or renegotiate scope/deadline before the sync.")
+
+    # 2. Difficulty-to-spec (unconfirmed band)
+    s = ds.get("in_band_share")
+    if s is not None and not ds["band_is_confirmed"] and s < 0.60:
+        lo, hi = ds["target_band"]
+        add("CRITICAL", "difficulty_spec",
+            f"Only {s:.0%} of accepted tasks fall in the {lo:.0%}–{hi:.0%} difficulty band (UNCONFIRMED).",
+            f"{ds['in_band']}/{ds['n_accepted_with_fpr']} in band; {ds['above_0.60']} ({ds['above_0.60_share']:.0%}) ≥0.60; QA bar ~{ds['qa_too_easy_line_observed']}",
+            "Confirm the target band with the lab, then re-score accepted tasks and re-tune the QA bar.")
+
+    # 3. QA throughput bottleneck
+    peak = max(m["accepted_by_review_week"].values()) if m["accepted_by_review_week"] else 0
+    need = f.get("needed_accepts_per_week")
+    if need and need > peak:
+        add("WARN", "qa_bottleneck",
+            f"Required pace {need:.0f} accepts/wk exceeds the best week ever ({peak}).",
+            f"need ~{f['needed_decided_per_week']:.0f} reviews/wk; experts can supply ~{m['capacity']['max_submittable_per_week']}/wk (not the limit)",
+            "Add QA reviewers and/or deploy the pre-submission gate to cut review load.")
+
+    # 4. Rejection concentration (actor)
+    if ec["top3_rejection_share"] and ec["top3_rejection_share"] >= 0.25:
+        tr = ec["top_rejectors"][:2]
+        names = "; ".join(f"{t['expert']} ({t['rejections']} rej, {t['top_reason']})" for t in tr)
+        add("WARN", "rejection_concentration",
+            f"Top 3 experts own {ec['top3_rejection_share']:.0%} of all rejections.",
+            f"worst: {names}",
+            "Coach the top offenders directly — higher leverage than a broad memo.")
+
+    # 5. Reviewer calibration spread
+    rates = [v["acc_rate"] for v in br.values()]
+    if rates and (max(rates) - min(rates)) >= 0.25:
+        hi_r = max(br.items(), key=lambda x: x[1]["acc_rate"])
+        lo_r = min(br.items(), key=lambda x: x[1]["acc_rate"])
+        add("WARN", "reviewer_calibration",
+            f"Reviewer acceptance spread is wide: {min(rates):.0%}–{max(rates):.0%}.",
+            f"{hi_r[0]} {hi_r[1]['acc_rate']:.0%} ({hi_r[1]['decided']} decided) vs {lo_r[0]} {lo_r[1]['acc_rate']:.0%} ({lo_r[1]['decided']})",
+            "Run a calibration sync; spot-check a sample of each reviewer's recent calls.")
+
+    # 6. Auto-preventable QA load
+    ap = rp.get("auto_share_of_all_qa_decisions")
+    if ap and ap >= 0.15:
+        add("WARN", "preventable_load",
+            f"{ap:.0%} of QA decisions were spent on auto-preventable rejections.",
+            f"{rp['auto']} rejections ({rp['auto_share']:.0%}) catchable pre-review: docker/too_easy/duplicate",
+            "Stand up the pre-submission CI gate to reclaim reviewer capacity.")
+
+    # 7. Throughput declining (last complete review week vs prior average)
+    aw = m["accepted_by_review_week"]
+    ks = sorted(aw, key=lambda x: int(x))
+    if len(ks) >= 2:
+        last, prior = aw[ks[-1]], sum(aw[k] for k in ks[:-1]) / (len(ks) - 1)
+        if last < 0.8 * prior:
+            add("WARN", "throughput_declining",
+                f"Accepts in the last complete week ({last}) fell below the prior average ({prior:.0f}).",
+                f"accepts by review week: {dict((k, aw[k]) for k in ks)}",
+                "Usually the review backlog, not fewer submissions — check reviewer load.")
+
+    # 8. Pending backlog
+    tot = h["accepted"] + h["rejected"] + h["pending"]
+    if tot and h["pending"] / tot >= 0.12:
+        add("WARN", "pending_backlog",
+            f"{h['pending']} tasks ({h['pending'] / tot:.0%}) are pending/unreviewed.",
+            f"accepted {h['accepted']}, rejected {h['rejected']}, pending {h['pending']}",
+            f"Triage now — clearing at ~{acc_rate:.0%} yields ~{round(h['pending'] * acc_rate)} accepts.")
+
+    # 9. Weak language
+    for lang, v in m["by_language"].items():
+        dec = v["accepted"] + v["rejected"]
+        if v["acc_rate"] is not None and v["acc_rate"] < 0.40 and dec >= 10:
+            add("WARN", "weak_language",
+                f"{lang} acceptance is only {v['acc_rate']:.0%} ({v['accepted']}/{dec} decided).",
+                f"vs other languages; check the dominant rejection reason for this cohort",
+                "Fix the cohort's systemic cause (e.g. a broken Docker template) before blaming skill.")
+
+    # 10. Data-quality hygiene (informational, but worth showing)
+    dq = m["data_quality"]
+    bits = []
+    if dq["dup_submission_rows_dropped"]:
+        bits.append(f"{dq['dup_submission_rows_dropped']} duplicate rows dropped")
+    if dq.get("reviews_after_cutoff_deferred_to_pending"):
+        bits.append(f"{dq['reviews_after_cutoff_deferred_to_pending']} post-cutoff reviews deferred to pending")
+    if dq.get("orphan_qa_rows_excluded"):
+        bits.append(f"{len(dq['orphan_qa_rows_excluded'])} orphan QA rows excluded")
+    if dq["empty_hours_rows"]:
+        bits.append(f"{dq['empty_hours_rows']} blank-hours rows")
+    if bits:
+        add("INFO", "data_quality",
+            "Data hygiene applied this run: " + ", ".join(bits) + ".",
+            f"cutoff {dq.get('cutoff_date')}; {dq['unique_submissions']} unique submissions",
+            "None blocking — kept for auditability.")
+
+    F.sort(key=lambda x: SEV_ORDER[x["severity"]])
+    return F
+
+
+def print_diagnostics(m):
+    d = m["diagnostics"]
+    counts = Counter(x["severity"] for x in d)
+    print(f"Project Falcon — diagnostics  (as of {m['as_of']}, data through {m['data_through']})")
+    print(f"  {counts.get('CRITICAL', 0)} critical · {counts.get('WARN', 0)} warning · "
+          f"{counts.get('INFO', 0)} info")
+    print(f"  snapshot: {m['headline']['accepted']}/{m['goal']} accepted, "
+          f"forecast {m['forecast']['base']}\n")
+    for x in d:
+        print(f"[{x['severity']:8}] {x['message']}")
+        print(f"            evidence: {x['evidence']}")
+        print(f"            → {x['recommendation']}\n")
+
+
 def main(argv=None):
-    parse_args(argv or sys.argv)
+    diagnose_flag = parse_args(argv or sys.argv)
     experts, subs, qa_list, clean = load()
     m = compute(experts, subs, qa_list, clean)
+    m["diagnostics"] = diagnose(m)
     (ROOT / "metrics.json").write_text(json.dumps(m, indent=2))
+
+    if diagnose_flag:
+        print_diagnostics(m)
+        return
 
     h, f = m["headline"], m["forecast"]
     need = ("DEADLINE PASSED" if f["past_due"]

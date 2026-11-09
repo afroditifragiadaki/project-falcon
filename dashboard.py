@@ -173,6 +173,21 @@ def build_html(m):
     top2_rej = sum(t["rejections"] for t in top2)
     top2_txt = " + ".join(t["expert"] for t in top2)
 
+    # diagnostics banner — surface CRITICAL/WARN flags at the top
+    diag = m.get("diagnostics", [])
+    sevtone = {"CRITICAL": "critical", "WARN": "warning", "INFO": "muted"}
+    ncrit = sum(1 for x in diag if x["severity"] == "CRITICAL")
+    nwarn = sum(1 for x in diag if x["severity"] == "WARN")
+    flags_html = ""
+    for x in [d for d in diag if d["severity"] in ("CRITICAL", "WARN")]:
+        tone = sevtone[x["severity"]]
+        flags_html += f"""
+        <div class="flag">
+          <span class="sev sev-{tone}">{x['severity']}</span>
+          <div><div class="fmsg">{x['message']}</div>
+            <div class="fev">{x['evidence']} &nbsp;·&nbsp; <b>→</b> {x['recommendation']}</div></div>
+        </div>"""
+
     return f"""<!doctype html>
 <html lang="en">
 <head>
@@ -211,6 +226,15 @@ def build_html(m):
     border:1px solid color-mix(in srgb, var(--vt) 40%, var(--border));
     font-weight:600; display:flex; gap:10px; align-items:center; }}
   .verdict .dot {{ width:10px; height:10px; border-radius:50%; background:var(--vt); flex:none; }}
+  .flags {{ background:var(--surface); border:1px solid var(--border); border-radius:12px; padding:14px 16px; margin-bottom:22px; }}
+  .flags h2 {{ font-size:13px; margin:0 0 10px; text-transform:uppercase; letter-spacing:.05em; color:var(--muted); }}
+  .flag {{ display:grid; grid-template-columns:78px 1fr; gap:10px; align-items:start; padding:8px 0; border-top:1px solid var(--border); }}
+  .flag:first-of-type {{ border-top:none; }}
+  .sev {{ font-size:10px; font-weight:700; padding:2px 7px; border-radius:20px; text-align:center; letter-spacing:.03em; }}
+  .sev-critical {{ background:color-mix(in srgb,var(--critical) 18%,transparent); color:var(--critical); }}
+  .sev-warning {{ background:color-mix(in srgb,var(--warning) 28%,transparent); color:var(--text); }}
+  .fmsg {{ font-size:13px; font-weight:600; }}
+  .fev {{ font-size:12px; color:var(--muted); margin-top:2px; }}
   .grid {{ display:grid; grid-template-columns:repeat(4,1fr); gap:14px; margin-bottom:22px; }}
   .kpi {{ background:var(--surface); border:1px solid var(--border); border-radius:12px; padding:14px 16px; }}
   .kpi .n {{ font-size:28px; font-weight:700; letter-spacing:-.02em; }}
@@ -266,6 +290,11 @@ def build_html(m):
   </header>
 
   <div class="verdict" style="--vt:var(--{verdict_tone})"><span class="dot"></span>{verdict}</div>
+
+  <div class="flags">
+    <h2>Diagnostics — {ncrit} critical · {nwarn} warnings <span style="text-transform:none;font-weight:400">(rebuild: <code>python3 metrics.py --diagnose</code>)</span></h2>
+    {flags_html}
+  </div>
 
   <div class="grid">
     <div class="kpi"><div class="n">{acc}</div><div class="l">Accepted</div><div class="d">{pct_goal:.0%} of {g} goal</div></div>

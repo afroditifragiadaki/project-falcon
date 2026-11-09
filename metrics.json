@@ -806,5 +806,77 @@
       "T9001",
       "T9002"
     ]
-  }
+  },
+  "diagnostics": [
+    {
+      "severity": "CRITICAL",
+      "code": "forecast_short",
+      "message": "Forecast ~496 accepted by 2026-11-13 \u2014 104 short of 600.",
+      "evidence": "base 496 (range 451\u2013535); gap 269 in 2 wks",
+      "recommendation": "Bring a recovery plan or renegotiate scope/deadline before the sync."
+    },
+    {
+      "severity": "CRITICAL",
+      "code": "difficulty_spec",
+      "message": "Only 30% of accepted tasks fall in the 20%\u201340% difficulty band (UNCONFIRMED).",
+      "evidence": "98/331 in band; 87 (26%) \u22650.60; QA bar ~0.8",
+      "recommendation": "Confirm the target band with the lab, then re-score accepted tasks and re-tune the QA bar."
+    },
+    {
+      "severity": "WARN",
+      "code": "qa_bottleneck",
+      "message": "Required pace 134 accepts/wk exceeds the best week ever (102).",
+      "evidence": "need ~246 reviews/wk; experts can supply ~203/wk (not the limit)",
+      "recommendation": "Add QA reviewers and/or deploy the pre-submission gate to cut review load."
+    },
+    {
+      "severity": "WARN",
+      "code": "rejection_concentration",
+      "message": "Top 3 experts own 29% of all rejections.",
+      "evidence": "worst: E19 (43 rej, tests_too_loose); E07 (26 rej, tests_too_loose)",
+      "recommendation": "Coach the top offenders directly \u2014 higher leverage than a broad memo."
+    },
+    {
+      "severity": "WARN",
+      "code": "reviewer_calibration",
+      "message": "Reviewer acceptance spread is wide: 32%\u201368%.",
+      "evidence": "R3 68% (168 decided) vs R4 32% (102)",
+      "recommendation": "Run a calibration sync; spot-check a sample of each reviewer's recent calls."
+    },
+    {
+      "severity": "WARN",
+      "code": "preventable_load",
+      "message": "22% of QA decisions were spent on auto-preventable rejections.",
+      "evidence": "134 rejections (49%) catchable pre-review: docker/too_easy/duplicate",
+      "recommendation": "Stand up the pre-submission CI gate to reclaim reviewer capacity."
+    },
+    {
+      "severity": "WARN",
+      "code": "throughput_declining",
+      "message": "Accepts in the last complete week (60) fell below the prior average (90).",
+      "evidence": "accepts by review week: {1: 79, 2: 90, 3: 102, 4: 60}",
+      "recommendation": "Usually the review backlog, not fewer submissions \u2014 check reviewer load."
+    },
+    {
+      "severity": "WARN",
+      "code": "pending_backlog",
+      "message": "113 tasks (16%) are pending/unreviewed.",
+      "evidence": "accepted 331, rejected 274, pending 113",
+      "recommendation": "Triage now \u2014 clearing at ~55% yields ~62 accepts."
+    },
+    {
+      "severity": "WARN",
+      "code": "weak_language",
+      "message": "Go acceptance is only 26% (13/51 decided).",
+      "evidence": "vs other languages; check the dominant rejection reason for this cohort",
+      "recommendation": "Fix the cohort's systemic cause (e.g. a broken Docker template) before blaming skill."
+    },
+    {
+      "severity": "INFO",
+      "code": "data_quality",
+      "message": "Data hygiene applied this run: 4 duplicate rows dropped, 21 post-cutoff reviews deferred to pending, 2 orphan QA rows excluded, 6 blank-hours rows.",
+      "evidence": "cutoff 2026-11-01; 718 unique submissions",
+      "recommendation": "None blocking \u2014 kept for auditability."
+    }
+  ]
 }

@@ -28,6 +28,19 @@ python3 metrics.py 2026-11-09
 `GOAL` (600 accepted), the `DUE` (Nov 13, 2026) deadline, and `AS_OF` are constants at
 the top of `metrics.py`.
 
+### Diagnostics
+
+```bash
+python3 metrics.py --diagnose
+```
+
+Runs a set of health-check rules over the metrics and prints ranked flags
+(CRITICAL / WARN / INFO), each with its evidence and a recommended action — e.g.
+forecast-short, difficulty-spec mismatch, QA bottleneck, rejection concentration,
+reviewer-calibration spread, auto-preventable load. The same flags are saved in
+`metrics.json` under `diagnostics` and shown as a banner at the top of the dashboard.
+Rules are threshold-driven off the data, so they re-fire correctly on fresh exports.
+
 ## What's here
 
 | File | What it is |
