@@ -62,5 +62,5 @@ No third-party dependencies — standard-library Python 3 only.
 - **343 / 600 accepted** at end of week 4; acceptance rate ~55% and falling.
 - The binding constraint is **QA review throughput**, not expert supply.
 - Top rejection reasons — loose tests + too easy — are 64% of all rejections and fixable.
-- Go lags badly (28% acceptance); those experts joined in week 3.
+- Go lags badly (26% acceptance); those experts joined in week 3.
 - Forecast misses 600 at current pace without roughly doubling QA throughput.
